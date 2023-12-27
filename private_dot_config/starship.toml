@@ -1,0 +1,8 @@
+
+add_newline = false
+command_timeout = 5000
+
+[character]
+success_symbol = '[λ](bold green)'
+error_symbol = '[x](bold red)'
+

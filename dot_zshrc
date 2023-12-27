@@ -1,0 +1,53 @@
+zstyle ':zim:zmodule' use 'degit'
+
+ZIM_HOME=${HOME}/.config/zim
+zstyle ':zim:completion' dumpfile "${ZIM_HOME}/zcompdump"
+zstyle ':completion::complete:*' cache-path "${ZIM_HOME}/zcompcache"
+
+if [[ ! -e ${ZIM_HOME}/zimfw.zsh ]]; then
+  curl -fsSL --create-dirs -o ${ZIM_HOME}/zimfw.zsh \
+      https://github.com/zimfw/zimfw/releases/latest/download/zimfw.zsh
+fi
+
+if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZDOTDIR:-${HOME}}/.zimrc ]]; then
+  source ${ZIM_HOME}/zimfw.zsh init -q
+fi
+
+# alias
+alias k="eza -lh"
+alias kk="pkill zellij"
+alias yy="yarn install && yarn dev"
+alias se="sudoedit"
+alias tree="et"
+alias curl="curl -s"
+
+# Python
+export WORKON_HOME=${HOME}/.venvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+
+# Rust
+export RUSTUP_DIST_SERVER="https://rsproxy.cn"
+export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
+
+# zsh config
+export HISTFILE=${ZIM_HOME}/zsh_history
+
+# History config
+export HISTSIZE=100000
+export SAVEHIST=100000
+setopt append_history
+setopt share_history
+setopt hist_expire_dups_first
+setopt hist_find_no_dups
+setopt hist_save_no_dups
+setopt hist_ignore_dups
+setopt hist_ignore_all_dups
+setopt hist_ignore_space
+setopt hist_reduce_blanks
+setopt inc_append_history
+
+# starship
+eval "$(starship init zsh)"
+
+source ${ZIM_HOME}/init.zsh
