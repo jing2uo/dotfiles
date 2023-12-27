@@ -4,14 +4,15 @@
 
 ### tools
 
-| 工具              | 备注                      |
-| ----------------- | ------------------------- |
-| alacritty         | 终端                      |
-| zellij            | 分屏，类 tmux             |
-| asdf-vm           | 语言、工具多版本管理      |
-| starship          | 终端提示                  |
-| virtualenvwrapper | Python venv 管理          |
-| rofi              | 启动器，类 alfred、albert |
+| 工具                                | 备注                      |
+| ----------------------------------- | ------------------------- |
+| [alacritty](https://alacritty.org/) | 终端                      |
+| [zellij](https://zellij.dev/)       | 分屏，类 tmux             |
+| [asdf-vm](https://asdf-vm.com)      | 语言、工具多版本管理      |
+| [starship](https://starship.rs/)    | 终端提示                  |
+| [ov](https://github.com/noborus/ov) | paper，替代 less more 等  |
+| virtualenvwrapper                   | Python venv 管理          |
+| rofi                                | 启动器，类 alfred、albert |
 
 ### apt-install 
 

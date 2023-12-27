@@ -29,6 +29,7 @@ function myfpath() {
   helm completion zsh > $MYFPATH/_helm
   kubectl completion zsh > $MYFPATH/_kubectl
   zellij setup --generate-completion zsh > $MYFPATH/_zellij
+  ov --completion zsh > $MYFPATH/_ov
   echo "now"
   ls -l $MYFPATH/
 }

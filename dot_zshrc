@@ -13,7 +13,13 @@ if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZDOTDIR:-${HOME}}/.zimrc ]]; then
   source ${ZIM_HOME}/zimfw.zsh init -q
 fi
 
+export PAPER=ov
+
 # alias
+alias less="ov"
+alias more="ov"
+alias head="ov"
+alias tail="ov"
 alias k="eza -lh"
 alias kk="zellij ka -y"
 alias yy="yarn install && yarn dev"
