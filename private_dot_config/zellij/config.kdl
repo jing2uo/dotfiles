@@ -1,0 +1,15 @@
+keybinds {
+    tmux {
+        bind "Ctrl b" { Write 2; SwitchToMode "Normal"; }
+        bind "m" { NewPane "Down"; SwitchToMode "Normal"; }
+        bind "n" { NewPane "Right"; SwitchToMode "Normal"; }
+        bind "b" { NewTab; SwitchToMode "Normal"; }
+        bind "z" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
+        bind "x" { CloseFocus; SwitchToMode "Normal"; }
+    }
+}
+
+default_shell "zsh"
+scrollback_lines_to_serialize 10000
+mouse_mode true
+copy_on_select true
