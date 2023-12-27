@@ -11,13 +11,14 @@
 | [asdf-vm](https://asdf-vm.com)      | 语言、工具多版本管理      |
 | [starship](https://starship.rs/)    | 终端提示                  |
 | [ov](https://github.com/noborus/ov) | paper，替代 less more 等  |
+| batcat                              | 彩色的，更多功能的 cat    |
 | virtualenvwrapper                   | Python venv 管理          |
 | rofi                                | 启动器，类 alfred、albert |
 
 ### apt-install 
 
 ```bash
-sudo apt install git curl zsh alacritty virtualenvwrapper rofi
+sudo apt install git curl zsh alacritty virtualenvwrapper rofi bat
 ```
 
 ### asdf-install
