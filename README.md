@@ -18,7 +18,7 @@
 ### apt-install 
 
 ```bash
-sudo apt install git curl zsh alacritty virtualenvwrapper rofi bat
+sudo apt install git curl zsh alacritty virtualenvwrapper rofi bat fzf -y
 ```
 
 ### asdf-install
@@ -29,7 +29,7 @@ https://asdf-vm.com/guide/getting-started.html
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.13.1
 source ~/.asdf/asdf.sh
 
-plugins=("chezmoi" "golang" "helm" "java" "kubectl" "nodejs" "rust" "starship")
+plugins=("chezmoi" "golang" "helm" "kubectl" "nodejs" "rust" "starship" "zellij")
 
 for plugin in "${plugins[@]}"; do
     asdf plugin-add "$plugin"

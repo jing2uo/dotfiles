@@ -1,1 +1,995 @@
-[{"identifier":{"id":"bennycode.sort-everything","uuid":"4fe1a931-5171-4c6d-8d27-c1034a85fe4b"},"version":"1.3.3","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/bennycode.sort-everything-1.3.3","scheme":"file"},"relativeLocation":"bennycode.sort-everything-1.3.3","metadata":{"id":"4fe1a931-5171-4c6d-8d27-c1034a85fe4b","publisherId":"32a5bcc6-cb67-4afa-afbc-9c72be962f59","publisherDisplayName":"Benny Neugebauer","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"installedTimestamp":1702041568318,"preRelease":false}},{"identifier":{"id":"chouzz.vscode-better-align","uuid":"f5a6ecde-96ce-4fde-8744-ab88c7727069"},"version":"1.4.2","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/chouzz.vscode-better-align-1.4.2","scheme":"file"},"relativeLocation":"chouzz.vscode-better-align-1.4.2","metadata":{"id":"f5a6ecde-96ce-4fde-8744-ab88c7727069","publisherId":"b3a947d9-1df4-4cbf-9bbf-3cfca4558416","publisherDisplayName":"Chouzz","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"installedTimestamp":1702041606830,"preRelease":false}},{"identifier":{"id":"christian-kohler.path-intellisense","uuid":"a41c1549-4053-44d4-bf30-60fc809b4a86"},"version":"2.8.5","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/christian-kohler.path-intellisense-2.8.5","scheme":"file"},"relativeLocation":"christian-kohler.path-intellisense-2.8.5","metadata":{"id":"a41c1549-4053-44d4-bf30-60fc809b4a86","publisherId":"a892fb38-060b-475f-9e73-2e06a8a17a68","publisherDisplayName":"Christian Kohler","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"installedTimestamp":1702041612012,"preRelease":false}},{"identifier":{"id":"esbenp.prettier-vscode","uuid":"96fa4707-6983-4489-b7c5-d5ffdfdcce90"},"version":"10.1.0","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/esbenp.prettier-vscode-10.1.0","scheme":"file"},"relativeLocation":"esbenp.prettier-vscode-10.1.0","metadata":{"id":"96fa4707-6983-4489-b7c5-d5ffdfdcce90","publisherId":"d16f4e39-2ffb-44e3-9c0d-79d873570e3a","publisherDisplayName":"Prettier","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"installedTimestamp":1702041630573,"preRelease":false}},{"identifier":{"id":"formulahendry.code-runner","uuid":"a6a0c5b2-d078-4bf5-a9ee-4e37054414b3"},"version":"0.12.1","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/formulahendry.code-runner-0.12.1","scheme":"file"},"relativeLocation":"formulahendry.code-runner-0.12.1","metadata":{"id":"a6a0c5b2-d078-4bf5-a9ee-4e37054414b3","publisherId":"38bbe3f0-5204-4170-845e-c2f966d979b8","publisherDisplayName":"Jun Han","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"installedTimestamp":1702041640445,"preRelease":false}},{"identifier":{"id":"foxundermoon.shell-format","uuid":"5fb19573-2183-4cf2-b53d-0fb869dae7ae"},"version":"7.2.5","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/foxundermoon.shell-format-7.2.5","scheme":"file"},"relativeLocation":"foxundermoon.shell-format-7.2.5","metadata":{"id":"5fb19573-2183-4cf2-b53d-0fb869dae7ae","publisherId":"c5bb2216-aaba-47a1-962e-5561e40c03c5","publisherDisplayName":"foxundermoon","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"installedTimestamp":1702041645826,"preRelease":false}},{"identifier":{"id":"grapecity.gc-excelviewer","uuid":"8bb12ae3-73f8-40cf-86b7-4bd5729c6238"},"version":"4.2.58","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/grapecity.gc-excelviewer-4.2.58","scheme":"file"},"relativeLocation":"grapecity.gc-excelviewer-4.2.58","metadata":{"id":"8bb12ae3-73f8-40cf-86b7-4bd5729c6238","publisherId":"aa6deade-27ef-4481-9de7-720b9c9e0b86","publisherDisplayName":"GrapeCity","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"installedTimestamp":1702041656940,"preRelease":false}},{"identifier":{"id":"gruntfuggly.todo-tree","uuid":"261cac81-cd7b-4555-bb41-0c2d2bcd3e70"},"version":"0.0.226","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/gruntfuggly.todo-tree-0.0.226","scheme":"file"},"relativeLocation":"gruntfuggly.todo-tree-0.0.226","metadata":{"id":"261cac81-cd7b-4555-bb41-0c2d2bcd3e70","publisherId":"d4906d2e-f2ee-492d-9c7c-02b6160599ec","publisherDisplayName":"Gruntfuggly","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"installedTimestamp":1702041663417,"preRelease":false}},{"identifier":{"id":"jannisx11.batch-rename-extension","uuid":"4fb89c9c-85d7-47a8-aaca-91ae216b0278"},"version":"0.0.6","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/jannisx11.batch-rename-extension-0.0.6","scheme":"file"},"relativeLocation":"jannisx11.batch-rename-extension-0.0.6","metadata":{"id":"4fb89c9c-85d7-47a8-aaca-91ae216b0278","publisherId":"8cdd974e-3246-468a-836c-b63dbddd843a","publisherDisplayName":"JannisX11","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"installedTimestamp":1702041680302,"preRelease":false}},{"identifier":{"id":"lulus.vscode-regexp-preivew","uuid":"4c4d07a1-7488-464d-9cf7-c178303dcad9"},"version":"1.0.0","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/lulus.vscode-regexp-preivew-1.0.0","scheme":"file"},"relativeLocation":"lulus.vscode-regexp-preivew-1.0.0","metadata":{"id":"4c4d07a1-7488-464d-9cf7-c178303dcad9","publisherId":"8750a393-0618-4dd7-b0b0-e190dd9e358f","publisherDisplayName":"Lulus Young","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"installedTimestamp":1702041686114,"preRelease":false}},{"identifier":{"id":"mhutchie.git-graph","uuid":"438221f8-1107-4ccd-a6fe-f3b7fe0856b7"},"version":"1.30.0","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/mhutchie.git-graph-1.30.0","scheme":"file"},"relativeLocation":"mhutchie.git-graph-1.30.0","metadata":{"id":"438221f8-1107-4ccd-a6fe-f3b7fe0856b7","publisherId":"996496dc-099f-469d-b89c-0d7713179365","publisherDisplayName":"mhutchie","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"installedTimestamp":1702041700580,"preRelease":false}},{"identifier":{"id":"ms-azuretools.vscode-docker","uuid":"0479fc1c-3d67-49f9-b087-fb9069afe48f"},"version":"1.28.0","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/ms-azuretools.vscode-docker-1.28.0","scheme":"file"},"relativeLocation":"ms-azuretools.vscode-docker-1.28.0","metadata":{"id":"0479fc1c-3d67-49f9-b087-fb9069afe48f","publisherId":"52b787f2-79a9-4f32-99b4-393afe3005d3","publisherDisplayName":"Microsoft","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"installedTimestamp":1702041707643,"preRelease":false}},{"identifier":{"id":"ms-vscode-remote.remote-containers","uuid":"93ce222b-5f6f-49b7-9ab1-a0463c6238df"},"version":"0.327.0","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/ms-vscode-remote.remote-containers-0.327.0","scheme":"file"},"relativeLocation":"ms-vscode-remote.remote-containers-0.327.0","metadata":{"id":"93ce222b-5f6f-49b7-9ab1-a0463c6238df","publisherId":"ac9410a2-0d75-40ec-90de-b59bb705801d","publisherDisplayName":"Microsoft","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"installedTimestamp":1702041719993,"preRelease":false}},{"identifier":{"id":"ms-vscode-remote.remote-ssh-edit","uuid":"bfeaf631-bcff-4908-93ed-fda4ef9a0c5c"},"version":"0.86.0","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/ms-vscode-remote.remote-ssh-edit-0.86.0","scheme":"file"},"relativeLocation":"ms-vscode-remote.remote-ssh-edit-0.86.0","metadata":{"id":"bfeaf631-bcff-4908-93ed-fda4ef9a0c5c","publisherId":"ac9410a2-0d75-40ec-90de-b59bb705801d","publisherDisplayName":"Microsoft","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"installedTimestamp":1702041731185,"preRelease":false}},{"identifier":{"id":"ms-vscode.remote-explorer","uuid":"11858313-52cc-4e57-b3e4-d7b65281e34b"},"version":"0.4.1","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/ms-vscode.remote-explorer-0.4.1","scheme":"file"},"relativeLocation":"ms-vscode.remote-explorer-0.4.1","metadata":{"id":"11858313-52cc-4e57-b3e4-d7b65281e34b","publisherId":"5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee","publisherDisplayName":"Microsoft","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"installedTimestamp":1702041731192,"preRelease":false}},{"identifier":{"id":"ms-vscode-remote.remote-ssh","uuid":"607fd052-be03-4363-b657-2bd62b83d28a"},"version":"0.107.1","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/ms-vscode-remote.remote-ssh-0.107.1","scheme":"file"},"relativeLocation":"ms-vscode-remote.remote-ssh-0.107.1","metadata":{"id":"607fd052-be03-4363-b657-2bd62b83d28a","publisherId":"ac9410a2-0d75-40ec-90de-b59bb705801d","publisherDisplayName":"Microsoft","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"installedTimestamp":1702041733508,"preRelease":false}},{"identifier":{"id":"naumovs.color-highlight","uuid":"121396ad-85a1-45ec-9fd1-d95028a847f5"},"version":"2.5.0","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/naumovs.color-highlight-2.5.0","scheme":"file"},"relativeLocation":"naumovs.color-highlight-2.5.0","metadata":{"id":"121396ad-85a1-45ec-9fd1-d95028a847f5","publisherId":"e9a76d04-24d4-44eb-a202-964f71acf59e","publisherDisplayName":"Sergii N","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"installedTimestamp":1702041739428,"preRelease":false}},{"identifier":{"id":"oderwat.indent-rainbow","uuid":"eaa2127d-cb69-4ab9-8505-a60c9ee5f28b"},"version":"8.3.1","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/oderwat.indent-rainbow-8.3.1","scheme":"file"},"relativeLocation":"oderwat.indent-rainbow-8.3.1","metadata":{"id":"eaa2127d-cb69-4ab9-8505-a60c9ee5f28b","publisherId":"ac064ae0-224d-4351-9aa4-45ef7bf3ed21","publisherDisplayName":"oderwat","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"installedTimestamp":1702041745001,"preRelease":false}},{"identifier":{"id":"parthr2031.colorful-comments","uuid":"593914aa-670d-4885-965f-1539224f8339"},"version":"1.0.0","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/parthr2031.colorful-comments-1.0.0","scheme":"file"},"relativeLocation":"parthr2031.colorful-comments-1.0.0","metadata":{"id":"593914aa-670d-4885-965f-1539224f8339","publisherId":"37adc1dd-69a9-475b-ac58-b43477ed3f17","publisherDisplayName":"Parth Rastogi","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"installedTimestamp":1702041751744,"preRelease":false}},{"identifier":{"id":"redhat.vscode-yaml","uuid":"2061917f-f76a-458a-8da9-f162de22b97e"},"version":"1.14.0","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/redhat.vscode-yaml-1.14.0","scheme":"file"},"relativeLocation":"redhat.vscode-yaml-1.14.0","metadata":{"id":"2061917f-f76a-458a-8da9-f162de22b97e","publisherId":"eed56242-9699-4317-8bc7-e9f4b9bdd3ff","publisherDisplayName":"Red Hat","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"installedTimestamp":1702041756853,"preRelease":false}},{"identifier":{"id":"serayuzgur.crates","uuid":"6a95a3fd-3a5d-4326-b8ab-1b1653b1f183"},"version":"0.6.5","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/serayuzgur.crates-0.6.5","scheme":"file"},"relativeLocation":"serayuzgur.crates-0.6.5","metadata":{"id":"6a95a3fd-3a5d-4326-b8ab-1b1653b1f183","publisherId":"f3db93d2-daa2-4a16-a789-41ffbe82294a","publisherDisplayName":"Seray Uzgur","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"installedTimestamp":1702041780472,"preRelease":false}},{"identifier":{"id":"tamasfe.even-better-toml","uuid":"b2215d5f-675e-4a2b-b6ac-1ca737518b78"},"version":"0.19.2","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/tamasfe.even-better-toml-0.19.2","scheme":"file"},"relativeLocation":"tamasfe.even-better-toml-0.19.2","metadata":{"id":"b2215d5f-675e-4a2b-b6ac-1ca737518b78","publisherId":"78c2102e-13a2-49ea-ac79-8d1bbacbbf0e","publisherDisplayName":"tamasfe","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"installedTimestamp":1702041889220,"preRelease":false}},{"identifier":{"id":"thamaraiselvam.remove-blank-lines","uuid":"324a3d09-7c55-41f9-86ed-156f7cd08e2c"},"version":"1.1.1","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/thamaraiselvam.remove-blank-lines-1.1.1","scheme":"file"},"relativeLocation":"thamaraiselvam.remove-blank-lines-1.1.1","metadata":{"id":"324a3d09-7c55-41f9-86ed-156f7cd08e2c","publisherId":"b1995d27-64a3-4a7a-8afc-85791d84eb99","publisherDisplayName":"Thamaraiselvam","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"installedTimestamp":1702041900763,"preRelease":false}},{"identifier":{"id":"vadimcn.vscode-lldb","uuid":"bee31e34-a44b-4a76-9ec2-e9fd1439a0f6"},"version":"1.10.0","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/vadimcn.vscode-lldb-1.10.0","scheme":"file"},"relativeLocation":"vadimcn.vscode-lldb-1.10.0","metadata":{"id":"bee31e34-a44b-4a76-9ec2-e9fd1439a0f6","publisherId":"3b05d186-6311-4caa-99b5-09032a9d3cf5","publisherDisplayName":"Vadim Chugunov","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"installedTimestamp":1702041906264,"preRelease":false}},{"identifier":{"id":"vincaslt.highlight-matching-tag","uuid":"aae00486-7e92-42b3-91b0-2b419e4f3875"},"version":"0.11.0","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/vincaslt.highlight-matching-tag-0.11.0","scheme":"file"},"relativeLocation":"vincaslt.highlight-matching-tag-0.11.0","metadata":{"id":"aae00486-7e92-42b3-91b0-2b419e4f3875","publisherId":"81b5ff8a-7099-47ff-acce-7406aece08b3","publisherDisplayName":"vincaslt","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"installedTimestamp":1702041911325,"preRelease":false}},{"identifier":{"id":"vscode-icons-team.vscode-icons","uuid":"9ccc1dd7-7ec4-4a46-bd4f-7d7b8b9d322a"},"version":"12.6.0","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/vscode-icons-team.vscode-icons-12.6.0","scheme":"file"},"relativeLocation":"vscode-icons-team.vscode-icons-12.6.0","metadata":{"id":"9ccc1dd7-7ec4-4a46-bd4f-7d7b8b9d322a","publisherId":"652ad61d-3a6a-48ca-ab1a-80dc8953b2b6","publisherDisplayName":"VSCode Icons Team","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"installedTimestamp":1702041916618,"preRelease":false}},{"identifier":{"id":"quanzaiyu.vscode-json-enhanced","uuid":"87326e9c-937b-4d68-b817-8d2a0fe0178d"},"version":"1.1.2","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/quanzaiyu.vscode-json-enhanced-1.1.2","scheme":"file"},"relativeLocation":"quanzaiyu.vscode-json-enhanced-1.1.2","metadata":{"id":"87326e9c-937b-4d68-b817-8d2a0fe0178d","publisherId":"2272e4a1-2eae-48c1-9a51-02fc828ea92e","publisherDisplayName":"quanzaiyu","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"installedTimestamp":1702362262643,"pinned":false,"preRelease":false}},{"identifier":{"id":"ms-ceintl.vscode-language-pack-zh-hans","uuid":"e4ee7751-6514-4731-9cdb-7580ffa9e70b"},"version":"1.85.2023121309","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/ms-ceintl.vscode-language-pack-zh-hans-1.85.2023121309","scheme":"file"},"relativeLocation":"ms-ceintl.vscode-language-pack-zh-hans-1.85.2023121309","metadata":{"id":"e4ee7751-6514-4731-9cdb-7580ffa9e70b","publisherId":"0b0882c3-aee3-4d7c-b5f9-872f9be0a115","publisherDisplayName":"Microsoft","targetPlatform":"undefined","isApplicationScoped":true,"updated":true,"isPreReleaseVersion":false,"installedTimestamp":1702479127368,"pinned":false,"preRelease":false}},{"identifier":{"id":"ms-python.python","uuid":"f1f59ae4-9318-4f3c-a9b5-81b2eaa5f8a5"},"version":"2023.22.1","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/ms-python.python-2023.22.1","scheme":"file"},"relativeLocation":"ms-python.python-2023.22.1","metadata":{"id":"f1f59ae4-9318-4f3c-a9b5-81b2eaa5f8a5","publisherId":"998b010b-e2af-44a5-a6cd-0b5fd3b9b6f8","publisherDisplayName":"Microsoft","targetPlatform":"undefined","isApplicationScoped":false,"updated":true,"isPreReleaseVersion":false,"installedTimestamp":1702521614043,"pinned":false,"preRelease":false}},{"identifier":{"id":"ms-python.vscode-pylance","uuid":"364d2426-116a-433a-a5d8-a5098dc3afbd"},"version":"2023.12.1","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/ms-python.vscode-pylance-2023.12.1","scheme":"file"},"relativeLocation":"ms-python.vscode-pylance-2023.12.1","metadata":{"id":"364d2426-116a-433a-a5d8-a5098dc3afbd","publisherId":"998b010b-e2af-44a5-a6cd-0b5fd3b9b6f8","publisherDisplayName":"Microsoft","targetPlatform":"undefined","isApplicationScoped":false,"updated":true,"isPreReleaseVersion":false,"installedTimestamp":1702521615110,"pinned":false,"preRelease":false}},{"identifier":{"id":"eamodio.gitlens","uuid":"4de763bd-505d-4978-9575-2b7696ecf94e"},"version":"14.6.1","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/eamodio.gitlens-14.6.1","scheme":"file"},"relativeLocation":"eamodio.gitlens-14.6.1","metadata":{"id":"4de763bd-505d-4978-9575-2b7696ecf94e","publisherId":"678d198b-9b2e-49d3-96ff-6d801c9575df","publisherDisplayName":"GitKraken","targetPlatform":"undefined","isApplicationScoped":false,"updated":true,"isPreReleaseVersion":false,"installedTimestamp":1702603264656,"pinned":false,"preRelease":false}},{"identifier":{"id":"rangav.vscode-thunder-client","uuid":"2fd56207-78ef-49d4-95d2-9b801eee4dbf"},"version":"2.16.3","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/rangav.vscode-thunder-client-2.16.3","scheme":"file"},"relativeLocation":"rangav.vscode-thunder-client-2.16.3","metadata":{"id":"2fd56207-78ef-49d4-95d2-9b801eee4dbf","publisherId":"f6503eef-4f6f-415c-b1e0-221209c035ee","publisherDisplayName":"Thunder Client","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"installedTimestamp":1702816027709,"pinned":false,"preRelease":false}},{"identifier":{"id":"ecksdy.env-switcher","uuid":"cd8b6fbc-6fa9-4153-86b8-60b2387bbcce"},"version":"0.5.2","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/ecksdy.env-switcher-0.5.2","scheme":"file"},"relativeLocation":"ecksdy.env-switcher-0.5.2","metadata":{"id":"cd8b6fbc-6fa9-4153-86b8-60b2387bbcce","publisherId":"02345503-71cc-4f7f-970a-678fc93f322e","publisherDisplayName":"EcksDy","targetPlatform":"undefined","isApplicationScoped":false,"updated":true,"isPreReleaseVersion":false,"installedTimestamp":1703036016524,"pinned":false,"preRelease":false}},{"identifier":{"id":"sonarsource.sonarlint-vscode","uuid":"a7fa941e-bcda-486f-8141-8483a6286177"},"version":"4.2.2","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/sonarsource.sonarlint-vscode-4.2.2-linux-x64","scheme":"file"},"relativeLocation":"sonarsource.sonarlint-vscode-4.2.2-linux-x64","metadata":{"id":"a7fa941e-bcda-486f-8141-8483a6286177","publisherId":"08b9cc7e-b259-49cd-b013-dfa5357b0a83","publisherDisplayName":"SonarSource","targetPlatform":"linux-x64","isApplicationScoped":false,"updated":true,"isPreReleaseVersion":false,"installedTimestamp":1703120288510,"pinned":false,"preRelease":false}},{"identifier":{"id":"llvm-vs-code-extensions.vscode-clangd","uuid":"103154cb-b81d-4e1b-8281-c5f4fa563d37"},"version":"0.1.26","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/llvm-vs-code-extensions.vscode-clangd-0.1.26","scheme":"file"},"relativeLocation":"llvm-vs-code-extensions.vscode-clangd-0.1.26","metadata":{"id":"103154cb-b81d-4e1b-8281-c5f4fa563d37","publisherId":"0f47d2a3-0735-453c-a89e-dc4193d6b6fa","publisherDisplayName":"LLVM","targetPlatform":"undefined","isApplicationScoped":false,"updated":true,"isPreReleaseVersion":false,"installedTimestamp":1703139966086,"pinned":false,"preRelease":false}},{"identifier":{"id":"golang.go","uuid":"d6f6cfea-4b6f-41f4-b571-6ad2ab7918da"},"version":"0.40.1","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/golang.go-0.40.1","scheme":"file"},"relativeLocation":"golang.go-0.40.1","metadata":{"id":"d6f6cfea-4b6f-41f4-b571-6ad2ab7918da","publisherId":"dbf6ae0a-da75-4167-ac8b-75b4512f2153","publisherDisplayName":"Go Team at Google","targetPlatform":"undefined","isApplicationScoped":false,"updated":true,"isPreReleaseVersion":false,"installedTimestamp":1703214010220,"pinned":false,"preRelease":false}},{"identifier":{"id":"vscodevim.vim","uuid":"d96e79c6-8b25-4be3-8545-0e0ecefcae03"},"version":"1.27.2","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/vscodevim.vim-1.27.2","scheme":"file"},"relativeLocation":"vscodevim.vim-1.27.2","metadata":{"id":"d96e79c6-8b25-4be3-8545-0e0ecefcae03","publisherId":"5d63889b-1b67-4b1f-8350-4f1dce041a26","publisherDisplayName":"vscodevim","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"installedTimestamp":1703393761478,"pinned":false,"preRelease":false}},{"identifier":{"id":"codeium.codeium","uuid":"acab4f40-b6db-42ec-bcd1-01802cbdd988"},"version":"1.7.14","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/codeium.codeium-1.7.14","scheme":"file"},"relativeLocation":"codeium.codeium-1.7.14","metadata":{"id":"acab4f40-b6db-42ec-bcd1-01802cbdd988","publisherId":"082b0525-4adf-4bcc-b60f-afa86c60860d","publisherDisplayName":"Codeium","targetPlatform":"undefined","isApplicationScoped":false,"updated":true,"isPreReleaseVersion":true,"installedTimestamp":1703409802869,"pinned":false,"preRelease":true}},{"identifier":{"id":"rust-lang.rust-analyzer","uuid":"06574cb4-e5dc-4631-8174-a543a4533621"},"version":"0.3.1782","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/rust-lang.rust-analyzer-0.3.1782-linux-x64","scheme":"file"},"relativeLocation":"rust-lang.rust-analyzer-0.3.1782-linux-x64","metadata":{"id":"06574cb4-e5dc-4631-8174-a543a4533621","publisherId":"cb14a7a7-a188-40bd-a953-e0a20757c5dd","publisherDisplayName":"The Rust Programming Language ","targetPlatform":"linux-x64","isApplicationScoped":false,"updated":true,"isPreReleaseVersion":false,"installedTimestamp":1703493458033,"pinned":false,"preRelease":false}},{"identifier":{"id":"ohanedan.lowlight-go-errors","uuid":"a577a027-f218-430d-b568-aa4fc68105e6"},"version":"1.3.0","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/ohanedan.lowlight-go-errors-1.3.0","scheme":"file"},"relativeLocation":"ohanedan.lowlight-go-errors-1.3.0","metadata":{"id":"a577a027-f218-430d-b568-aa4fc68105e6","publisherId":"c65fbd61-fcba-4189-bb50-14140ac96dd1","publisherDisplayName":"Ozan Hanedan","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"installedTimestamp":1703586381570,"pinned":false,"preRelease":false}},{"identifier":{"id":"charliermarsh.ruff","uuid":"c2ca9b43-fa38-44fc-928e-5125970b9c00"},"version":"2023.60.0","location":{"$mid":1,"path":"/home/jing2uo/.vscode/extensions/charliermarsh.ruff-2023.60.0-linux-x64","scheme":"file"},"relativeLocation":"charliermarsh.ruff-2023.60.0-linux-x64","metadata":{"id":"c2ca9b43-fa38-44fc-928e-5125970b9c00","publisherId":"ae7578b3-bd2b-455d-bbd6-cd231eee3c09","publisherDisplayName":"Astral Software","targetPlatform":"linux-x64","isApplicationScoped":false,"updated":true,"isPreReleaseVersion":false,"installedTimestamp":1703639094460,"pinned":false,"preRelease":false}},{"identifier":{"id":"kdl-org.kdl","uuid":"85fc99f6-11df-44ee-91ed-ae96cfa2d7ac"},"version":"1.3.1","location":{"$mid":1,"fsPath":"/home/jing2uo/.vscode/extensions/kdl-org.kdl-1.3.1","external":"file:///home/jing2uo/.vscode/extensions/kdl-org.kdl-1.3.1","path":"/home/jing2uo/.vscode/extensions/kdl-org.kdl-1.3.1","scheme":"file"},"relativeLocation":"kdl-org.kdl-1.3.1","metadata":{"id":"85fc99f6-11df-44ee-91ed-ae96cfa2d7ac","publisherId":"0e4cb19e-bf6d-4e62-a862-ae4b91baf151","publisherDisplayName":"kdl-org","targetPlatform":"undefined","updated":false,"isPreReleaseVersion":false,"installedTimestamp":1703685808790,"pinned":false,"preRelease":false}}]
+[
+  {
+    "identifier": {
+      "id": "bennycode.sort-everything",
+      "uuid": "4fe1a931-5171-4c6d-8d27-c1034a85fe4b"
+    },
+    "version": "1.3.3",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/bennycode.sort-everything-1.3.3",
+      "scheme": "file"
+    },
+    "relativeLocation": "bennycode.sort-everything-1.3.3",
+    "metadata": {
+      "id": "4fe1a931-5171-4c6d-8d27-c1034a85fe4b",
+      "publisherId": "32a5bcc6-cb67-4afa-afbc-9c72be962f59",
+      "publisherDisplayName": "Benny Neugebauer",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702041568318,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "chouzz.vscode-better-align",
+      "uuid": "f5a6ecde-96ce-4fde-8744-ab88c7727069"
+    },
+    "version": "1.4.2",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/chouzz.vscode-better-align-1.4.2",
+      "scheme": "file"
+    },
+    "relativeLocation": "chouzz.vscode-better-align-1.4.2",
+    "metadata": {
+      "id": "f5a6ecde-96ce-4fde-8744-ab88c7727069",
+      "publisherId": "b3a947d9-1df4-4cbf-9bbf-3cfca4558416",
+      "publisherDisplayName": "Chouzz",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702041606830,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "christian-kohler.path-intellisense",
+      "uuid": "a41c1549-4053-44d4-bf30-60fc809b4a86"
+    },
+    "version": "2.8.5",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/christian-kohler.path-intellisense-2.8.5",
+      "scheme": "file"
+    },
+    "relativeLocation": "christian-kohler.path-intellisense-2.8.5",
+    "metadata": {
+      "id": "a41c1549-4053-44d4-bf30-60fc809b4a86",
+      "publisherId": "a892fb38-060b-475f-9e73-2e06a8a17a68",
+      "publisherDisplayName": "Christian Kohler",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702041612012,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "esbenp.prettier-vscode",
+      "uuid": "96fa4707-6983-4489-b7c5-d5ffdfdcce90"
+    },
+    "version": "10.1.0",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/esbenp.prettier-vscode-10.1.0",
+      "scheme": "file"
+    },
+    "relativeLocation": "esbenp.prettier-vscode-10.1.0",
+    "metadata": {
+      "id": "96fa4707-6983-4489-b7c5-d5ffdfdcce90",
+      "publisherId": "d16f4e39-2ffb-44e3-9c0d-79d873570e3a",
+      "publisherDisplayName": "Prettier",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702041630573,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "formulahendry.code-runner",
+      "uuid": "a6a0c5b2-d078-4bf5-a9ee-4e37054414b3"
+    },
+    "version": "0.12.1",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/formulahendry.code-runner-0.12.1",
+      "scheme": "file"
+    },
+    "relativeLocation": "formulahendry.code-runner-0.12.1",
+    "metadata": {
+      "id": "a6a0c5b2-d078-4bf5-a9ee-4e37054414b3",
+      "publisherId": "38bbe3f0-5204-4170-845e-c2f966d979b8",
+      "publisherDisplayName": "Jun Han",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702041640445,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "foxundermoon.shell-format",
+      "uuid": "5fb19573-2183-4cf2-b53d-0fb869dae7ae"
+    },
+    "version": "7.2.5",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/foxundermoon.shell-format-7.2.5",
+      "scheme": "file"
+    },
+    "relativeLocation": "foxundermoon.shell-format-7.2.5",
+    "metadata": {
+      "id": "5fb19573-2183-4cf2-b53d-0fb869dae7ae",
+      "publisherId": "c5bb2216-aaba-47a1-962e-5561e40c03c5",
+      "publisherDisplayName": "foxundermoon",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702041645826,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "grapecity.gc-excelviewer",
+      "uuid": "8bb12ae3-73f8-40cf-86b7-4bd5729c6238"
+    },
+    "version": "4.2.58",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/grapecity.gc-excelviewer-4.2.58",
+      "scheme": "file"
+    },
+    "relativeLocation": "grapecity.gc-excelviewer-4.2.58",
+    "metadata": {
+      "id": "8bb12ae3-73f8-40cf-86b7-4bd5729c6238",
+      "publisherId": "aa6deade-27ef-4481-9de7-720b9c9e0b86",
+      "publisherDisplayName": "GrapeCity",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702041656940,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "gruntfuggly.todo-tree",
+      "uuid": "261cac81-cd7b-4555-bb41-0c2d2bcd3e70"
+    },
+    "version": "0.0.226",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/gruntfuggly.todo-tree-0.0.226",
+      "scheme": "file"
+    },
+    "relativeLocation": "gruntfuggly.todo-tree-0.0.226",
+    "metadata": {
+      "id": "261cac81-cd7b-4555-bb41-0c2d2bcd3e70",
+      "publisherId": "d4906d2e-f2ee-492d-9c7c-02b6160599ec",
+      "publisherDisplayName": "Gruntfuggly",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702041663417,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "jannisx11.batch-rename-extension",
+      "uuid": "4fb89c9c-85d7-47a8-aaca-91ae216b0278"
+    },
+    "version": "0.0.6",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/jannisx11.batch-rename-extension-0.0.6",
+      "scheme": "file"
+    },
+    "relativeLocation": "jannisx11.batch-rename-extension-0.0.6",
+    "metadata": {
+      "id": "4fb89c9c-85d7-47a8-aaca-91ae216b0278",
+      "publisherId": "8cdd974e-3246-468a-836c-b63dbddd843a",
+      "publisherDisplayName": "JannisX11",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702041680302,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "lulus.vscode-regexp-preivew",
+      "uuid": "4c4d07a1-7488-464d-9cf7-c178303dcad9"
+    },
+    "version": "1.0.0",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/lulus.vscode-regexp-preivew-1.0.0",
+      "scheme": "file"
+    },
+    "relativeLocation": "lulus.vscode-regexp-preivew-1.0.0",
+    "metadata": {
+      "id": "4c4d07a1-7488-464d-9cf7-c178303dcad9",
+      "publisherId": "8750a393-0618-4dd7-b0b0-e190dd9e358f",
+      "publisherDisplayName": "Lulus Young",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702041686114,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "mhutchie.git-graph",
+      "uuid": "438221f8-1107-4ccd-a6fe-f3b7fe0856b7"
+    },
+    "version": "1.30.0",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/mhutchie.git-graph-1.30.0",
+      "scheme": "file"
+    },
+    "relativeLocation": "mhutchie.git-graph-1.30.0",
+    "metadata": {
+      "id": "438221f8-1107-4ccd-a6fe-f3b7fe0856b7",
+      "publisherId": "996496dc-099f-469d-b89c-0d7713179365",
+      "publisherDisplayName": "mhutchie",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702041700580,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "ms-azuretools.vscode-docker",
+      "uuid": "0479fc1c-3d67-49f9-b087-fb9069afe48f"
+    },
+    "version": "1.28.0",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/ms-azuretools.vscode-docker-1.28.0",
+      "scheme": "file"
+    },
+    "relativeLocation": "ms-azuretools.vscode-docker-1.28.0",
+    "metadata": {
+      "id": "0479fc1c-3d67-49f9-b087-fb9069afe48f",
+      "publisherId": "52b787f2-79a9-4f32-99b4-393afe3005d3",
+      "publisherDisplayName": "Microsoft",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702041707643,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "ms-vscode-remote.remote-containers",
+      "uuid": "93ce222b-5f6f-49b7-9ab1-a0463c6238df"
+    },
+    "version": "0.327.0",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/ms-vscode-remote.remote-containers-0.327.0",
+      "scheme": "file"
+    },
+    "relativeLocation": "ms-vscode-remote.remote-containers-0.327.0",
+    "metadata": {
+      "id": "93ce222b-5f6f-49b7-9ab1-a0463c6238df",
+      "publisherId": "ac9410a2-0d75-40ec-90de-b59bb705801d",
+      "publisherDisplayName": "Microsoft",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702041719993,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "ms-vscode-remote.remote-ssh-edit",
+      "uuid": "bfeaf631-bcff-4908-93ed-fda4ef9a0c5c"
+    },
+    "version": "0.86.0",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/ms-vscode-remote.remote-ssh-edit-0.86.0",
+      "scheme": "file"
+    },
+    "relativeLocation": "ms-vscode-remote.remote-ssh-edit-0.86.0",
+    "metadata": {
+      "id": "bfeaf631-bcff-4908-93ed-fda4ef9a0c5c",
+      "publisherId": "ac9410a2-0d75-40ec-90de-b59bb705801d",
+      "publisherDisplayName": "Microsoft",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702041731185,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "ms-vscode.remote-explorer",
+      "uuid": "11858313-52cc-4e57-b3e4-d7b65281e34b"
+    },
+    "version": "0.4.1",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/ms-vscode.remote-explorer-0.4.1",
+      "scheme": "file"
+    },
+    "relativeLocation": "ms-vscode.remote-explorer-0.4.1",
+    "metadata": {
+      "id": "11858313-52cc-4e57-b3e4-d7b65281e34b",
+      "publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+      "publisherDisplayName": "Microsoft",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702041731192,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "ms-vscode-remote.remote-ssh",
+      "uuid": "607fd052-be03-4363-b657-2bd62b83d28a"
+    },
+    "version": "0.107.1",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/ms-vscode-remote.remote-ssh-0.107.1",
+      "scheme": "file"
+    },
+    "relativeLocation": "ms-vscode-remote.remote-ssh-0.107.1",
+    "metadata": {
+      "id": "607fd052-be03-4363-b657-2bd62b83d28a",
+      "publisherId": "ac9410a2-0d75-40ec-90de-b59bb705801d",
+      "publisherDisplayName": "Microsoft",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702041733508,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "naumovs.color-highlight",
+      "uuid": "121396ad-85a1-45ec-9fd1-d95028a847f5"
+    },
+    "version": "2.5.0",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/naumovs.color-highlight-2.5.0",
+      "scheme": "file"
+    },
+    "relativeLocation": "naumovs.color-highlight-2.5.0",
+    "metadata": {
+      "id": "121396ad-85a1-45ec-9fd1-d95028a847f5",
+      "publisherId": "e9a76d04-24d4-44eb-a202-964f71acf59e",
+      "publisherDisplayName": "Sergii N",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702041739428,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "oderwat.indent-rainbow",
+      "uuid": "eaa2127d-cb69-4ab9-8505-a60c9ee5f28b"
+    },
+    "version": "8.3.1",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/oderwat.indent-rainbow-8.3.1",
+      "scheme": "file"
+    },
+    "relativeLocation": "oderwat.indent-rainbow-8.3.1",
+    "metadata": {
+      "id": "eaa2127d-cb69-4ab9-8505-a60c9ee5f28b",
+      "publisherId": "ac064ae0-224d-4351-9aa4-45ef7bf3ed21",
+      "publisherDisplayName": "oderwat",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702041745001,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "parthr2031.colorful-comments",
+      "uuid": "593914aa-670d-4885-965f-1539224f8339"
+    },
+    "version": "1.0.0",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/parthr2031.colorful-comments-1.0.0",
+      "scheme": "file"
+    },
+    "relativeLocation": "parthr2031.colorful-comments-1.0.0",
+    "metadata": {
+      "id": "593914aa-670d-4885-965f-1539224f8339",
+      "publisherId": "37adc1dd-69a9-475b-ac58-b43477ed3f17",
+      "publisherDisplayName": "Parth Rastogi",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702041751744,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "redhat.vscode-yaml",
+      "uuid": "2061917f-f76a-458a-8da9-f162de22b97e"
+    },
+    "version": "1.14.0",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/redhat.vscode-yaml-1.14.0",
+      "scheme": "file"
+    },
+    "relativeLocation": "redhat.vscode-yaml-1.14.0",
+    "metadata": {
+      "id": "2061917f-f76a-458a-8da9-f162de22b97e",
+      "publisherId": "eed56242-9699-4317-8bc7-e9f4b9bdd3ff",
+      "publisherDisplayName": "Red Hat",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702041756853,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "serayuzgur.crates",
+      "uuid": "6a95a3fd-3a5d-4326-b8ab-1b1653b1f183"
+    },
+    "version": "0.6.5",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/serayuzgur.crates-0.6.5",
+      "scheme": "file"
+    },
+    "relativeLocation": "serayuzgur.crates-0.6.5",
+    "metadata": {
+      "id": "6a95a3fd-3a5d-4326-b8ab-1b1653b1f183",
+      "publisherId": "f3db93d2-daa2-4a16-a789-41ffbe82294a",
+      "publisherDisplayName": "Seray Uzgur",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702041780472,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "tamasfe.even-better-toml",
+      "uuid": "b2215d5f-675e-4a2b-b6ac-1ca737518b78"
+    },
+    "version": "0.19.2",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/tamasfe.even-better-toml-0.19.2",
+      "scheme": "file"
+    },
+    "relativeLocation": "tamasfe.even-better-toml-0.19.2",
+    "metadata": {
+      "id": "b2215d5f-675e-4a2b-b6ac-1ca737518b78",
+      "publisherId": "78c2102e-13a2-49ea-ac79-8d1bbacbbf0e",
+      "publisherDisplayName": "tamasfe",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702041889220,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "thamaraiselvam.remove-blank-lines",
+      "uuid": "324a3d09-7c55-41f9-86ed-156f7cd08e2c"
+    },
+    "version": "1.1.1",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/thamaraiselvam.remove-blank-lines-1.1.1",
+      "scheme": "file"
+    },
+    "relativeLocation": "thamaraiselvam.remove-blank-lines-1.1.1",
+    "metadata": {
+      "id": "324a3d09-7c55-41f9-86ed-156f7cd08e2c",
+      "publisherId": "b1995d27-64a3-4a7a-8afc-85791d84eb99",
+      "publisherDisplayName": "Thamaraiselvam",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702041900763,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "vadimcn.vscode-lldb",
+      "uuid": "bee31e34-a44b-4a76-9ec2-e9fd1439a0f6"
+    },
+    "version": "1.10.0",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/vadimcn.vscode-lldb-1.10.0",
+      "scheme": "file"
+    },
+    "relativeLocation": "vadimcn.vscode-lldb-1.10.0",
+    "metadata": {
+      "id": "bee31e34-a44b-4a76-9ec2-e9fd1439a0f6",
+      "publisherId": "3b05d186-6311-4caa-99b5-09032a9d3cf5",
+      "publisherDisplayName": "Vadim Chugunov",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702041906264,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "vincaslt.highlight-matching-tag",
+      "uuid": "aae00486-7e92-42b3-91b0-2b419e4f3875"
+    },
+    "version": "0.11.0",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/vincaslt.highlight-matching-tag-0.11.0",
+      "scheme": "file"
+    },
+    "relativeLocation": "vincaslt.highlight-matching-tag-0.11.0",
+    "metadata": {
+      "id": "aae00486-7e92-42b3-91b0-2b419e4f3875",
+      "publisherId": "81b5ff8a-7099-47ff-acce-7406aece08b3",
+      "publisherDisplayName": "vincaslt",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702041911325,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "vscode-icons-team.vscode-icons",
+      "uuid": "9ccc1dd7-7ec4-4a46-bd4f-7d7b8b9d322a"
+    },
+    "version": "12.6.0",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/vscode-icons-team.vscode-icons-12.6.0",
+      "scheme": "file"
+    },
+    "relativeLocation": "vscode-icons-team.vscode-icons-12.6.0",
+    "metadata": {
+      "id": "9ccc1dd7-7ec4-4a46-bd4f-7d7b8b9d322a",
+      "publisherId": "652ad61d-3a6a-48ca-ab1a-80dc8953b2b6",
+      "publisherDisplayName": "VSCode Icons Team",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702041916618,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "quanzaiyu.vscode-json-enhanced",
+      "uuid": "87326e9c-937b-4d68-b817-8d2a0fe0178d"
+    },
+    "version": "1.1.2",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/quanzaiyu.vscode-json-enhanced-1.1.2",
+      "scheme": "file"
+    },
+    "relativeLocation": "quanzaiyu.vscode-json-enhanced-1.1.2",
+    "metadata": {
+      "id": "87326e9c-937b-4d68-b817-8d2a0fe0178d",
+      "publisherId": "2272e4a1-2eae-48c1-9a51-02fc828ea92e",
+      "publisherDisplayName": "quanzaiyu",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702362262643,
+      "pinned": false,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "ms-ceintl.vscode-language-pack-zh-hans",
+      "uuid": "e4ee7751-6514-4731-9cdb-7580ffa9e70b"
+    },
+    "version": "1.85.2023121309",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/ms-ceintl.vscode-language-pack-zh-hans-1.85.2023121309",
+      "scheme": "file"
+    },
+    "relativeLocation": "ms-ceintl.vscode-language-pack-zh-hans-1.85.2023121309",
+    "metadata": {
+      "id": "e4ee7751-6514-4731-9cdb-7580ffa9e70b",
+      "publisherId": "0b0882c3-aee3-4d7c-b5f9-872f9be0a115",
+      "publisherDisplayName": "Microsoft",
+      "targetPlatform": "undefined",
+      "isApplicationScoped": true,
+      "updated": true,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702479127368,
+      "pinned": false,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "ms-python.python",
+      "uuid": "f1f59ae4-9318-4f3c-a9b5-81b2eaa5f8a5"
+    },
+    "version": "2023.22.1",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/ms-python.python-2023.22.1",
+      "scheme": "file"
+    },
+    "relativeLocation": "ms-python.python-2023.22.1",
+    "metadata": {
+      "id": "f1f59ae4-9318-4f3c-a9b5-81b2eaa5f8a5",
+      "publisherId": "998b010b-e2af-44a5-a6cd-0b5fd3b9b6f8",
+      "publisherDisplayName": "Microsoft",
+      "targetPlatform": "undefined",
+      "isApplicationScoped": false,
+      "updated": true,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702521614043,
+      "pinned": false,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "ms-python.vscode-pylance",
+      "uuid": "364d2426-116a-433a-a5d8-a5098dc3afbd"
+    },
+    "version": "2023.12.1",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/ms-python.vscode-pylance-2023.12.1",
+      "scheme": "file"
+    },
+    "relativeLocation": "ms-python.vscode-pylance-2023.12.1",
+    "metadata": {
+      "id": "364d2426-116a-433a-a5d8-a5098dc3afbd",
+      "publisherId": "998b010b-e2af-44a5-a6cd-0b5fd3b9b6f8",
+      "publisherDisplayName": "Microsoft",
+      "targetPlatform": "undefined",
+      "isApplicationScoped": false,
+      "updated": true,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702521615110,
+      "pinned": false,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "eamodio.gitlens",
+      "uuid": "4de763bd-505d-4978-9575-2b7696ecf94e"
+    },
+    "version": "14.6.1",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/eamodio.gitlens-14.6.1",
+      "scheme": "file"
+    },
+    "relativeLocation": "eamodio.gitlens-14.6.1",
+    "metadata": {
+      "id": "4de763bd-505d-4978-9575-2b7696ecf94e",
+      "publisherId": "678d198b-9b2e-49d3-96ff-6d801c9575df",
+      "publisherDisplayName": "GitKraken",
+      "targetPlatform": "undefined",
+      "isApplicationScoped": false,
+      "updated": true,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702603264656,
+      "pinned": false,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "rangav.vscode-thunder-client",
+      "uuid": "2fd56207-78ef-49d4-95d2-9b801eee4dbf"
+    },
+    "version": "2.16.3",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/rangav.vscode-thunder-client-2.16.3",
+      "scheme": "file"
+    },
+    "relativeLocation": "rangav.vscode-thunder-client-2.16.3",
+    "metadata": {
+      "id": "2fd56207-78ef-49d4-95d2-9b801eee4dbf",
+      "publisherId": "f6503eef-4f6f-415c-b1e0-221209c035ee",
+      "publisherDisplayName": "Thunder Client",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1702816027709,
+      "pinned": false,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "ecksdy.env-switcher",
+      "uuid": "cd8b6fbc-6fa9-4153-86b8-60b2387bbcce"
+    },
+    "version": "0.5.2",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/ecksdy.env-switcher-0.5.2",
+      "scheme": "file"
+    },
+    "relativeLocation": "ecksdy.env-switcher-0.5.2",
+    "metadata": {
+      "id": "cd8b6fbc-6fa9-4153-86b8-60b2387bbcce",
+      "publisherId": "02345503-71cc-4f7f-970a-678fc93f322e",
+      "publisherDisplayName": "EcksDy",
+      "targetPlatform": "undefined",
+      "isApplicationScoped": false,
+      "updated": true,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1703036016524,
+      "pinned": false,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "sonarsource.sonarlint-vscode",
+      "uuid": "a7fa941e-bcda-486f-8141-8483a6286177"
+    },
+    "version": "4.2.2",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/sonarsource.sonarlint-vscode-4.2.2-linux-x64",
+      "scheme": "file"
+    },
+    "relativeLocation": "sonarsource.sonarlint-vscode-4.2.2-linux-x64",
+    "metadata": {
+      "id": "a7fa941e-bcda-486f-8141-8483a6286177",
+      "publisherId": "08b9cc7e-b259-49cd-b013-dfa5357b0a83",
+      "publisherDisplayName": "SonarSource",
+      "targetPlatform": "linux-x64",
+      "isApplicationScoped": false,
+      "updated": true,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1703120288510,
+      "pinned": false,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "llvm-vs-code-extensions.vscode-clangd",
+      "uuid": "103154cb-b81d-4e1b-8281-c5f4fa563d37"
+    },
+    "version": "0.1.26",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/llvm-vs-code-extensions.vscode-clangd-0.1.26",
+      "scheme": "file"
+    },
+    "relativeLocation": "llvm-vs-code-extensions.vscode-clangd-0.1.26",
+    "metadata": {
+      "id": "103154cb-b81d-4e1b-8281-c5f4fa563d37",
+      "publisherId": "0f47d2a3-0735-453c-a89e-dc4193d6b6fa",
+      "publisherDisplayName": "LLVM",
+      "targetPlatform": "undefined",
+      "isApplicationScoped": false,
+      "updated": true,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1703139966086,
+      "pinned": false,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "golang.go",
+      "uuid": "d6f6cfea-4b6f-41f4-b571-6ad2ab7918da"
+    },
+    "version": "0.40.1",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/golang.go-0.40.1",
+      "scheme": "file"
+    },
+    "relativeLocation": "golang.go-0.40.1",
+    "metadata": {
+      "id": "d6f6cfea-4b6f-41f4-b571-6ad2ab7918da",
+      "publisherId": "dbf6ae0a-da75-4167-ac8b-75b4512f2153",
+      "publisherDisplayName": "Go Team at Google",
+      "targetPlatform": "undefined",
+      "isApplicationScoped": false,
+      "updated": true,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1703214010220,
+      "pinned": false,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "vscodevim.vim",
+      "uuid": "d96e79c6-8b25-4be3-8545-0e0ecefcae03"
+    },
+    "version": "1.27.2",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/vscodevim.vim-1.27.2",
+      "scheme": "file"
+    },
+    "relativeLocation": "vscodevim.vim-1.27.2",
+    "metadata": {
+      "id": "d96e79c6-8b25-4be3-8545-0e0ecefcae03",
+      "publisherId": "5d63889b-1b67-4b1f-8350-4f1dce041a26",
+      "publisherDisplayName": "vscodevim",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1703393761478,
+      "pinned": false,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "rust-lang.rust-analyzer",
+      "uuid": "06574cb4-e5dc-4631-8174-a543a4533621"
+    },
+    "version": "0.3.1782",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/rust-lang.rust-analyzer-0.3.1782-linux-x64",
+      "scheme": "file"
+    },
+    "relativeLocation": "rust-lang.rust-analyzer-0.3.1782-linux-x64",
+    "metadata": {
+      "id": "06574cb4-e5dc-4631-8174-a543a4533621",
+      "publisherId": "cb14a7a7-a188-40bd-a953-e0a20757c5dd",
+      "publisherDisplayName": "The Rust Programming Language ",
+      "targetPlatform": "linux-x64",
+      "isApplicationScoped": false,
+      "updated": true,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1703493458033,
+      "pinned": false,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "ohanedan.lowlight-go-errors",
+      "uuid": "a577a027-f218-430d-b568-aa4fc68105e6"
+    },
+    "version": "1.3.0",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/ohanedan.lowlight-go-errors-1.3.0",
+      "scheme": "file"
+    },
+    "relativeLocation": "ohanedan.lowlight-go-errors-1.3.0",
+    "metadata": {
+      "id": "a577a027-f218-430d-b568-aa4fc68105e6",
+      "publisherId": "c65fbd61-fcba-4189-bb50-14140ac96dd1",
+      "publisherDisplayName": "Ozan Hanedan",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1703586381570,
+      "pinned": false,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "charliermarsh.ruff",
+      "uuid": "c2ca9b43-fa38-44fc-928e-5125970b9c00"
+    },
+    "version": "2023.60.0",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/charliermarsh.ruff-2023.60.0-linux-x64",
+      "scheme": "file"
+    },
+    "relativeLocation": "charliermarsh.ruff-2023.60.0-linux-x64",
+    "metadata": {
+      "id": "c2ca9b43-fa38-44fc-928e-5125970b9c00",
+      "publisherId": "ae7578b3-bd2b-455d-bbd6-cd231eee3c09",
+      "publisherDisplayName": "Astral Software",
+      "targetPlatform": "linux-x64",
+      "isApplicationScoped": false,
+      "updated": true,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1703639094460,
+      "pinned": false,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "kdl-org.kdl",
+      "uuid": "85fc99f6-11df-44ee-91ed-ae96cfa2d7ac"
+    },
+    "version": "1.3.1",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/kdl-org.kdl-1.3.1",
+      "scheme": "file"
+    },
+    "relativeLocation": "kdl-org.kdl-1.3.1",
+    "metadata": {
+      "id": "85fc99f6-11df-44ee-91ed-ae96cfa2d7ac",
+      "publisherId": "0e4cb19e-bf6d-4e62-a862-ae4b91baf151",
+      "publisherDisplayName": "kdl-org",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1703685808790,
+      "pinned": false,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "codeium.codeium",
+      "uuid": "acab4f40-b6db-42ec-bcd1-01802cbdd988"
+    },
+    "version": "1.7.15",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/codeium.codeium-1.7.15",
+      "scheme": "file"
+    },
+    "relativeLocation": "codeium.codeium-1.7.15",
+    "metadata": {
+      "id": "acab4f40-b6db-42ec-bcd1-01802cbdd988",
+      "publisherId": "082b0525-4adf-4bcc-b60f-afa86c60860d",
+      "publisherDisplayName": "Codeium",
+      "targetPlatform": "undefined",
+      "isApplicationScoped": false,
+      "updated": true,
+      "isPreReleaseVersion": true,
+      "installedTimestamp": 1703736237354,
+      "pinned": false,
+      "preRelease": true
+    }
+  }
+]
