@@ -4,6 +4,7 @@ env:
 window:
   startup_mode: Maximized
   opacity: 0.9
+  dynamic_title: false
 
 font:
   size: 16.0

@@ -972,13 +972,13 @@
       "id": "codeium.codeium",
       "uuid": "acab4f40-b6db-42ec-bcd1-01802cbdd988"
     },
-    "version": "1.7.15",
+    "version": "1.7.16",
     "location": {
       "$mid": 1,
-      "path": "/home/jing2uo/.vscode/extensions/codeium.codeium-1.7.15",
+      "path": "/home/jing2uo/.vscode/extensions/codeium.codeium-1.7.16",
       "scheme": "file"
     },
-    "relativeLocation": "codeium.codeium-1.7.15",
+    "relativeLocation": "codeium.codeium-1.7.16",
     "metadata": {
       "id": "acab4f40-b6db-42ec-bcd1-01802cbdd988",
       "publisherId": "082b0525-4adf-4bcc-b60f-afa86c60860d",
@@ -987,9 +987,35 @@
       "isApplicationScoped": false,
       "updated": true,
       "isPreReleaseVersion": true,
-      "installedTimestamp": 1703736237354,
+      "installedTimestamp": 1703820857644,
       "pinned": false,
       "preRelease": true
+    }
+  },
+  {
+    "identifier": {
+      "id": "mikestead.dotenv",
+      "uuid": "532533c9-a894-4a58-9eee-bbfbe7c06f71"
+    },
+    "version": "1.0.1",
+    "location": {
+      "$mid": 1,
+      "fsPath": "/home/jing2uo/.vscode/extensions/mikestead.dotenv-1.0.1",
+      "external": "file:///home/jing2uo/.vscode/extensions/mikestead.dotenv-1.0.1",
+      "path": "/home/jing2uo/.vscode/extensions/mikestead.dotenv-1.0.1",
+      "scheme": "file"
+    },
+    "relativeLocation": "mikestead.dotenv-1.0.1",
+    "metadata": {
+      "id": "532533c9-a894-4a58-9eee-bbfbe7c06f71",
+      "publisherId": "b6aa9b98-56e5-4846-b7d2-600d45fc63fc",
+      "publisherDisplayName": "mikestead",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1703899742653,
+      "pinned": false,
+      "preRelease": false
     }
   }
 ]

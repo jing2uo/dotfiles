@@ -1,3 +1,35 @@
+function myfpath() {
+  if [ -z "$MYFPATH" ]; then
+    export MYFPATH=$HOME/completions && mkdir -p $MYFPATH
+  fi
+  helm completion zsh >$MYFPATH/_helm
+  kubectl completion zsh >$MYFPATH/_kubectl
+  zellij setup --generate-completion zsh >$MYFPATH/_zellij
+  ov --completion zsh >$MYFPATH/_ov
+  echo "now"
+  ls -l $MYFPATH/
+}
+
+alias yaml2json="python3 -c 'import json, sys, yaml;from yaml import CSafeLoader as sl; y=yaml.load(sys.stdin.read(), Loader=sl) ; json.dump(y, sys.stdout)'"
+
+function _deletemydotfiles() {
+  param1=$1
+  param2=$2
+
+  if [[ "$param1" == "-yes" && "$param2" == "-yes" ]]; then
+    rm -rf $(chezmoi managed)
+    rm -rf $HOME/.config/zim/
+    rm -rf $HOME/.local/share/chezmoi
+  else
+    echo "use: _deletemydotfiles -yes -yes to delete"
+  fi
+}
+
+function prettier-vscode-extensions-json() {
+  jq . ~/.vscode/extensions/extensions.json >/tmp/vse.json
+  mv /tmp/vse.json ~/.vscode/extensions/extensions.json
+}
+
 function dcode() {
   echo "$1" | base64 -d
 }
@@ -58,15 +90,6 @@ function chroot2dir() {
 function ccc() {
   sudo chmod a+x /usr/local/bin/* /opt/apps/*.appimage
   sudo chown -R root:root /usr/share/applications/opts /usr/local/bin /opt/apps
-}
-
-function myfpath() {
-  helm completion zsh >$MYFPATH/_helm
-  kubectl completion zsh >$MYFPATH/_kubectl
-  zellij setup --generate-completion zsh >$MYFPATH/_zellij
-  ov --completion zsh >$MYFPATH/_ov
-  echo "now"
-  ls -l $MYFPATH/
 }
 
 function upkernel() {

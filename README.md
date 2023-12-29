@@ -6,6 +6,7 @@
 
 | 工具                                | 备注                      |
 | ----------------------------------- | ------------------------- |
+| [zim](zimfw.sh/)                    | zsh 配置框架，类 ohmyzsh  |
 | [asdf-vm](https://asdf-vm.com)      | 语言、工具多版本管理      |
 | [alacritty](https://alacritty.org/) | 终端                      |
 | [zellij](https://zellij.dev/)       | 分屏，类 tmux             |
@@ -50,7 +51,7 @@ asdf_install() {
   for plugin in "${plugins[@]}"; do
     IFS=' ' read -ra values <<< "$plugin"
     for value in "${values[@]}"; do
-      echo "\nasdf install $plugin"
+      echo " === asdf install $plugin ==="
       asdf plugin-add "$plugin"
       asdf install "$plugin" latest
     done

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+jq . ~/.vscode/extensions/extensions.json > /tmp/vse.json
+mv /tmp/vse.json ~/.vscode/extensions/extensions.json

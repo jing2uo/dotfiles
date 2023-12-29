@@ -1,0 +1,7 @@
+if [ -d "${HOME}/.local/bin" ]; then
+  mkdir -p ${HOME}/.local/bin
+fi
+export PATH=${HOME}/.local/bin:$PATH
+
+if [ -r ~/.profile ]; then . ~/.profile; fi
+if [ -r /etc/profile ]; then . /etc/profile; fi

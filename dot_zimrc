@@ -7,8 +7,14 @@ zmodule zsh-users/zsh-autosuggestions
 zmodule zsh-users/zsh-completions -f src
 zmodule completion
 
-zmodule joke/zim-chezmoi
 zmodule djui/alias-tips
-zmodule Aloxaf/fzf-tab
-zmodule Freed-Wu/fzf-tab-source
-zmodule b4b4r07/enhancd
+
+if command -v chezmoi >/dev/null 2>&1; then
+  zmodule joke/zim-chezmoi
+fi
+
+if command -v fzf >/dev/null 2>&1; then
+  zmodule Aloxaf/fzf-tab
+  zmodule Freed-Wu/fzf-tab-source
+  zmodule b4b4r07/enhancd
+fi

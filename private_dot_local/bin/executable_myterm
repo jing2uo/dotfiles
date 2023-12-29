@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if wmctrl -l | grep -q "Alacritty"; then
+	wmctrl -xa "Alacritty"
+else
+	alacritty
+fi
