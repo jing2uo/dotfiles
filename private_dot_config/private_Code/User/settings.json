@@ -84,8 +84,6 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "go.hideErrorCases.autoFold": true,
-  "go.hideErrorCases.errorTypeRegexp": "(E|e)rr.$",
   "lowlightgoerrors.ChangeColor": true,
   "lowlightgoerrors.DefaultOpacity": "Low",
   "files.associations": {

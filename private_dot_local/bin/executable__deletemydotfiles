@@ -1,0 +1,12 @@
+#!/bin/bash
+
+param1=$1
+param2=$2
+
+if [[ "$param1" == "-yes" && "$param2" == "-yes" ]]; then
+  rm -rf $(chezmoi managed)
+  rm -rf $HOME/.config/zim/
+  rm -rf $HOME/.local/share/chezmoi
+else
+  echo "use: _deletemydotfiles -yes -yes to delete"
+fi

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+StartupNotify=true
+Terminal=false
+Name=Typora
+GenericName=Markdown Editor
+Comment=A minimal Markdown reading and writing app
+Categories=Office;
+MimeType=text/markdown;text/x-markdown;
+Icon=typora
+Exec=/opt/typora/Typora %U
+

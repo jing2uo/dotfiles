@@ -13,13 +13,7 @@ if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZDOTDIR:-${HOME}}/.zimrc ]]; then
   source ${ZIM_HOME}/zimfw.zsh init -q
 fi
 
-alias zz="zimfw clean && zimfw install && zimfw build -v"
-
-# some function
-source $HOME/.func
-
 if [[ "$HEREIS" == "desktop" ]]; then
-
   # alias
   alias less="ov"
   alias more="ov"
@@ -27,25 +21,27 @@ if [[ "$HEREIS" == "desktop" ]]; then
   alias tail="ov"
   alias cat="batcat -p"
   alias k="eza -lh"
-  alias kk="zellij ka -y"
-  alias yy="yarn install && yarn dev"
   alias se="sudoedit"
   alias tree="et"
-  alias curl="curl -k -s"
   alias _deletemydotfiles="echo DANGER"
-
-  # Python
-  export WORKON_HOME=${HOME}/.venvs
-  export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-  source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
-
-  # Rust
-  export RUSTUP_DIST_SERVER="https://rsproxy.cn"
-  export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
 fi
+
+alias zz="zimfw clean && zimfw install && zimfw build -v"
+alias curl="curl -k -s"
 
 export WORDCHARS=${WORDCHARS/\//}
 export PATH=${HOME}/.local/bin:$PATH
+
+# Python
+export WORKON_HOME=${HOME}/.venvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+if [[ -e "/usr/share/virtualenvwrapper/virtualenvwrapper.sh" ]]; then
+  source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+fi
+
+# Rust
+export RUSTUP_DIST_SERVER="https://rsproxy.cn"
+export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
 
 # zsh config
 setopt globdots
@@ -111,7 +107,6 @@ fi
 export MYFPATH=${ZIM_HOME}/completions
 if [[ ! -e "$MYFPATH" ]]; then
   mkdir -p $MYFPATH
-  myfpath >/dev/null 2>&1
 fi
 fpath=("${fpath[@]}"
   $MYFPATH

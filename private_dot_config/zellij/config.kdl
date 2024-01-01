@@ -1,6 +1,9 @@
 keybinds {
+    shared_except "tmux" "locked" {
+        bind "F12" { SwitchToMode "Tmux"; }
+    }
     tmux {
-        bind "Ctrl b" { Write 2; SwitchToMode "Normal"; }
+        bind "F12" { Write 2; SwitchToMode "Normal"; }
         bind "m" { NewPane "Down"; SwitchToMode "Normal"; }
         bind "n" { NewPane "Right"; SwitchToMode "Normal"; }
         bind "b" { NewTab; SwitchToMode "Normal"; }

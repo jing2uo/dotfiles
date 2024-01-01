@@ -4,19 +4,21 @@
 
 ## 常用工具
 
-| 工具                                | 备注                      |
-| ----------------------------------- | ------------------------- |
-| [zim](zimfw.sh/)                    | zsh 配置框架，类 ohmyzsh  |
-| [asdf-vm](https://asdf-vm.com)      | 语言、工具多版本管理      |
-| [alacritty](https://alacritty.org/) | 终端                      |
-| [zellij](https://zellij.dev/)       | 分屏，类 tmux             |
-| [starship](https://starship.rs/)    | 终端提示                  |
-| [ov](https://github.com/noborus/ov) | paper，替代 less more 等  |
-| batcat                              | 彩色的，更多功能的 cat    |
-| direnv                              | 进入目录自动激活变量      |
-| fzf                                 | 模糊搜索                  |
-| virtualenvwrapper                   | Python venv 管理          |
-| rofi                                | 启动器，类 alfred、albert |
+| 工具                                | 备注                          |
+| ----------------------------------- | ----------------------------- |
+| [zim](zimfw.sh/)                    | zsh 配置框架，类 ohmyzsh      |
+| [asdf-vm](https://asdf-vm.com)      | 语言、工具多版本管理          |
+| [alacritty](https://alacritty.org/) | 终端                          |
+| [zellij](https://zellij.dev/)       | 分屏，类 tmux                 |
+| [starship](https://starship.rs/)    | 终端提示                      |
+| [ov](https://github.com/noborus/ov) | paper，替代 less more 等      |
+| batcat                              | 彩色的，更多功能的 cat        |
+| direnv                              | 进入目录自动激活变量          |
+| fzf                                 | 模糊搜索                      |
+| virtualenvwrapper                   | Python venv 管理              |
+| rofi                                | 启动器，类 alfred、albert     |
+| i3-wm                               | 平铺 wm                       |
+| polybar                             | 提供好看的 status bar 配合 i3 |
 
 ## 初始化新环境
 

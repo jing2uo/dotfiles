@@ -1,0 +1,7 @@
+#!/usr/bin/env python
+
+import json, sys, yaml
+from yaml import CSafeLoader as sl
+
+y=yaml.load(sys.stdin.read(), Loader=sl)
+json.dump(y, sys.stdout)

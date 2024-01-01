@@ -1,0 +1,46 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+NoDisplay=false
+Icon=libreoffice
+Type=Application
+Categories=Office;
+Exec=/opt/apps/libreoffice.appimage %U
+MimeType=application/vnd.openofficeorg.extension;x-scheme-handler/vnd.libreoffice.cmis;x-scheme-handler/vnd.sun.star.webdav;x-scheme-handler/vnd.sun.star.webdavs;x-scheme-handler/vnd.libreoffice.command;x-scheme-handler/ms-word;x-scheme-handler/ms-powerpoint;x-scheme-handler/ms-excel;x-scheme-handler/ms-visio;x-scheme-handler/ms-access;application/vnd.oasis.opendocument.spreadsheet;application/vnd.oasis.opendocument.spreadsheet-template;application/vnd.sun.xml.calc;application/vnd.sun.xml.calc.template;application/msexcel;application/vnd.ms-excel;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;application/vnd.ms-excel.sheet.macroenabled.12;application/vnd.openxmlformats-officedocument.spreadsheetml.template;application/vnd.ms-excel.template.macroenabled.12;application/vnd.ms-excel.sheet.binary.macroenabled.12;text/csv;application/x-dbf;text/spreadsheet;application/csv;application/excel;application/tab-separated-values;application/vnd.lotus-1-2-3;application/vnd.oasis.opendocument.chart;application/vnd.oasis.opendocument.chart-template;application/x-dbase;application/x-dos_ms_excel;application/x-excel;application/x-msexcel;application/x-ms-excel;application/x-quattropro;application/x-123;text/comma-separated-values;text/tab-separated-values;text/x-comma-separated-values;text/x-csv;application/vnd.oasis.opendocument.text;application/vnd.oasis.opendocument.text-template;application/vnd.oasis.opendocument.text-web;application/vnd.oasis.opendocument.text-master;application/vnd.oasis.opendocument.text-master-template;application/vnd.sun.xml.writer;application/vnd.sun.xml.writer.template;application/vnd.sun.xml.writer.global;application/msword;application/vnd.ms-word;application/x-doc;application/x-hwp;application/rtf;text/rtf;application/vnd.wordperfect;application/wordperfect;application/vnd.lotus-wordpro;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/vnd.ms-word.document.macroEnabled.12;application/vnd.openxmlformats-officedocument.wordprocessingml.template;application/vnd.ms-word.template.macroEnabled.12;application/vnd.ms-works;application/vnd.stardivision.writer-global;application/x-extension-txt;application/x-t602;text/plain;application/vnd.oasis.opendocument.text-flat-xml;application/x-fictionbook+xml;application/macwriteii;application/x-aportisdoc;application/prs.plucker;application/vnd.palm;application/clarisworks;application/x-sony-bbeb;application/x-abiword;application/x-iwork-pages-sffpages;application/x-mswrite;application/x-starwriter;
+Name=LibreOffice
+GenericName=Office
+GenericName[zh_CN]=办公
+Comment=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[zh_CN]=办公生产套件与开放、标准化的 ODF 文档格式兼容。由 The Document Foundation 提供支持。
+StartupNotify=true
+X-GIO-NoFuse=true
+X-AppStream-Ignore=True
+
+##Define Actions
+Actions=Writer;Calc;Impress;Draw;Base;Math;
+
+[Desktop Action Writer]
+Name=Writer
+Exec=/opt/apps/libreoffice.appimage --writer
+
+[Desktop Action Calc]
+Name=Calc
+Exec=/opt/apps/libreoffice.appimage --calc
+
+[Desktop Action Impress]
+Name=Impress
+Exec=/opt/apps/libreoffice.appimage --impress
+
+[Desktop Action Draw]
+Name=Draw
+Exec=/opt/apps/libreoffice.appimage --draw
+
+[Desktop Action Base]
+Name=Base
+Exec=/opt/apps/libreoffice.appimage --base
+
+[Desktop Action Math]
+Name=Math
+Exec=/opt/apps/libreoffice.appimage --math
+
+##End of actions menu

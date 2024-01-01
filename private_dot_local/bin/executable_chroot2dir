@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+  echo "please input target directory, like /mnt"
+  return 1
+fi
+
+DIR=$1
+
+if ! ls "$DIR" >/dev/null 2>&1; then
+  echo "directory $DIR not found"
+  return 1
+fi
+
+sudo mount -t proc /proc $DIR/proc
+sudo mount --rbind /dev $DIR/dev
+sudo mount --make-rslave $DIR/dev
+sudo mount --rbind /sys $DIR/sys
+sudo mount --make-rslave $DIR/sys
+sudo cp /etc/resolv.conf $DIR/etc/resolv.conf
+sudo chroot $DIR

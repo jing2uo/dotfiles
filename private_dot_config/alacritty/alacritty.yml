@@ -3,7 +3,7 @@ env:
 
 window:
   startup_mode: Maximized
-  opacity: 0.9
+  opacity: 0.8
   dynamic_title: false
 
 font:

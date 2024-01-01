@@ -24,29 +24,6 @@
   },
   {
     "identifier": {
-      "id": "chouzz.vscode-better-align",
-      "uuid": "f5a6ecde-96ce-4fde-8744-ab88c7727069"
-    },
-    "version": "1.4.2",
-    "location": {
-      "$mid": 1,
-      "path": "/home/jing2uo/.vscode/extensions/chouzz.vscode-better-align-1.4.2",
-      "scheme": "file"
-    },
-    "relativeLocation": "chouzz.vscode-better-align-1.4.2",
-    "metadata": {
-      "id": "f5a6ecde-96ce-4fde-8744-ab88c7727069",
-      "publisherId": "b3a947d9-1df4-4cbf-9bbf-3cfca4558416",
-      "publisherDisplayName": "Chouzz",
-      "targetPlatform": "undefined",
-      "updated": false,
-      "isPreReleaseVersion": false,
-      "installedTimestamp": 1702041606830,
-      "preRelease": false
-    }
-  },
-  {
-    "identifier": {
       "id": "christian-kohler.path-intellisense",
       "uuid": "a41c1549-4053-44d4-bf30-60fc809b4a86"
     },
@@ -139,29 +116,6 @@
   },
   {
     "identifier": {
-      "id": "grapecity.gc-excelviewer",
-      "uuid": "8bb12ae3-73f8-40cf-86b7-4bd5729c6238"
-    },
-    "version": "4.2.58",
-    "location": {
-      "$mid": 1,
-      "path": "/home/jing2uo/.vscode/extensions/grapecity.gc-excelviewer-4.2.58",
-      "scheme": "file"
-    },
-    "relativeLocation": "grapecity.gc-excelviewer-4.2.58",
-    "metadata": {
-      "id": "8bb12ae3-73f8-40cf-86b7-4bd5729c6238",
-      "publisherId": "aa6deade-27ef-4481-9de7-720b9c9e0b86",
-      "publisherDisplayName": "GrapeCity",
-      "targetPlatform": "undefined",
-      "updated": false,
-      "isPreReleaseVersion": false,
-      "installedTimestamp": 1702041656940,
-      "preRelease": false
-    }
-  },
-  {
-    "identifier": {
       "id": "gruntfuggly.todo-tree",
       "uuid": "261cac81-cd7b-4555-bb41-0c2d2bcd3e70"
     },
@@ -180,52 +134,6 @@
       "updated": false,
       "isPreReleaseVersion": false,
       "installedTimestamp": 1702041663417,
-      "preRelease": false
-    }
-  },
-  {
-    "identifier": {
-      "id": "jannisx11.batch-rename-extension",
-      "uuid": "4fb89c9c-85d7-47a8-aaca-91ae216b0278"
-    },
-    "version": "0.0.6",
-    "location": {
-      "$mid": 1,
-      "path": "/home/jing2uo/.vscode/extensions/jannisx11.batch-rename-extension-0.0.6",
-      "scheme": "file"
-    },
-    "relativeLocation": "jannisx11.batch-rename-extension-0.0.6",
-    "metadata": {
-      "id": "4fb89c9c-85d7-47a8-aaca-91ae216b0278",
-      "publisherId": "8cdd974e-3246-468a-836c-b63dbddd843a",
-      "publisherDisplayName": "JannisX11",
-      "targetPlatform": "undefined",
-      "updated": false,
-      "isPreReleaseVersion": false,
-      "installedTimestamp": 1702041680302,
-      "preRelease": false
-    }
-  },
-  {
-    "identifier": {
-      "id": "lulus.vscode-regexp-preivew",
-      "uuid": "4c4d07a1-7488-464d-9cf7-c178303dcad9"
-    },
-    "version": "1.0.0",
-    "location": {
-      "$mid": 1,
-      "path": "/home/jing2uo/.vscode/extensions/lulus.vscode-regexp-preivew-1.0.0",
-      "scheme": "file"
-    },
-    "relativeLocation": "lulus.vscode-regexp-preivew-1.0.0",
-    "metadata": {
-      "id": "4c4d07a1-7488-464d-9cf7-c178303dcad9",
-      "publisherId": "8750a393-0618-4dd7-b0b0-e190dd9e358f",
-      "publisherDisplayName": "Lulus Young",
-      "targetPlatform": "undefined",
-      "updated": false,
-      "isPreReleaseVersion": false,
-      "installedTimestamp": 1702041686114,
       "preRelease": false
     }
   },
@@ -507,29 +415,6 @@
   },
   {
     "identifier": {
-      "id": "thamaraiselvam.remove-blank-lines",
-      "uuid": "324a3d09-7c55-41f9-86ed-156f7cd08e2c"
-    },
-    "version": "1.1.1",
-    "location": {
-      "$mid": 1,
-      "path": "/home/jing2uo/.vscode/extensions/thamaraiselvam.remove-blank-lines-1.1.1",
-      "scheme": "file"
-    },
-    "relativeLocation": "thamaraiselvam.remove-blank-lines-1.1.1",
-    "metadata": {
-      "id": "324a3d09-7c55-41f9-86ed-156f7cd08e2c",
-      "publisherId": "b1995d27-64a3-4a7a-8afc-85791d84eb99",
-      "publisherDisplayName": "Thamaraiselvam",
-      "targetPlatform": "undefined",
-      "updated": false,
-      "isPreReleaseVersion": false,
-      "installedTimestamp": 1702041900763,
-      "preRelease": false
-    }
-  },
-  {
-    "identifier": {
       "id": "vadimcn.vscode-lldb",
       "uuid": "bee31e34-a44b-4a76-9ec2-e9fd1439a0f6"
     },
@@ -747,31 +632,6 @@
   },
   {
     "identifier": {
-      "id": "ecksdy.env-switcher",
-      "uuid": "cd8b6fbc-6fa9-4153-86b8-60b2387bbcce"
-    },
-    "version": "0.5.2",
-    "location": {
-      "$mid": 1,
-      "path": "/home/jing2uo/.vscode/extensions/ecksdy.env-switcher-0.5.2",
-      "scheme": "file"
-    },
-    "relativeLocation": "ecksdy.env-switcher-0.5.2",
-    "metadata": {
-      "id": "cd8b6fbc-6fa9-4153-86b8-60b2387bbcce",
-      "publisherId": "02345503-71cc-4f7f-970a-678fc93f322e",
-      "publisherDisplayName": "EcksDy",
-      "targetPlatform": "undefined",
-      "isApplicationScoped": false,
-      "updated": true,
-      "isPreReleaseVersion": false,
-      "installedTimestamp": 1703036016524,
-      "pinned": false,
-      "preRelease": false
-    }
-  },
-  {
-    "identifier": {
       "id": "sonarsource.sonarlint-vscode",
       "uuid": "a7fa941e-bcda-486f-8141-8483a6286177"
     },
@@ -871,31 +731,6 @@
   },
   {
     "identifier": {
-      "id": "rust-lang.rust-analyzer",
-      "uuid": "06574cb4-e5dc-4631-8174-a543a4533621"
-    },
-    "version": "0.3.1782",
-    "location": {
-      "$mid": 1,
-      "path": "/home/jing2uo/.vscode/extensions/rust-lang.rust-analyzer-0.3.1782-linux-x64",
-      "scheme": "file"
-    },
-    "relativeLocation": "rust-lang.rust-analyzer-0.3.1782-linux-x64",
-    "metadata": {
-      "id": "06574cb4-e5dc-4631-8174-a543a4533621",
-      "publisherId": "cb14a7a7-a188-40bd-a953-e0a20757c5dd",
-      "publisherDisplayName": "The Rust Programming Language ",
-      "targetPlatform": "linux-x64",
-      "isApplicationScoped": false,
-      "updated": true,
-      "isPreReleaseVersion": false,
-      "installedTimestamp": 1703493458033,
-      "pinned": false,
-      "preRelease": false
-    }
-  },
-  {
-    "identifier": {
       "id": "ohanedan.lowlight-go-errors",
       "uuid": "a577a027-f218-430d-b568-aa4fc68105e6"
     },
@@ -945,30 +780,6 @@
   },
   {
     "identifier": {
-      "id": "kdl-org.kdl",
-      "uuid": "85fc99f6-11df-44ee-91ed-ae96cfa2d7ac"
-    },
-    "version": "1.3.1",
-    "location": {
-      "$mid": 1,
-      "path": "/home/jing2uo/.vscode/extensions/kdl-org.kdl-1.3.1",
-      "scheme": "file"
-    },
-    "relativeLocation": "kdl-org.kdl-1.3.1",
-    "metadata": {
-      "id": "85fc99f6-11df-44ee-91ed-ae96cfa2d7ac",
-      "publisherId": "0e4cb19e-bf6d-4e62-a862-ae4b91baf151",
-      "publisherDisplayName": "kdl-org",
-      "targetPlatform": "undefined",
-      "updated": false,
-      "isPreReleaseVersion": false,
-      "installedTimestamp": 1703685808790,
-      "pinned": false,
-      "preRelease": false
-    }
-  },
-  {
-    "identifier": {
       "id": "codeium.codeium",
       "uuid": "acab4f40-b6db-42ec-bcd1-01802cbdd988"
     },
@@ -1000,8 +811,6 @@
     "version": "1.0.1",
     "location": {
       "$mid": 1,
-      "fsPath": "/home/jing2uo/.vscode/extensions/mikestead.dotenv-1.0.1",
-      "external": "file:///home/jing2uo/.vscode/extensions/mikestead.dotenv-1.0.1",
       "path": "/home/jing2uo/.vscode/extensions/mikestead.dotenv-1.0.1",
       "scheme": "file"
     },
@@ -1014,6 +823,31 @@
       "updated": false,
       "isPreReleaseVersion": false,
       "installedTimestamp": 1703899742653,
+      "pinned": false,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "rust-lang.rust-analyzer",
+      "uuid": "06574cb4-e5dc-4631-8174-a543a4533621"
+    },
+    "version": "0.3.1791",
+    "location": {
+      "$mid": 1,
+      "path": "/home/jing2uo/.vscode/extensions/rust-lang.rust-analyzer-0.3.1791-linux-x64",
+      "scheme": "file"
+    },
+    "relativeLocation": "rust-lang.rust-analyzer-0.3.1791-linux-x64",
+    "metadata": {
+      "id": "06574cb4-e5dc-4631-8174-a543a4533621",
+      "publisherId": "cb14a7a7-a188-40bd-a953-e0a20757c5dd",
+      "publisherDisplayName": "The Rust Programming Language ",
+      "targetPlatform": "linux-x64",
+      "isApplicationScoped": false,
+      "updated": true,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1704113831326,
       "pinned": false,
       "preRelease": false
     }

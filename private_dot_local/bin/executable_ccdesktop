@@ -1,0 +1,15 @@
+#!/bin/bash
+
+sudo chmod a+x /usr/local/bin/* /opt/apps/*.appimage
+
+cd /usr/share/applications/
+
+cat <<EOF | xargs sudo rm -f
+  htop.desktop
+  display-im6.q16.desktop
+  vim.desktop
+  sqlitebrowser.desktop
+  rofi-theme-selector.desktop
+  rofi.desktop
+  emacs*.desktop
+EOF
