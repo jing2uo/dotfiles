@@ -25,6 +25,7 @@ if [[ "$HEREIS" == "desktop" ]]; then
   alias se="sudoedit"
   alias tree="et"
   alias _deletemydotfiles="echo DANGER"
+  alias nn="nitrogen --random --set-scaled Pictures/Wallpapers > /dev/null 2>&1"
 fi
 
 alias zz="zimfw clean && zimfw install && zimfw build -v"

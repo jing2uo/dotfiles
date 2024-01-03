@@ -9,20 +9,16 @@ tiling_drag modifier titlebar
 
 # autostart
 exec --no-startup-id dex --autostart --environment i3
-exec --no-startup-id polybar
+exec --no-startup-id polybar --quiet
 exec --no-startup-id nm-applet
-exec --no-startup-id feh --bg-scale --randomize --no-fehbg ~/Pictures/Wallpapers
 exec --no-startup-id sleep 5; copyq
 exec --no-startup-id setxkbmap -option caps:ctrl_modifier
-exec --no-startup-id /opt/enpass/Enpass -minimize
-
-exec_always spacefm -d
-exec_always picom --daemon --backend glx
+exec --no-startup-id nitrogen --random --set-scaled Pictures/Wallpapers
+exec --no-startup-id spacefm -d
 
 # short key
 bindsym $mod+Return exec bash ~/.local/bin/myterm
-bindsym $mod+q kill
-bindsym $mod+g exec --no-startup-id i3lock-fancy -p
+bindsym $mod+z kill
 bindsym $mod+d exec --no-startup-id rofi -show drun
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 5%+
@@ -37,7 +33,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 bindsym $mod+f fullscreen toggle
-bindsym $mod+s layout stacking
+bindsym $mod+q layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
