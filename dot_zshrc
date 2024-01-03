@@ -21,6 +21,7 @@ if [[ "$HEREIS" == "desktop" ]]; then
   alias tail="ov"
   alias cat="batcat -p"
   alias k="eza -lh"
+  alias kk="zellij ka -y"
   alias se="sudoedit"
   alias tree="et"
   alias _deletemydotfiles="echo DANGER"

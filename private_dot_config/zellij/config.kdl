@@ -2,6 +2,15 @@ keybinds {
     shared_except "tmux" "locked" {
         bind "F12" { SwitchToMode "Tmux"; }
     }
+    shared_except "locked" {
+        bind "Alt n" { NewPane; }
+        bind "Alt j" "Alt Left" { MoveFocusOrTab "Left"; }
+        bind "Alt l" "Alt Right" { MoveFocusOrTab "Right"; }
+        bind "Alt k" "Alt Down" { MoveFocus "Down"; }
+        bind "Alt i" "Alt Up" { MoveFocus "Up"; }
+        bind "Alt ." "Alt >" { Resize "Increase"; }
+        bind "Alt ," "Alt <" { Resize "Decrease"; }
+    }
     tmux {
         bind "F12" { Write 2; SwitchToMode "Normal"; }
         bind "m" { NewPane "Down"; SwitchToMode "Normal"; }
@@ -9,6 +18,10 @@ keybinds {
         bind "b" { NewTab; SwitchToMode "Normal"; }
         bind "z" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
         bind "x" { CloseFocus; SwitchToMode "Normal"; }
+        bind "i" { MoveFocus "Up"; SwitchToMode "Normal"; }
+        bind "k" { MoveFocus "Down"; SwitchToMode "Normal"; }
+        bind "j" { MoveFocus "Left"; SwitchToMode "Normal"; }
+        bind "l" { MoveFocus "Right"; SwitchToMode "Normal"; }
     }
 }
 

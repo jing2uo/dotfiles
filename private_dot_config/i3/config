@@ -13,9 +13,11 @@ exec --no-startup-id polybar
 exec --no-startup-id nm-applet
 exec --no-startup-id feh --bg-scale --randomize --no-fehbg ~/Pictures/Wallpapers
 exec --no-startup-id sleep 5; copyq
-exec --no-startup-id "/opt/enpass/Enpass -minimize"
-exec setxkbmap -option caps:ctrl_modifier
-exec_always picom -b
+exec --no-startup-id setxkbmap -option caps:ctrl_modifier
+exec --no-startup-id /opt/enpass/Enpass -minimize
+
+exec_always spacefm -d
+exec_always picom --daemon --backend glx
 
 # short key
 bindsym $mod+Return exec bash ~/.local/bin/myterm
@@ -34,8 +36,6 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
-bindsym $mod+h split h
-bindsym $mod+v split b
 bindsym $mod+f fullscreen toggle
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
@@ -74,3 +74,5 @@ for_window [class="Enpass"] floating enable, resize set 600 400, border pixel 2
 for_window [class="Telegram"] floating enable, resize set 1000 800, border pixel 2
 for_window [class="Blueman-manager"] floating enable, resize set 800 600, border pixel 2
 for_window [class="Joplin"] floating enable, resize set 1500 900, border pixel 2
+
+for_window [workspace=".*"] layout tabbed

@@ -14,4 +14,4 @@ shell:
   args:
     - -l
     - -c
-    - ~/.asdf/shims/zellij
+    - ~/.asdf/shims/zellij -l compact
