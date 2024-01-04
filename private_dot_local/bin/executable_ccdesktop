@@ -5,6 +5,7 @@ sudo chmod a+x /usr/local/bin/* /opt/apps/*.appimage
 cd /usr/share/applications/
 
 cat <<EOF | xargs sudo rm -f
+  ranger.desktop
   htop.desktop
   display-im6.q16.desktop
   vim.desktop

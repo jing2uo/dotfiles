@@ -369,29 +369,6 @@
   },
   {
     "identifier": {
-      "id": "serayuzgur.crates",
-      "uuid": "6a95a3fd-3a5d-4326-b8ab-1b1653b1f183"
-    },
-    "version": "0.6.5",
-    "location": {
-      "$mid": 1,
-      "path": "/home/jing2uo/.vscode/extensions/serayuzgur.crates-0.6.5",
-      "scheme": "file"
-    },
-    "relativeLocation": "serayuzgur.crates-0.6.5",
-    "metadata": {
-      "id": "6a95a3fd-3a5d-4326-b8ab-1b1653b1f183",
-      "publisherId": "f3db93d2-daa2-4a16-a789-41ffbe82294a",
-      "publisherDisplayName": "Seray Uzgur",
-      "targetPlatform": "undefined",
-      "updated": false,
-      "isPreReleaseVersion": false,
-      "installedTimestamp": 1702041780472,
-      "preRelease": false
-    }
-  },
-  {
-    "identifier": {
       "id": "tamasfe.even-better-toml",
       "uuid": "b2215d5f-675e-4a2b-b6ac-1ca737518b78"
     },
@@ -410,29 +387,6 @@
       "updated": false,
       "isPreReleaseVersion": false,
       "installedTimestamp": 1702041889220,
-      "preRelease": false
-    }
-  },
-  {
-    "identifier": {
-      "id": "vadimcn.vscode-lldb",
-      "uuid": "bee31e34-a44b-4a76-9ec2-e9fd1439a0f6"
-    },
-    "version": "1.10.0",
-    "location": {
-      "$mid": 1,
-      "path": "/home/jing2uo/.vscode/extensions/vadimcn.vscode-lldb-1.10.0",
-      "scheme": "file"
-    },
-    "relativeLocation": "vadimcn.vscode-lldb-1.10.0",
-    "metadata": {
-      "id": "bee31e34-a44b-4a76-9ec2-e9fd1439a0f6",
-      "publisherId": "3b05d186-6311-4caa-99b5-09032a9d3cf5",
-      "publisherDisplayName": "Vadim Chugunov",
-      "targetPlatform": "undefined",
-      "updated": false,
-      "isPreReleaseVersion": false,
-      "installedTimestamp": 1702041906264,
       "preRelease": false
     }
   },
@@ -608,30 +562,6 @@
   },
   {
     "identifier": {
-      "id": "rangav.vscode-thunder-client",
-      "uuid": "2fd56207-78ef-49d4-95d2-9b801eee4dbf"
-    },
-    "version": "2.16.3",
-    "location": {
-      "$mid": 1,
-      "path": "/home/jing2uo/.vscode/extensions/rangav.vscode-thunder-client-2.16.3",
-      "scheme": "file"
-    },
-    "relativeLocation": "rangav.vscode-thunder-client-2.16.3",
-    "metadata": {
-      "id": "2fd56207-78ef-49d4-95d2-9b801eee4dbf",
-      "publisherId": "f6503eef-4f6f-415c-b1e0-221209c035ee",
-      "publisherDisplayName": "Thunder Client",
-      "targetPlatform": "undefined",
-      "updated": false,
-      "isPreReleaseVersion": false,
-      "installedTimestamp": 1702816027709,
-      "pinned": false,
-      "preRelease": false
-    }
-  },
-  {
-    "identifier": {
       "id": "sonarsource.sonarlint-vscode",
       "uuid": "a7fa941e-bcda-486f-8141-8483a6286177"
     },
@@ -651,31 +581,6 @@
       "updated": true,
       "isPreReleaseVersion": false,
       "installedTimestamp": 1703120288510,
-      "pinned": false,
-      "preRelease": false
-    }
-  },
-  {
-    "identifier": {
-      "id": "llvm-vs-code-extensions.vscode-clangd",
-      "uuid": "103154cb-b81d-4e1b-8281-c5f4fa563d37"
-    },
-    "version": "0.1.26",
-    "location": {
-      "$mid": 1,
-      "path": "/home/jing2uo/.vscode/extensions/llvm-vs-code-extensions.vscode-clangd-0.1.26",
-      "scheme": "file"
-    },
-    "relativeLocation": "llvm-vs-code-extensions.vscode-clangd-0.1.26",
-    "metadata": {
-      "id": "103154cb-b81d-4e1b-8281-c5f4fa563d37",
-      "publisherId": "0f47d2a3-0735-453c-a89e-dc4193d6b6fa",
-      "publisherDisplayName": "LLVM",
-      "targetPlatform": "undefined",
-      "isApplicationScoped": false,
-      "updated": true,
-      "isPreReleaseVersion": false,
-      "installedTimestamp": 1703139966086,
       "pinned": false,
       "preRelease": false
     }
@@ -829,25 +734,25 @@
   },
   {
     "identifier": {
-      "id": "rust-lang.rust-analyzer",
-      "uuid": "06574cb4-e5dc-4631-8174-a543a4533621"
+      "id": "rangav.vscode-thunder-client",
+      "uuid": "2fd56207-78ef-49d4-95d2-9b801eee4dbf"
     },
-    "version": "0.3.1791",
+    "version": "2.17.0",
     "location": {
       "$mid": 1,
-      "path": "/home/jing2uo/.vscode/extensions/rust-lang.rust-analyzer-0.3.1791-linux-x64",
+      "path": "/home/jing2uo/.vscode/extensions/rangav.vscode-thunder-client-2.17.0",
       "scheme": "file"
     },
-    "relativeLocation": "rust-lang.rust-analyzer-0.3.1791-linux-x64",
+    "relativeLocation": "rangav.vscode-thunder-client-2.17.0",
     "metadata": {
-      "id": "06574cb4-e5dc-4631-8174-a543a4533621",
-      "publisherId": "cb14a7a7-a188-40bd-a953-e0a20757c5dd",
-      "publisherDisplayName": "The Rust Programming Language ",
-      "targetPlatform": "linux-x64",
+      "id": "2fd56207-78ef-49d4-95d2-9b801eee4dbf",
+      "publisherId": "f6503eef-4f6f-415c-b1e0-221209c035ee",
+      "publisherDisplayName": "Thunder Client",
+      "targetPlatform": "undefined",
       "isApplicationScoped": false,
       "updated": true,
       "isPreReleaseVersion": false,
-      "installedTimestamp": 1704113831326,
+      "installedTimestamp": 1704332194940,
       "pinned": false,
       "preRelease": false
     }

@@ -41,10 +41,6 @@ if [[ -e "/usr/share/virtualenvwrapper/virtualenvwrapper.sh" ]]; then
   source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
 fi
 
-# Rust
-export RUSTUP_DIST_SERVER="https://rsproxy.cn"
-export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
-
 # zsh config
 setopt globdots
 bindkey -s '\e\e' '\C-asudo \C-e'
@@ -89,6 +85,7 @@ fi
 
 # starship
 if command -v starship >/dev/null 2>&1; then
+  export STARSHIP_CACHE=${XDG_CACHE_HOME}/starship/
   eval "$(starship init zsh)"
 else
   export PS1="%F{green}%n@%m:%~%F{reset} \$ "

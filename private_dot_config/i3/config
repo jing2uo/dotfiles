@@ -68,7 +68,5 @@ for_window [instance="copyq"] floating enable, resize set 600 400, border pixel 
 for_window [class="Spacefm"] floating enable, resize set 600 400, border pixel 2
 for_window [class="Enpass"] floating enable, resize set 600 400, border pixel 2
 for_window [class="Telegram"] floating enable, resize set 1000 800, border pixel 2
-for_window [class="Blueman-manager"] floating enable, resize set 800 600, border pixel 2
-for_window [class="Joplin"] floating enable, resize set 1500 900, border pixel 2
 
 for_window [workspace=".*"] layout tabbed
