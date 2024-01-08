@@ -737,24 +737,22 @@
       "id": "codeium.codeium",
       "uuid": "acab4f40-b6db-42ec-bcd1-01802cbdd988"
     },
-    "version": "1.6.16",
+    "version": "1.6.18",
     "location": {
       "$mid": 1,
-      "fsPath": "/home/jing2uo/.vscode/extensions/codeium.codeium-1.6.16",
-      "external": "file:///home/jing2uo/.vscode/extensions/codeium.codeium-1.6.16",
-      "path": "/home/jing2uo/.vscode/extensions/codeium.codeium-1.6.16",
+      "fsPath": "/home/jing2uo/.vscode/extensions/codeium.codeium-1.6.18",
+      "path": "/home/jing2uo/.vscode/extensions/codeium.codeium-1.6.18",
       "scheme": "file"
     },
-    "relativeLocation": "codeium.codeium-1.6.16",
+    "relativeLocation": "codeium.codeium-1.6.18",
     "metadata": {
       "id": "acab4f40-b6db-42ec-bcd1-01802cbdd988",
       "publisherId": "082b0525-4adf-4bcc-b60f-afa86c60860d",
       "publisherDisplayName": "Codeium",
       "targetPlatform": "undefined",
-      "isApplicationScoped": false,
-      "updated": true,
+      "updated": false,
       "isPreReleaseVersion": false,
-      "installedTimestamp": 1704443184444,
+      "installedTimestamp": 1704721162421,
       "pinned": false,
       "preRelease": false
     }
