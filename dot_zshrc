@@ -41,6 +41,10 @@ if [[ -e "/usr/share/virtualenvwrapper/virtualenvwrapper.sh" ]]; then
   source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
 fi
 
+# Rust
+export RUSTUP_DIST_SERVER="https://rsproxy.cn"
+export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
+
 # zsh config
 setopt globdots
 bindkey -s '\e\e' '\C-asudo \C-e'

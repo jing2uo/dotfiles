@@ -63,7 +63,7 @@
       "before": [" "]
     }
   ],
-  "vim.useCtrlKeys": true,
+  "vim.useCtrlKeys": false,
   "vim.useSystemClipboard": true,
   "vsicons.dontShowNewVersionMessage": true,
   "window.autoDetectColorScheme": true,

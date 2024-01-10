@@ -20,6 +20,7 @@ exec --no-startup-id spacefm -d
 bindsym $mod+Return exec bash ~/.local/bin/myterm
 bindsym $mod+z kill
 bindsym $mod+d exec --no-startup-id rofi -show drun
+bindsym $mod+p exec --no-startup-id flameshot gui
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 5%+
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 5%-
@@ -68,5 +69,5 @@ for_window [instance="copyq"] floating enable, resize set 600 400, border pixel 
 for_window [class="Spacefm"] floating enable, resize set 600 400, border pixel 2
 for_window [class="Enpass"] floating enable, resize set 600 400, border pixel 2
 for_window [class="Telegram"] floating enable, resize set 1000 800, border pixel 2
-
+for_window [class="Yad" title="yad-calendar"] floating enable
 for_window [workspace=".*"] layout tabbed

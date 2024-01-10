@@ -462,31 +462,6 @@
   },
   {
     "identifier": {
-      "id": "ms-ceintl.vscode-language-pack-zh-hans",
-      "uuid": "e4ee7751-6514-4731-9cdb-7580ffa9e70b"
-    },
-    "version": "1.85.2023121309",
-    "location": {
-      "$mid": 1,
-      "path": "/home/jing2uo/.vscode/extensions/ms-ceintl.vscode-language-pack-zh-hans-1.85.2023121309",
-      "scheme": "file"
-    },
-    "relativeLocation": "ms-ceintl.vscode-language-pack-zh-hans-1.85.2023121309",
-    "metadata": {
-      "id": "e4ee7751-6514-4731-9cdb-7580ffa9e70b",
-      "publisherId": "0b0882c3-aee3-4d7c-b5f9-872f9be0a115",
-      "publisherDisplayName": "Microsoft",
-      "targetPlatform": "undefined",
-      "isApplicationScoped": true,
-      "updated": true,
-      "isPreReleaseVersion": false,
-      "installedTimestamp": 1702479127368,
-      "pinned": false,
-      "preRelease": false
-    }
-  },
-  {
-    "identifier": {
       "id": "ms-python.python",
       "uuid": "f1f59ae4-9318-4f3c-a9b5-81b2eaa5f8a5"
     },
@@ -740,7 +715,6 @@
     "version": "1.6.18",
     "location": {
       "$mid": 1,
-      "fsPath": "/home/jing2uo/.vscode/extensions/codeium.codeium-1.6.18",
       "path": "/home/jing2uo/.vscode/extensions/codeium.codeium-1.6.18",
       "scheme": "file"
     },
