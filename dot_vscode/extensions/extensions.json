@@ -712,21 +712,48 @@
       "id": "codeium.codeium",
       "uuid": "acab4f40-b6db-42ec-bcd1-01802cbdd988"
     },
-    "version": "1.6.18",
+    "version": "1.6.22",
     "location": {
       "$mid": 1,
-      "path": "/home/jing2uo/.vscode/extensions/codeium.codeium-1.6.18",
+      "path": "/home/jing2uo/.vscode/extensions/codeium.codeium-1.6.22",
       "scheme": "file"
     },
-    "relativeLocation": "codeium.codeium-1.6.18",
+    "relativeLocation": "codeium.codeium-1.6.22",
     "metadata": {
       "id": "acab4f40-b6db-42ec-bcd1-01802cbdd988",
       "publisherId": "082b0525-4adf-4bcc-b60f-afa86c60860d",
       "publisherDisplayName": "Codeium",
       "targetPlatform": "undefined",
+      "isApplicationScoped": false,
+      "updated": true,
+      "isPreReleaseVersion": false,
+      "installedTimestamp": 1704931516630,
+      "pinned": false,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "yoavbls.pretty-ts-errors",
+      "uuid": "1e149c89-8f97-447e-863d-1146f0ad1b70"
+    },
+    "version": "0.5.3",
+    "location": {
+      "$mid": 1,
+      "fsPath": "/home/jing2uo/.vscode/extensions/yoavbls.pretty-ts-errors-0.5.3",
+      "external": "file:///home/jing2uo/.vscode/extensions/yoavbls.pretty-ts-errors-0.5.3",
+      "path": "/home/jing2uo/.vscode/extensions/yoavbls.pretty-ts-errors-0.5.3",
+      "scheme": "file"
+    },
+    "relativeLocation": "yoavbls.pretty-ts-errors-0.5.3",
+    "metadata": {
+      "id": "1e149c89-8f97-447e-863d-1146f0ad1b70",
+      "publisherId": "0939a3c0-6896-4249-bfa3-4ff58ebaccd0",
+      "publisherDisplayName": "yoavbls",
+      "targetPlatform": "undefined",
       "updated": false,
       "isPreReleaseVersion": false,
-      "installedTimestamp": 1704721162421,
+      "installedTimestamp": 1704931611834,
       "pinned": false,
       "preRelease": false
     }
