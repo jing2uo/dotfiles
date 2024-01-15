@@ -1,0 +1,16 @@
+[core]
+	quotePath = false
+	excludesfile = ~/.gitignore
+[push]
+	default = current
+[color]
+	ui = auto
+[credential]
+	helper = store
+[pull]
+	rebase = true
+[gc]
+	autoDetach = false
+[user]
+	name = jing guo
+	email = mail@guojing.io

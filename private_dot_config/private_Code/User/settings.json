@@ -7,7 +7,7 @@
     "editor.formatOnSave": true
   },
   "code-runner.executorMap": {
-    "python": "$pythonPath -u $fullFileName",
+    "python": "$pythonPath -u $fullFileName"
   },
   "debug.console.fontSize": 16,
   "editor.cursorSmoothCaretAnimation": "on",
@@ -63,7 +63,6 @@
       "before": [" "]
     }
   ],
-  "vim.useCtrlKeys": false,
   "vim.useSystemClipboard": true,
   "vsicons.dontShowNewVersionMessage": true,
   "window.autoDetectColorScheme": true,
@@ -97,5 +96,7 @@
         }
       }
     ]
-  }
+  },
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "vim.enableNeovim": true
 }

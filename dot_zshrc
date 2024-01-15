@@ -20,30 +20,18 @@ if [[ "$HEREIS" == "desktop" ]]; then
   alias head="ov"
   alias tail="ov"
   alias cat="batcat -p"
-  alias k="eza -lh"
   alias kk="zellij ka -y"
-  alias se="sudoedit"
   alias tree="et"
   alias _deletemydotfiles="echo DANGER"
-  alias nn="nitrogen --random --set-scaled ~/Pictures/Wallpapers > /dev/null 2>&1"
 fi
 
+alias se="sudoedit"
+alias k="eza -lh"
 alias zz="zimfw clean && zimfw install && zimfw build -v"
 alias curl="curl -k -s"
 
 export WORDCHARS=${WORDCHARS/\//}
 export PATH=${HOME}/.local/bin:$PATH
-
-# Python
-export WORKON_HOME=${HOME}/.venvs
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-if [[ -e "/usr/share/virtualenvwrapper/virtualenvwrapper.sh" ]]; then
-  source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
-fi
-
-# Rust
-export RUSTUP_DIST_SERVER="https://rsproxy.cn"
-export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
 
 # zsh config
 setopt globdots
@@ -89,7 +77,9 @@ fi
 
 # starship
 if command -v starship >/dev/null 2>&1; then
-  export STARSHIP_CACHE=${XDG_CACHE_HOME}/starship/
+  if [ -n "${XDG_CACHE_HOME}" ]; then
+    export STARSHIP_CACHE=${XDG_CACHE_HOME}/starship/
+  fi
   eval "$(starship init zsh)"
 else
   export PS1="%F{green}%n@%m:%~%F{reset} \$ "
@@ -114,6 +104,24 @@ fi
 fpath=("${fpath[@]}"
   $MYFPATH
 )
+
+# Python
+export WORKON_HOME=${HOME}/.venvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+if [[ -e "/usr/share/virtualenvwrapper/virtualenvwrapper.sh" ]]; then
+  source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+fi
+
+# conda
+export CONDA_HOME=$HOME/.asdf/installs/python/miniconda3-latest
+export CONDA_AUTO_ACTIVATE_BASE=false
+if [[ -e "$CONDA_HOME/etc/profile.d/conda.sh" ]]; then
+  source $CONDA_HOME/etc/profile.d/conda.sh
+fi
+
+# Rust
+export RUSTUP_DIST_SERVER="https://rsproxy.cn"
+export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
 
 # init zim
 source ${ZIM_HOME}/init.zsh

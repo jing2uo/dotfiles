@@ -1,19 +1,19 @@
-# i3 config file (v4)
+#
+# i3 config file
 
 set $mod Mod1
 font pango:monospace 8
-default_border pixel
+default_border pixel 3
 default_floating_border pixel
 floating_modifier $mod
 tiling_drag modifier titlebar
 
 # autostart
 exec --no-startup-id dex --autostart --environment i3
-exec --no-startup-id polybar --quiet
+exec --no-startup-id ~/.local/bin/mydesktop
 exec --no-startup-id nm-applet
 exec --no-startup-id sleep 5; copyq
 exec --no-startup-id setxkbmap -option caps:ctrl_modifier
-exec --no-startup-id nitrogen --random --set-scaled Pictures/Wallpapers
 exec --no-startup-id spacefm -d
 
 # short key
@@ -59,6 +59,10 @@ bindsym $mod+Shift+3 move container to workspace number $ws3
 bindsym $mod+Shift+4 move container to workspace number $ws4
 bindsym $mod+Shift+5 move container to workspace number $ws5
 bindsym $mod+Shift+6 move container to workspace number $ws6
+
+bindsym $mod+x move workspace to output right
+
+workspace 6 output HDMI-1 primary
 
 assign [class="Alacritty"] 1
 assign [class="firefox"] 2

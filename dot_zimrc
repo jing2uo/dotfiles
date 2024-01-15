@@ -4,6 +4,8 @@ export ZSH_AUTOSUGGEST_HIST_IGNORE_DUPS="true"
 export ZSH_AUTOSUGGEST_USE_INITIAL_TIMESTAMP="false"
 zmodule zsh-users/zsh-autosuggestions
 
+zmodule conda-incubator/conda-zsh-completion
+
 zmodule zsh-users/zsh-completions -f src
 zmodule completion
 
