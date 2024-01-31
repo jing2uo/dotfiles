@@ -1,5 +1,0 @@
-#!/bin/bash
-
-xrandr --output eDP-1-1 --off
-xrandr --output DP-1-1 --mode 1920x1080
-nitrogen --random --set-scaled Pictures/Wallpapers >/dev/null 2>&1
