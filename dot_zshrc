@@ -25,8 +25,9 @@ if [[ "$HEREIS" == "desktop" ]]; then
   alias _deletemydotfiles="echo DANGER"
 fi
 
-alias se="sudoedit"
 alias k="eza -lh"
+alias y="yarn"
+alias se="sudoedit"
 alias zz="zimfw clean && zimfw install && zimfw build -v"
 alias curl="curl -k -s"
 
