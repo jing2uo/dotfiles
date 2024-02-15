@@ -22,6 +22,7 @@ if [[ "$HEREIS" == "desktop" ]]; then
   alias cat="batcat -p"
   alias kk="zellij ka -y"
   alias tree="et"
+  alias ww="feh --bg-scale --randomize --no-fehbg ~/Pictures/Wallpapers/"
   alias _deletemydotfiles="echo DANGER"
 fi
 
