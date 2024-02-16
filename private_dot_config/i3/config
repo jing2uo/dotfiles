@@ -17,7 +17,7 @@ exec --no-startup-id setxkbmap -option caps:ctrl_modifier
 exec --no-startup-id spacefm -d
 
 # short key
-bindsym $mod+l exec --no-startup-id i3lock --color 000000
+bindsym $mod+BackSpace exec --no-startup-id i3lock --color 000000
 bindsym $mod+d exec --no-startup-id rofi -show drun
 bindsym $mod+p exec --no-startup-id flameshot gui
 bindsym $mod+Return exec bash ~/.local/bin/myterm
