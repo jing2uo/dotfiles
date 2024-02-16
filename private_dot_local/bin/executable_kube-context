@@ -1,0 +1,68 @@
+#!/bin/bash
+
+# 定义脚本参数
+while [[ $# -gt 0 ]]; do
+	case "$1" in
+	-h | --help)
+		echo "Usage: $0 [options]"
+		echo "Options:"
+		echo "  -h, --help          Print this help message"
+		echo "  --token <value>     Required token parameter"
+		echo "  --endpoint <value>  Required endpoint parameter"
+		echo "  --name <value>      Required name parameter"
+		exit 0
+		;;
+	--token)
+		shift
+		TOKEN="$1"
+		;;
+	--endpoint)
+		shift
+		ENDPOINT="$1"
+		;;
+	--name)
+		shift
+		NAME="$1"
+		;;
+	*)
+		echo "Invalid option: $1"
+		echo "Use '$0 --help' for more information."
+		exit 1
+		;;
+	esac
+	shift
+done
+
+# 检查是否提供了所有参数
+if [ -z "$TOKEN" ] || [ -z "$ENDPOINT" ] || [ -z "$NAME" ]; then
+	echo "Usage: $0 [options]"
+	echo "Options:"
+	echo "  -h, --help          Print this help message"
+	echo "  --token <value>     Required token parameter"
+	echo "  --endpoint <value>  Required endpoint parameter"
+	echo "  --name <value>      Required name parameter"
+	exit 1
+fi
+
+# 处理参数
+echo "Name: $NAME"
+echo "Endpoint: $ENDPOINT"
+echo "Token: $TOKEN"
+
+C=$(kubectl config get-contexts | awk '{print $2}' | grep -E "^\b($NAME)\b$" | wc -l)
+if [ "$C" != "0" ]; then
+	echo
+	echo "$NAME context already exists"
+	exit 1
+fi
+
+kubectl --token $TOKEN --server $ENDPOINT --insecure-skip-tls-verify get ns &>/dev/null
+if [ "$?" != "0" ]; then
+	echo
+	echo "Invalid token or server, please check"
+	exit 1
+fi
+
+kubectl config set-cluster $NAME --server=$ENDPOINT --insecure-skip-tls-verify
+kubectl config set-credentials $NAME --token=$TOKEN
+kubectl config set-context $NAME --cluster=$NAME --user=$NAME

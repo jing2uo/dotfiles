@@ -1,0 +1,17 @@
+[Desktop Entry]
+Version=1.0
+Name=Inkscape
+GenericName[zh_CN]=矢量图形编辑器
+GenericName=Vector Graphics Editor
+Comment[zh_CN]=创建、编辑可缩放矢量图形图像
+Comment=Create and edit Scalable Vector Graphics images
+Keywords[zh_CN]=image;editor;vector;drawing；矢量；图像；编辑；编辑器；向量;绘图;
+Keywords=image;editor;vector;drawing;
+Type=Application
+Categories=Graphics;VectorGraphics;GTK;
+MimeType=image/svg+xml;image/svg+xml-compressed;application/vnd.corel-draw;application/pdf;application/postscript;image/x-eps;application/illustrator;image/cgm;image/x-wmf;application/x-xccx;application/x-xcgm;application/x-xcdt;application/x-xsk1;application/x-xcmx;image/x-xcdr;application/visio;application/x-visio;application/vnd.visio;application/visio.drawing;application/vsd;application/x-vsd;image/x-vsd;
+Exec=/opt/apps/inkscape.appimage %F
+Terminal=false
+StartupNotify=true
+Icon=org.inkscape.Inkscape
+X-Ayatana-Desktop-Shortcuts=Drawing

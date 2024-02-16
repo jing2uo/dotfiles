@@ -1,15 +1,15 @@
 #!/bin/bash
 
 if [ -z "$1" ]; then
-	echo "please input device name, like /dev/sdx"
-	return 1
+  echo "please input device name, like /dev/sdx"
+  exit 1
 fi
 
 DEV="$1"
 
 if ! ls "$DEV" >/dev/null 2>&1; then
-	echo "device $DEV not found"
-	return 1
+  echo "device $DEV not found"
+  exit 1
 fi
 
 sudo mount "$DEV" /mnt/

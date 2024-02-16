@@ -1,0 +1,16 @@
+#!/bin/bash
+
+mainbar() {
+  polybar --quiet --reload mainbar &
+}
+
+extbar() {
+  MONITOR=$1 polybar --quiet --reload extbar &
+}
+
+fehwallpaper() {
+  feh --bg-scale --randomize --no-fehbg ~/Pictures/Wallpapers/
+}
+
+mainbar
+fehwallpaper

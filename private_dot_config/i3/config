@@ -10,17 +10,14 @@ tiling_drag modifier titlebar
 
 # autostart
 exec --no-startup-id dex --autostart --environment i3
-exec --no-startup-id ~/.local/bin/mydesktop
+exec --no-startup-id bash ~/.local/bin/mypolybar
 exec --no-startup-id nm-applet
-exec --no-startup-id sleep 5; copyq
-exec --no-startup-id setxkbmap -option caps:ctrl_modifier
-exec --no-startup-id spacefm -d
+exec --no-startup-id pcmanfm -d
 
 # short key
-bindsym $mod+BackSpace exec --no-startup-id i3lock --color 000000
 bindsym $mod+d exec --no-startup-id rofi -show drun
-bindsym $mod+p exec --no-startup-id flameshot gui
-bindsym $mod+Return exec bash ~/.local/bin/myterm
+bindsym $mod+Return exec bash ~/.local/bin/myterminal
+bindsym $mod+BackSpace exec --no-startup-id i3lock --color 000000
 bindsym $mod+z kill
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 5%+
@@ -63,17 +60,16 @@ bindsym $mod+Shift+6 move container to workspace number $ws6
 
 bindsym $mod+x move workspace to output right
 
-workspace 6 output HDMI-1 primary
-
 assign [class="Alacritty"] 1
 assign [class="firefox"] 2
 assign [class="Code"] 3
-assign [class="Remote-viewer"] 6
+assign [class="Bytedance-feishu"] 5
+assign [class="Spicy"] 6
 
-for_window [instance="copyq"] floating enable, resize set 600 400, border pixel 2
-for_window [class="Spacefm"] floating enable, resize set 600 400, border pixel 2
 for_window [class="Enpass"] floating enable, resize set 600 400, border pixel 2
+for_window [class="Pcmanfm"] floating enable, resize set 800 600, border pixel 2
 for_window [class="Telegram"] floating enable, resize set 1000 800, border pixel 2
 for_window [class="Pavucontrol"] floating enable, resize set 1000 800, border pixel 2
+for_window [class="wemeetapp"] floating enable, resize set 1500 800, border none
 for_window [class="Yad" title="yad-calendar"] floating enable
 for_window [workspace=".*"] layout tabbed

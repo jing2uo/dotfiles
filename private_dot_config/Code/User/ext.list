@@ -1,4 +1,5 @@
 bennycode.sort-everything
+charliermarsh.ruff
 christian-kohler.path-intellisense
 codeium.codeium
 eamodio.gitlens
@@ -7,8 +8,9 @@ formulahendry.code-runner
 foxundermoon.shell-format
 golang.go
 gruntfuggly.todo-tree
+hilleer.yaml-plus-json
 jock.svg
-llvm-vs-code-extensions.vscode-clangd
+mechatroner.rainbow-csv
 mhutchie.git-graph
 mikestead.dotenv
 ms-azuretools.vscode-docker
@@ -16,10 +18,10 @@ ms-ceintl.vscode-language-pack-zh-hans
 ms-python.debugpy
 ms-python.python
 ms-python.vscode-pylance
-ms-vscode.remote-explorer
 ms-vscode-remote.remote-containers
 ms-vscode-remote.remote-ssh
 ms-vscode-remote.remote-ssh-edit
+ms-vscode.remote-explorer
 naumovs.color-highlight
 oderwat.indent-rainbow
 ohanedan.lowlight-go-errors
@@ -27,12 +29,10 @@ parthr2031.colorful-comments
 quanzaiyu.vscode-json-enhanced
 rangav.vscode-thunder-client
 redhat.vscode-yaml
-rust-lang.rust-analyzer
+redjue.git-commit-plugin
 sonarsource.sonarlint-vscode
-tamasfe.even-better-toml
-tauri-apps.tauri-vscode
-vadimcn.vscode-lldb
 vincaslt.highlight-matching-tag
 vscode-icons-team.vscode-icons
 vscodevim.vim
+whosydd.typora-open
 yoavbls.pretty-ts-errors

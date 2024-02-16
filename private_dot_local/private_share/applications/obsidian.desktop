@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Obsidian
-Exec=/opt/Obsidian/obsidian %U
-Terminal=false
-Type=Application
-Icon=obsidian
-Comment=Obsidian
-MimeType=text/html;x-scheme-handler/obsidian;
-Categories=Development;

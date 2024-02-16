@@ -2,17 +2,17 @@
 
 if [ -z "$1" ]; then
   echo "please input vmlinuz path, like /boot/vmlinuz-5.10.0-18-amd64"
-  return 1
+  exit 1
 fi
 
 vmlinuz_path=$1
 
 if ! ls "$vmlinuz_path" >/dev/null 2>&1; then
   echo "vmlinuz $vmlinuz_path not found"
-  return 1
+  exit 1
 fi
 
 vmlinuz_version=$(echo $1 | sed 's%/boot/vmlinuz-%%g')
 sudo linux-update-symlinks install $vmlinuz_version $vmlinuz_path
 echo "now:"
-ls -lh / | grep -E 'vmlinuz|initrd'
+ls -lh / | grep --color -E 'vmlinuz|initrd'

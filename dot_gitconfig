@@ -1,6 +1,7 @@
 [core]
 	quotePath = false
 	excludesfile = ~/.gitignore
+	compression = 0
 [push]
 	default = current
 [color]
@@ -14,3 +15,5 @@
 [user]
 	name = jing guo
 	email = mail@guojing.io
+[http]
+	postBuffer = 52428800
