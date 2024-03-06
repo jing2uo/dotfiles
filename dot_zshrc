@@ -125,5 +125,10 @@ fi
 export RUSTUP_DIST_SERVER="https://rsproxy.cn"
 export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
 
+# private env
+if [[ -e "$HOME/.private_env" ]]; then
+  source $HOME/.private_env
+fi
+
 # init zim
 source ${ZIM_HOME}/init.zsh

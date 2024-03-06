@@ -12,7 +12,6 @@ tiling_drag modifier titlebar
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id bash ~/.local/bin/mydesktop
 exec --no-startup-id nm-applet
-exec --no-startup-id setxkbmap -option caps:ctrl_modifier
 exec --no-startup-id sleep 10; copyq
 exec --no-startup-id pcmanfm -d
 

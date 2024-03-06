@@ -98,5 +98,6 @@
     ]
   },
   "terminal.integrated.enableMultiLinePasteWarning": false,
-  "vim.enableNeovim": true
+  "vim.enableNeovim": true,
+  "workbench.startupEditor": "none"
 }

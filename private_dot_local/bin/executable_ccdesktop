@@ -1,10 +1,12 @@
 #!/bin/bash
 
-sudo chmod a+x /usr/local/bin/* /opt/apps/*.appimage
+sudo chown root:root /usr/local/bin/* /opt/apps/*
+sudo chmod a+x /usr/local/bin/* /opt/apps/*
 
 cd /usr/share/applications/
 
 cat <<EOF | xargs sudo rm -f
+  pcmanfm.desktop
   ranger.desktop
   htop.desktop
   display-im6.q16.desktop
@@ -12,5 +14,6 @@ cat <<EOF | xargs sudo rm -f
   sqlitebrowser.desktop
   rofi-theme-selector.desktop
   rofi.desktop
+  bleachbit-root.desktop
   emacs*.desktop
 EOF
