@@ -13,25 +13,6 @@ if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZDOTDIR:-${HOME}}/.zimrc ]]; then
   source ${ZIM_HOME}/zimfw.zsh init -q
 fi
 
-if [[ "$HEREIS" == "desktop" ]]; then
-  # alias
-  alias less="ov"
-  alias more="ov"
-  alias head="ov"
-  alias tail="ov"
-  alias cat="batcat -p"
-  alias kk="zellij ka -y"
-  alias tree="et"
-  alias ww="feh --bg-scale --randomize --no-fehbg ~/Pictures/Wallpapers/"
-  alias _deletemydotfiles="echo DANGER"
-fi
-
-alias k="eza -lh"
-alias y="yarn"
-alias se="sudoedit"
-alias zz="zimfw clean && zimfw install && zimfw build -v"
-alias curl="curl -k -s"
-
 export WORDCHARS=${WORDCHARS/\//}
 export PATH=${HOME}/.local/bin:$PATH
 
@@ -69,65 +50,15 @@ setopt hist_ignore_space
 setopt hist_reduce_blanks
 setopt inc_append_history
 
-# asdf-vm
-if [[ -e "$HOME/.asdf/asdf.sh" ]]; then
-  source $HOME/.asdf/asdf.sh
-  fpath=("${fpath[@]}"
-    $HOME/.asdf/completions/
-  )
-fi
-
-# starship
-if command -v starship >/dev/null 2>&1; then
-  if [ -n "${XDG_CACHE_HOME}" ]; then
-    export STARSHIP_CACHE=${XDG_CACHE_HOME}/starship/
-  fi
-  eval "$(starship init zsh)"
-else
-  export PS1="%F{green}%n@%m:%~%F{reset} \$ "
-fi
-
-# direnv
-if command -v direnv >/dev/null 2>&1; then
-  eval "$(direnv hook zsh)"
-fi
-
-# fzf in debian
-if command -v fzf >/dev/null 2>&1; then
-  source /usr/share/doc/fzf/examples/key-bindings.zsh
-  source /usr/share/doc/fzf/examples/completion.zsh
-fi
-
-# custom fpath in zim
-export MYFPATH=${ZIM_HOME}/completions
-if [[ ! -e "$MYFPATH" ]]; then
-  mkdir -p $MYFPATH
-fi
-fpath=("${fpath[@]}"
-  $MYFPATH
-)
-
-# Python
-export WORKON_HOME=${HOME}/.venvs
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-if [[ -e "/usr/share/virtualenvwrapper/virtualenvwrapper.sh" ]]; then
-  source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
-fi
-
-# conda
-export CONDA_HOME=$HOME/.asdf/installs/python/miniconda3-latest
-export CONDA_AUTO_ACTIVATE_BASE=false
-if [[ -e "$CONDA_HOME/etc/profile.d/conda.sh" ]]; then
-  source $CONDA_HOME/etc/profile.d/conda.sh
-fi
-
-# Rust
-export RUSTUP_DIST_SERVER="https://rsproxy.cn"
-export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
 
 # private env
 if [[ -e "$HOME/.private_env" ]]; then
   source $HOME/.private_env
+fi
+
+# public env
+if [[ -e "$HOME/.public_env" ]]; then
+  source $HOME/.public_env
 fi
 
 # init zim
