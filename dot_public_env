@@ -6,7 +6,6 @@ if [[ "$HEREIS" == "desktop" ]]; then
   alias tail="ov"
   alias cat="batcat -p"
   alias kk="zellij ka -y"
-  alias tree="et"
   alias ww="feh --bg-scale --randomize --no-fehbg ~/Pictures/Wallpapers/"
   alias _deletemydotfiles="echo DANGER"
 fi
@@ -72,3 +71,4 @@ fi
 # Rust
 export RUSTUP_DIST_SERVER="https://rsproxy.cn"
 export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
+export RUSTUP_INIT_SKIP_PATH_CHECK=yes

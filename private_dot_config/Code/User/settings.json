@@ -2,15 +2,19 @@
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[python]": {
-    "editor.defaultFormatter": "charliermarsh.ruff",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff"
   },
   "code-runner.executorMap": {
     "python": "$pythonPath -u $fullFileName"
   },
   "debug.console.fontSize": 16,
   "editor.cursorSmoothCaretAnimation": "on",
+  "editor.fontFamily": "monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 22,
   "editor.formatOnSave": true,
@@ -22,10 +26,23 @@
   "editor.mouseWheelZoom": true,
   "editor.smoothScrolling": true,
   "editor.suggestSelection": "first",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "keyword.other.dotenv",
+        "settings": {
+          "foreground": "#FF000000"
+        }
+      }
+    ]
+  },
   "editor.wordWrap": "on",
   "editor.wordWrapColumn": 100,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "files.associations": {
+    ".env*": "dotenv"
+  },
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
@@ -35,6 +52,9 @@
   "go.toolsManagement.autoUpdate": true,
   "indentRainbow.lightIndicatorStyleLineWidth": 2,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "lowlightgoerrors.ChangeColor": true,
+  "lowlightgoerrors.DefaultOpacity": "Low",
+  "python.defaultInterpreterPath": "/home/jing2uo/.venvs/tools",
   "python.venvFolders": ["/home/jing2uo/.venvs"],
   "redhat.telemetry.enabled": true,
   "sonarlint.connectedMode.connections.sonarqube": [],
@@ -42,6 +62,7 @@
   "sonarlint.pathToNodeExecutable": "/home/jing2uo/.asdf/shims/node",
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.fontFamily": "monospace",
   "terminal.integrated.fontSize": 18,
   "todo-tree.general.tags": [
     "BUG",
@@ -54,6 +75,7 @@
   ],
   "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
   "vim.easymotion": true,
+  "vim.enableNeovim": true,
   "vim.foldfix": true,
   "vim.hlsearch": true,
   "vim.incsearch": true,
@@ -76,28 +98,5 @@
   },
   "workbench.iconTheme": "vscode-icons",
   "workbench.preferredLightColorTheme": "Default Dark Modern",
-  "editor.fontFamily": "monospace",
-  "terminal.integrated.fontFamily": "monospace",
-  "python.defaultInterpreterPath": "/home/jing2uo/.venvs/tools",
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "lowlightgoerrors.ChangeColor": true,
-  "lowlightgoerrors.DefaultOpacity": "Low",
-  "files.associations": {
-    ".env*": "dotenv"
-  },
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "scope": "keyword.other.dotenv",
-        "settings": {
-          "foreground": "#FF000000"
-        }
-      }
-    ]
-  },
-  "terminal.integrated.enableMultiLinePasteWarning": false,
-  "vim.enableNeovim": true,
   "workbench.startupEditor": "none"
 }
