@@ -1,8 +1,7 @@
 [Desktop Entry]
-Name=Telegram Desktop
+Name=Telegram
 Comment=Official desktop version of Telegram messaging app
-TryExec=/opt/Telegram/Telegram
-Exec=/opt/Telegram/Telegram -- %u
+Exec=env DESKTOPINTEGRATION=1 /opt/Telegram/Telegram -- %u
 Icon=telegram
 Terminal=false
 StartupWMClass=TelegramDesktop
