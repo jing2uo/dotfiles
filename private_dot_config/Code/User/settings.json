@@ -56,7 +56,6 @@
   "lowlightgoerrors.DefaultOpacity": "Low",
   "python.defaultInterpreterPath": "/home/jing2uo/.venvs/tools",
   "python.venvFolders": ["/home/jing2uo/.venvs"],
-  "redhat.telemetry.enabled": true,
   "sonarlint.connectedMode.connections.sonarqube": [],
   "sonarlint.ls.javaHome": "/opt/jdk/",
   "sonarlint.pathToNodeExecutable": "/home/jing2uo/.asdf/shims/node",
@@ -86,7 +85,6 @@
     }
   ],
   "vim.useSystemClipboard": true,
-  "vsicons.dontShowNewVersionMessage": true,
   "window.autoDetectColorScheme": true,
   "window.dialogStyle": "custom",
   "window.openFilesInNewWindow": "on",
@@ -98,5 +96,10 @@
   },
   "workbench.iconTheme": "vscode-icons",
   "workbench.preferredLightColorTheme": "Default Dark Modern",
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "redhat.telemetry.enabled": true,
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+
 }

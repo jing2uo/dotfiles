@@ -76,6 +76,5 @@ for_window [class="Telegram"] floating enable, resize set 1000 800, border pixel
 for_window [class="Bytedance-feishu"] floating enable, resize set 1000 800, border pixel 2
 for_window [class="Pavucontrol"] floating enable, resize set 1000 800, border pixel 2
 for_window [class="wemeetapp"] floating enable, resize set 1500 800, border none
-for_window [class="anytype"] floating enable, resize set 1600 800, border pixel 2
 for_window [class="Yad" title="yad-calendar"] floating enable
 for_window [workspace=".*"] layout tabbed
