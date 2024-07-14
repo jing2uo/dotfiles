@@ -6,8 +6,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[python]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "charliermarsh.ruff"
+    "editor.formatOnSave": true
   },
   "code-runner.executorMap": {
     "python": "$pythonPath -u $fullFileName"
@@ -92,14 +91,23 @@
   "window.titleBarStyle": "custom",
   "workbench.editor.empty.hint": "hidden",
   "workbench.editorAssociations": {
-    "*.md": "vscode.markdown.preview.editor"
+    "*.md": "default"
   },
-  "workbench.iconTheme": "vscode-icons",
   "workbench.preferredLightColorTheme": "Default Dark Modern",
   "workbench.startupEditor": "none",
   "redhat.telemetry.enabled": true,
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
-
+  "workbench.iconTheme": "vscode-icons",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "codeium.enableConfig": {
+    "*": true,
+    "plaintext": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

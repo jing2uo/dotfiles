@@ -13,6 +13,8 @@ if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZDOTDIR:-${HOME}}/.zimrc ]]; then
   source ${ZIM_HOME}/zimfw.zsh init -q
 fi
 
+export ZIM_COMP=${ZIM_HOME}/completions
+mkdir -p ${ZIM_COMP}
 export WORDCHARS=${WORDCHARS/\//}
 export PATH=${HOME}/.local/bin:$PATH
 

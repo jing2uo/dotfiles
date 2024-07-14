@@ -17,3 +17,5 @@ cat <<EOF | xargs sudo rm -f
   bleachbit-root.desktop
   emacs*.desktop
 EOF
+
+rm -rf .local/share/applications/userapp-Telegram*.desktop

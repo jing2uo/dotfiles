@@ -7,12 +7,14 @@ if [[ "$HEREIS" == "desktop" ]]; then
   alias cat="batcat -p"
   alias kk="zellij ka -y"
   alias kx="kubectx"
+  alias kn="kubens"
   alias kc="kubectl"
   alias ww="feh --bg-scale --randomize --no-fehbg ~/Pictures/Wallpapers/"
   alias _deletemydotfiles="echo DANGER"
 fi
 
 alias k="eza -lh"
+alias man="tldr"
 alias y="yarn"
 alias se="sudoedit"
 alias zz="zimfw clean && zimfw install && zimfw build -v"
