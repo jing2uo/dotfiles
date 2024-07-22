@@ -1,20 +1,20 @@
 #!/bin/bash
 
+main_display="HDMI-0"
 monitor_count=$(xrandr --query | grep -w connected | wc -l)
-edp=$(xrandr --query | grep -w connected | grep -w eDP | awk '{print $1}')
 
 if [ $monitor_count -gt 1 ]; then
-	xrandr --output $edp --off
-	MONITOR=$(xrandr --query | grep -w connected | grep -v $edp | awk '{print $1}')
-	xrandr --output $MONITOR --primary --mode 1920x1080
-	sleep 5
-	killall -q polybar
-	MONITOR=$MONITOR polybar --quiet --reload mainbar &
+  xrandr --output $main_display --off
+  MONITOR=$(xrandr --query | grep -w connected | grep -v $main_display | awk '{print $1}')
+  xrandr --output $MONITOR --primary --mode 1920x1080
+  sleep 5
+  killall -q polybar
+  MONITOR=$MONITOR polybar --quiet --reload mainbar &
 else
-	xrandr --output $edp --mode 1368x768
-	sleep 5
-	killall -q polybar
-	MONITOR=$edp polybar --quiet --reload mainbar &
+  xrandr --output $main_display --mode 1920x1080
+  sleep 5
+  killall -q polybar
+  MONITOR=$edp polybar --quiet --reload mainbar &
 fi
 
 feh --bg-scale --randomize --no-fehbg ~/Pictures/Wallpapers/
