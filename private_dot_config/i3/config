@@ -62,8 +62,6 @@ bindsym $mod+Shift+6 move container to workspace number $ws6
 
 bindsym $mod+x move workspace to output right
 
-workspace 6 output HDMI-1 primary
-
 assign [class="Alacritty"] 1
 assign [class="firefox"] 2
 assign [class="Code"] 3
