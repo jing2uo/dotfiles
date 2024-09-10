@@ -2,14 +2,27 @@
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[python]": {
     "editor.formatOnSave": true
   },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
   "code-runner.executorMap": {
     "python": "$pythonPath -u $fullFileName"
+  },
+  "codeium.enableConfig": {
+    "*": true,
+    "plaintext": true
   },
   "debug.console.fontSize": 16,
   "editor.cursorSmoothCaretAnimation": "on",
@@ -55,6 +68,7 @@
   "lowlightgoerrors.DefaultOpacity": "Low",
   "python.defaultInterpreterPath": "/home/jing2uo/.venvs/tools",
   "python.venvFolders": ["/home/jing2uo/.venvs"],
+  "redhat.telemetry.enabled": true,
   "sonarlint.connectedMode.connections.sonarqube": [],
   "sonarlint.ls.javaHome": "/opt/jdk/",
   "sonarlint.pathToNodeExecutable": "/home/jing2uo/.asdf/shims/node",
@@ -93,21 +107,7 @@
   "workbench.editorAssociations": {
     "*.md": "default"
   },
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.preferredLightColorTheme": "Default Dark Modern",
-  "workbench.startupEditor": "none",
-  "redhat.telemetry.enabled": true,
-  "[yaml]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "workbench.iconTheme": "vscode-icons",
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "codeium.enableConfig": {
-    "*": true,
-    "plaintext": true
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  "workbench.startupEditor": "none"
 }

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo chown root:root /usr/local/bin/* /opt/apps/*
+sudo chown -R root:root /usr/local/bin/*
 sudo chmod a+x /usr/local/bin/* /opt/apps/*
 
 cd /usr/share/applications/
@@ -19,3 +19,4 @@ cat <<EOF | xargs sudo rm -f
 EOF
 
 rm -rf ~/.local/share/applications/userapp-Telegram*.desktop
+rm -rf ~/.local/share/applications/org.telegram*

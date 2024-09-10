@@ -1,6 +1,7 @@
 export XDG_CACHE_HOME="/tmp/${USER}/cache"
 mkdir -p $XDG_CACHE_HOME
 
+export LC_TIME=zh_CN.UTF-8
 
 if [ -d "${HOME}/.local/bin" ]; then
   mkdir -p ${HOME}/.local/bin
