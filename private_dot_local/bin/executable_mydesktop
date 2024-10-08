@@ -1,17 +1,17 @@
 #!/bin/bash
 
-main_display="HDMI-0"
+edp="eDP-1-1"
+main_display="HDMI-1-1"
 monitor_count=$(xrandr --query | grep -w connected | wc -l)
 
 if [ $monitor_count -gt 1 ]; then
-  xrandr --output $main_display --off
-  MONITOR=$(xrandr --query | grep -w connected | grep -v $main_display | awk '{print $1}')
-  xrandr --output $MONITOR --primary --mode 1920x1080
+  xrandr --output $edp --off
+  xrandr --output $main_display --primary --mode 1920x1080
   sleep 5
   killall -q polybar
-  MONITOR=$MONITOR polybar --quiet --reload mainbar &
+  MONITOR=$main_display polybar --quiet --reload mainbar &
 else
-  xrandr --output $main_display --mode 1920x1080
+  xrandr --output $edp --mode 1920x1080
   sleep 5
   killall -q polybar
   MONITOR=$edp polybar --quiet --reload mainbar &
