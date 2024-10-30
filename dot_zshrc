@@ -54,26 +54,25 @@ setopt inc_append_history
 
 
 if [[ "$HEREIS" == "desktop" ]]; then
-  # alias
-  alias less="ov"
-  alias more="ov"
-  alias head="ov"
-  alias tail="ov"
-  alias cat="batcat -p"
-  alias kk="zellij ka -y"
-  alias kx="kubectx"
-  alias kn="kubens"
-  alias kc="kubectl"
   alias _deletemydotfiles="echo DANGER"
 fi
 
+alias cat="batcat -p"
+alias curl="curl -k -s"
+alias less="ov"
+alias more="ov"
+alias head="ov"
+alias tail="ov"
 alias k="eza -lh"
+alias kx="kubectx"
+alias kn="kubens"
+alias kc="kubectl"
+alias kk="zellij ka -y"
 alias man="tldr"
 alias y="yarn"
 alias se="sudoedit"
 alias zz="zimfw clean && zimfw install && zimfw build -v"
-alias ff="fastfetch"
-alias curl="curl -k -s"
+alias yt='yt-dlp -f "bv*+ba" '
 
 # custom fpath in zim
 export MYFPATH=${ZIM_HOME}/completions

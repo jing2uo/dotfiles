@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
 Name=Snipaste
-Icon=Snipaste
-Exec="/opt/apps/snipaste.appimage"
+Icon=/opt/apps/snipaste.svg
+Exec=/opt/apps/snipaste.appimage
 Terminal=false

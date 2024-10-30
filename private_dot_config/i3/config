@@ -13,6 +13,7 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id bash ~/.local/bin/mypolybar
 exec --no-startup-id nm-applet
 exec --no-startup-id pcmanfm -d
+exec --no-startup-id sleep 5; copyq
 
 # short key
 bindsym $mod+d exec --no-startup-id rofi -show drun
@@ -63,9 +64,10 @@ bindsym $mod+x move workspace to output right
 assign [class="Alacritty"] 1
 assign [class="firefox"] 2
 assign [class="Code"] 3
-assign [class="Bytedance-feishu"] 5
-assign [class="Spicy"] 6
+assign [class="Bytedance-feishu"] 4
+assign [class="Spicy"] 5
 
+for_window [instance="copyq"] floating enable, resize set 600 400, border pixel 2
 for_window [class="Enpass"] floating enable, resize set 600 400, border pixel 2
 for_window [class="Pcmanfm"] floating enable, resize set 800 600, border pixel 2
 for_window [class="Telegram"] floating enable, resize set 1000 800, border pixel 2
