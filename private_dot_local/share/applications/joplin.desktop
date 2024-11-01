@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=Joplin
-Exec=/opt/apps/joplin.appimage
-Icon=joplin
-Type=Application
-Categories=Office;
-MimeType=text/html;x-scheme-handler/joplin;

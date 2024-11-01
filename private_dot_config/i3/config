@@ -70,7 +70,7 @@ assign [class="Spicy"] 5
 for_window [instance="copyq"] floating enable, resize set 600 400, border pixel 2
 for_window [class="Enpass"] floating enable, resize set 600 400, border pixel 2
 for_window [class="Pcmanfm"] floating enable, resize set 800 600, border pixel 2
-for_window [class="Telegram"] floating enable, resize set 1000 800, border pixel 2
+for_window [class="materialgram"] floating enable, resize set 1000 800, border pixel 2
 for_window [class="Pavucontrol"] floating enable, resize set 1000 800, border pixel 2
 for_window [class="wemeetapp"] floating enable, resize set 1500 800, border none
 for_window [class="Yad" title="yad-calendar"] floating enable
