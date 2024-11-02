@@ -11,6 +11,7 @@ cat <<EOF | xargs sudo rm -f
   htop.desktop
   display-im6.q16.desktop
   vim.desktop
+  nvim.desktop
   sqlitebrowser.desktop
   rofi-theme-selector.desktop
   rofi.desktop
