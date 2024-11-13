@@ -20,10 +20,6 @@
   "code-runner.executorMap": {
     "python": "$pythonPath -u $fullFileName"
   },
-  "codeium.enableConfig": {
-    "*": true,
-    "plaintext": true
-  },
   "debug.console.fontSize": 16,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.fontFamily": "monospace",
@@ -52,6 +48,20 @@
   "editor.wordWrapColumn": 100,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "explorer.fileNesting.patterns": {
+    "*.db": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.s3db": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.ts": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+    "tsconfig.json": "tsconfig.*.json"
+  },
   "files.associations": {
     ".env*": "dotenv"
   },
@@ -66,10 +76,11 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "lowlightgoerrors.ChangeColor": true,
   "lowlightgoerrors.DefaultOpacity": "Low",
+  "notebook.lineNumbers": "on",
   "redhat.telemetry.enabled": true,
-  "sonarlint.connectedMode.connections.sonarqube": [],
   "sonarlint.ls.javaHome": "/opt/jdk/",
   "sonarlint.pathToNodeExecutable": "/home/jing2uo/.asdf/shims/node",
+  "sqlite3-editor.ui.minimizePanel": true,
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.fontFamily": "monospace",
@@ -85,7 +96,6 @@
   ],
   "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
   "vim.easymotion": true,
-  "vim.enableNeovim": true,
   "vim.foldfix": true,
   "vim.hlsearch": true,
   "vim.incsearch": true,
@@ -103,9 +113,8 @@
   "window.titleBarStyle": "custom",
   "workbench.editor.empty.hint": "hidden",
   "workbench.editorAssociations": {
-    "*.md": "default"
+    "*.md": "vscode.markdown.preview.editor"
   },
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.preferredLightColorTheme": "Default Dark Modern",
-  "workbench.startupEditor": "none"
+  "workbench.preferredLightColorTheme": "Default Dark Modern"
 }

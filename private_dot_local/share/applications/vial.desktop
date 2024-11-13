@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Vial
-Exec=/opt/apps/vial.appimage
-Terminal=false
-Type=Application
-Icon=vial
-Comment=QMK GUI
-Categories=Utility;

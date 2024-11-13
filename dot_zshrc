@@ -57,22 +57,16 @@ if [[ "$HEREIS" == "desktop" ]]; then
   alias _deletemydotfiles="echo DANGER"
 fi
 
-alias cat="batcat -p"
 alias curl="curl -k -s"
-alias less="ov"
-alias more="ov"
-alias head="ov"
-alias tail="ov"
 alias k="eza -lh"
 alias kx="kubectx"
 alias kn="kubens"
 alias kc="kubectl"
 alias kk="zellij ka -y"
-alias man="tldr"
-alias y="yarn"
 alias se="sudoedit"
-alias zz="zimfw clean && zimfw install && zimfw build -v"
+alias y="yarn"
 alias yt='yt-dlp -f "bv*+ba" '
+alias zz="zimfw clean && zimfw install && zimfw build -v"
 
 # custom fpath in zim
 export MYFPATH=${ZIM_HOME}/completions
@@ -116,6 +110,13 @@ fi
 export RUSTUP_DIST_SERVER="https://rsproxy.cn"
 export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
 export RUSTUP_INIT_SKIP_PATH_CHECK=yes
+
+# conda
+export CONDA_HOME=$HOME/.asdf/installs/python/miniconda3-latest
+export CONDA_AUTO_ACTIVATE_BASE=false
+if [[ -e "$CONDA_HOME/etc/profile.d/conda.sh" ]]; then
+  source $CONDA_HOME/etc/profile.d/conda.sh
+fi
 
 # init zim
 source ${ZIM_HOME}/init.zsh

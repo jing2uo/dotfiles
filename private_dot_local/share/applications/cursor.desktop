@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Cursor
-Comment=AI Code Editing.
-GenericName=Text Editor
-Exec=/opt/apps/cursor.appimage
-Icon=cursor
-Type=Application
-Categories=Development;IDE;
-MimeType=text/plain;inode/directory;

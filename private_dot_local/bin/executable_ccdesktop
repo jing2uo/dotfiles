@@ -3,21 +3,22 @@
 sudo chown -R root:root /usr/local/bin/*
 sudo chmod a+x /usr/local/bin/* /opt/apps/* ~/.local/bin/*
 
-cd /usr/share/applications/
+files=(
+  "pcmanfm-desktop-pref.desktop",
+  "ranger.desktop"
+  "htop.desktop"
+  "display-im7.q16.desktop"
+  "vim.desktop"
+  "nvim.desktop"
+  "sqlitebrowser.desktop"
+  "rofi-theme-selector.desktop"
+  "rofi.desktop"
+  "bleachbit-root.desktop"
+  "emacs-*.desktop"
+  "emacsclient-*.desktop"
+)
 
-cat <<EOF | xargs sudo rm -f
-  pcmanfm.desktop
-  ranger.desktop
-  htop.desktop
-  display-im6.q16.desktop
-  vim.desktop
-  nvim.desktop
-  sqlitebrowser.desktop
-  rofi-theme-selector.desktop
-  rofi.desktop
-  bleachbit-root.desktop
-  emacs*.desktop
-EOF
+for file in "${files[@]}"; do
+  sudo find /usr/share/applications -name "${file}" -exec rm -f {} +
+done
 
-rm -rf ~/.local/share/applications/userapp-Telegram*.desktop
-rm -rf ~/.local/share/applications/org.telegram*
