@@ -4,10 +4,10 @@ sudo chown -R root:root /usr/local/bin/*
 sudo chmod a+x /usr/local/bin/* /opt/apps/* ~/.local/bin/*
 
 files=(
-  "pcmanfm.desktop"
+  "pcmanfm-desktop-pref.desktop",
   "ranger.desktop"
   "htop.desktop"
-  "display-im6.q16.desktop"
+  "display-im7.q16.desktop"
   "vim.desktop"
   "nvim.desktop"
   "sqlitebrowser.desktop"
