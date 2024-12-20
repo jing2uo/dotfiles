@@ -34,9 +34,7 @@
 	verbosity = mesg
 	corner_radius = 5
 	force_xinerama = false
-	mouse_left_click = do_action
-	mouse_middle_click = close_all
-	mouse_right_click = close_current
+	mouse_left_click = close_all
 
 [urgency_low]
 	# IMPORTANT: colors have to be defined in quotation marks.

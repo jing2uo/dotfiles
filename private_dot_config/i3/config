@@ -73,7 +73,7 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+x move workspace to output right
 
 assign [class="Alacritty"] 1
-assign [class="zen-alpha"] 2
+assign [class="zen-beta"] 2
 assign [class="Code"] 3
 assign [class="wemeetapp"] 4
 assign [class="Spicy"] 6
