@@ -1,16 +1,15 @@
 #!/bin/bash
 
 sudo chown -R root:root /usr/local/bin/*
-sudo chmod a+x /usr/local/bin/* /opt/apps/* ~/.local/bin/*
+sudo chmod a+x /usr/local/bin/* ~/.local/bin/*
 
 files=(
   "pcmanfm-desktop-pref.desktop",
-  "ranger.desktop"
+  "gparted.desktop"
   "htop.desktop"
   "display-im7.q16.desktop"
   "vim.desktop"
   "nvim.desktop"
-  "sqlitebrowser.desktop"
   "rofi-theme-selector.desktop"
   "rofi.desktop"
   "bleachbit-root.desktop"

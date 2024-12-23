@@ -116,5 +116,6 @@
     "*.md": "vscode.markdown.preview.editor"
   },
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.preferredLightColorTheme": "Default Dark Modern"
+  "workbench.preferredLightColorTheme": "Default Dark Modern",
+  "chat.commandCenter.enabled": false
 }
