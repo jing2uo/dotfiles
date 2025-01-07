@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=SiYuan
+Comment=A privacy-first personal knowledge management system that supports complete offline use, as well as end-to-end encrypted data sync
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=start-siyuan.sh --file-forwarding org.b3log.siyuan @@u %u @@
+Icon=org.b3log.siyuan
+StartupWMClass=SiYuan
+Type=Application
+Categories=Office;
+X-GNOME-SingleWindow=true
+X-SingleMainWindow=true
+X-Flatpak=org.b3log.siyuan
