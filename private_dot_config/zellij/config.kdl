@@ -3,13 +3,12 @@ keybinds {
         bind "F12" { SwitchToMode "Tmux"; }
     }
     shared_except "locked" {
-        bind "Alt n" { NewPane; }
-        bind "Alt j" "Alt Left" { MoveFocusOrTab "Left"; }
-        bind "Alt l" "Alt Right" { MoveFocusOrTab "Right"; }
-        bind "Alt k" "Alt Down" { MoveFocus "Down"; }
-        bind "Alt i" "Alt Up" { MoveFocus "Up"; }
-        bind "Alt ." "Alt >" { Resize "Increase"; }
-        bind "Alt ," "Alt <" { Resize "Decrease"; }
+        bind "Super j" "Super Left" { MoveFocusOrTab "Left"; }
+        bind "Super l" "Super Right" { MoveFocusOrTab "Right"; }
+        bind "Super k" "Super Down" { MoveFocus "Down"; }
+        bind "Super i" "Super Up" { MoveFocus "Up"; }
+        bind "Super ." "Super >" { Resize "Increase"; }
+        bind "Super ," "Super <" { Resize "Decrease"; }
     }
     tmux {
         bind "F12" { Write 2; SwitchToMode "Normal"; }

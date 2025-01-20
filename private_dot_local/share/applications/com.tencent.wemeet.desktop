@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=WemeetApp
+Keywords=wemeet;tencent;meeting;
+Exec=env 'QT_QPA_PLATFORM=wayland;xcb' QT_SCALE_FACTOR=1.6 /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=wemeetapp --file-forwarding com.tencent.wemeet @@u %u @@
+Icon=com.tencent.wemeet
+Type=Application
+Terminal=false
+Categories=AudioVideo;
+MimeType=x-scheme-handler/wemeet;
+X-Flatpak-RenamedFrom=wemeet.desktop;
+X-Flatpak=com.tencent.wemeet

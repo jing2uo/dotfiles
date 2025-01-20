@@ -1,7 +1,9 @@
 #!/bin/bash
 
-if wmctrl -l | grep -q "Alacritty"; then
-	wmctrl -xa "Alacritty"
+count=$(hyprctl clients | grep "class: kitty" | wc -l)
+
+if [ $count -gt 0 ]; then
+  hyprctl dispatch focuswindow "kitty"
 else
-	alacritty
+  kitty
 fi

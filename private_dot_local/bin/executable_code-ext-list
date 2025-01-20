@@ -1,3 +1,0 @@
-#!/bin/bash
-
-code --list-extensions | sort | uniq >~/.config/Code/User/ext.list

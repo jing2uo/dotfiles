@@ -21,3 +21,15 @@ for file in "${files[@]}"; do
   sudo find /usr/share/applications -name "${file}" -exec rm -f {} +
 done
 
+files=(
+  "org.libreoffice.LibreOffice.base.desktop"
+  "org.libreoffice.LibreOffice.calc.desktop"
+  "org.libreoffice.LibreOffice.draw.desktop"
+  "org.libreoffice.LibreOffice.impress.desktop"
+  "org.libreoffice.LibreOffice.math.desktop"
+  "org.libreoffice.LibreOffice.writer.desktop"
+  "org.libreoffice.LibreOffice.xsltfilter.desktop"
+)
+for file in "${files[@]}"; do
+  sudo find /var/lib/flatpak/exports/share/applications/ -name "${file}" -exec rm -f {} +
+done

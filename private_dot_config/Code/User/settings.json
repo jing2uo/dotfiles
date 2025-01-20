@@ -6,7 +6,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -113,9 +113,13 @@
   "window.titleBarStyle": "custom",
   "workbench.editor.empty.hint": "hidden",
   "workbench.editorAssociations": {
-    "*.md": "vscode.markdown.preview.editor"
+    "*.md": "vscode.markdown.preview.editor",
+    "{git,gitlens,git-graph}:/**/*.{md,csv,svg}": "default"
   },
   "workbench.iconTheme": "material-icon-theme",
   "workbench.preferredLightColorTheme": "Default Dark Modern",
-  "chat.commandCenter.enabled": false
+  "chat.commandCenter.enabled": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "vscode-office.editorTheme": "Github Dark",
+  "jupyter.askForKernelRestart": false
 }

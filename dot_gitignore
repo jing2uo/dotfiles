@@ -5,8 +5,7 @@
 
 # python
 __pycache__
+.venv
 
 # nodejs
 node_modules
-
-

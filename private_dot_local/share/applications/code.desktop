@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=Visual Studio Code
+Name=Code
 Comment=Code Editing. Redefined.
 GenericName=Text Editor
-Exec=/opt/code/code %F
+Exec=/opt/code/code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto --enable-wayland-ime --unity-launch %F
 Icon=vscode
 Type=Application
 StartupNotify=false
@@ -15,5 +15,5 @@ Keywords=vscode;
 [Desktop Action new-empty-window]
 Name=New Empty Window
 Name[zh_CN]=新建空窗口
-Exec=/opt/code/code --new-window %F
+Exec=/opt/code/code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto --enable-wayland-ime --new-window %F
 Icon=vscode
