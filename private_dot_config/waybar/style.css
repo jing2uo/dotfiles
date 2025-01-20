@@ -1,7 +1,7 @@
 * {
   min-height: 0;
   min-width: 0;
-  font-family: "Sans";
+  font-family: "monospace";
   font-size: 16px;
   font-weight: 600;
 }
@@ -41,33 +41,16 @@ window#waybar {
 
 #clock,
 #pulseaudio,
-#custom-logo,
-#custom-power,
-#custom-spotify,
-#custom-notification,
 #cpu,
 #tray,
+#backlight,
 #battery,
-#window,
-#mpris {
+#window {
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
   /* background-color: #181825; */
   background-color: #1e1e2e;
-}
-
-#mpris.playing {
-  color: #a6e3a1;
-}
-
-#mpris.paused {
-  color: #9399b2;
-}
-
-#custom-sep {
-  padding: 0px;
-  color: #585b70;
 }
 
 window#waybar.empty #window {
@@ -102,11 +85,7 @@ window#waybar.empty #window {
   color: #a6adc8;
 }
 
-#custom-logo {
-  color: #89b4fa;
-}
-
-#custom-power {
+#backlight {
   color: #f38ba8;
 }
 

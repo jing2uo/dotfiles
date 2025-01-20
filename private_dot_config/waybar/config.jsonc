@@ -11,6 +11,7 @@
   "modules-right": [
     "cpu",
     "pulseaudio",
+    "backlight",
     "clock",
     "clock#simpleclock",
     "battery",
@@ -31,9 +32,14 @@
     "icon-size": 24,
     "spacing": 10,
   },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "  {percent}%",
+    "scroll-step": 1.0,
+  },
   "clock#simpleclock": {
     "tooltip": false,
-    "format": " {:%H:%M}",
+    "format": "  {:%H:%M}",
   },
   "clock": {
     "format": "  {:L%a %d %b}",
@@ -64,7 +70,8 @@
       "headphone": "",
       "default": [" ", " ", " "],
     },
-    "on-click": "pavucontrol",
+    "on-click-right": "pavucontrol",
+    "on-click": "pactl set-sink-mute 0 toggle",
     "scroll-step": 2.0,
   },
   "battery": {
