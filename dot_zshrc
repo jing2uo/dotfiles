@@ -67,7 +67,6 @@ alias se="sudoedit"
 alias y="yarn"
 alias yt='yt-dlp -f "bv*+ba" '
 alias zz="zimfw clean && zimfw install && zimfw build -v"
-alias code="/opt/code/code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto"
 
 # custom fpath in zim
 export MYFPATH=${ZIM_HOME}/completions
@@ -119,7 +118,6 @@ export CONDA_AUTO_ACTIVATE_BASE=false
 if [[ -e "$CONDA_HOME/etc/profile.d/conda.sh" ]]; then
   source $CONDA_HOME/etc/profile.d/conda.sh
 fi
-
 
 # init zim
 source ${ZIM_HOME}/init.zsh

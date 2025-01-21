@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=BlueMail
-Exec=/opt/BlueMail/bluemail --no-sandbox  --enable-features=UseOzonePlatform --ozone-platform=wayland %U
+Exec=/opt/BlueMail/bluemail --no-sandbox %U
 Terminal=false
 Type=Application
 Icon=bluemail
