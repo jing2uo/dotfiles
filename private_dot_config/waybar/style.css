@@ -41,7 +41,6 @@ window#waybar {
 
 #clock,
 #pulseaudio,
-#cpu,
 #tray,
 #backlight,
 #battery,
@@ -55,10 +54,6 @@ window#waybar {
 
 window#waybar.empty #window {
   background-color: transparent;
-}
-
-#cpu {
-  color: #94e2d5;
 }
 
 #battery {

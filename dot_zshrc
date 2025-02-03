@@ -78,11 +78,8 @@ fpath=("${fpath[@]}"
 )
 
 # asdf-vm
-if [[ -e "$HOME/.asdf/asdf.sh" ]]; then
-  source $HOME/.asdf/asdf.sh
-  fpath=("${fpath[@]}"
-    $HOME/.asdf/completions/
-  )
+if command -v asdf >/dev/null 2>&1; then
+  export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 fi
 
 

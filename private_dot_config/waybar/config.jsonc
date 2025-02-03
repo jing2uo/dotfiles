@@ -9,12 +9,11 @@
   "fixed-center": true,
   "modules-left": ["hyprland/workspaces", "hyprland/window"],
   "modules-right": [
-    "cpu",
-    "pulseaudio",
+    "battery",
     "backlight",
+    "pulseaudio",
     "clock",
     "clock#simpleclock",
-    "battery",
     "tray",
   ],
   "hyprland/workspaces": {
@@ -31,6 +30,7 @@
       "8": " ",
       "9": " ",
       "10": " ",
+      "default": " "
 	  },
     "all-outputs": true,
     "active-only": false,
@@ -68,11 +68,6 @@
       "on-scroll": 1,
     },
     "tooltip-format": "<span color='#cdd6f4' font='Lexend 16'><tt><small>{calendar}</small></tt></span>",
-  },
-  "cpu": {
-    "format": "  {usage}%",
-    "tooltip": true,
-    "interval": 1,
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",
