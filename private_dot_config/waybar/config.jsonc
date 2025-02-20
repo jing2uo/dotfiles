@@ -7,13 +7,16 @@
   "gtk-layer-shell": true,
   "passthrough": false,
   "fixed-center": true,
-  "modules-left": ["hyprland/workspaces", "hyprland/window"],
+  "modules-left": [
+    "hyprland/workspaces",
+    "hyprland/window"],
   "modules-right": [
     "battery",
     "backlight",
     "pulseaudio",
     "clock",
     "clock#simpleclock",
+    "custom/keyboard",
     "tray",
   ],
   "hyprland/workspaces": {
@@ -88,5 +91,12 @@
         "critical": 15
     },
     "format": "  {capacity}%",
-  }
+  },
+  "custom/keyboard": {
+    "format": "  {}",
+    "interval": 3,
+    "exec": "~/.config/waybar/kbd.sh",
+    "on-click": "~/.config/waybar/kbd.sh --toggle",
+    "tooltip-format": "Toggle Laptop Keyboard"
+  },
 }

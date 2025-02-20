@@ -36,11 +36,12 @@ if [[ -n "${terminfo[kcud1]}" ]]; then
   bindkey "${terminfo[kcud1]}" down-line-or-beginning-search
 fi
 
-export HISTFILE=${ZIM_HOME}/zsh_history
 
 # History config
-export HISTSIZE=100000
-export SAVEHIST=100000
+export HISTSIZE=10000000
+export SAVEHIST=10000000
+export HISTFILE=${ZIM_HOME}/zsh_history
+
 setopt append_history
 setopt share_history
 setopt hist_expire_dups_first

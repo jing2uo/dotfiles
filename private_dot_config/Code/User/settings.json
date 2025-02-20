@@ -117,9 +117,12 @@
     "{git,gitlens,git-graph}:/**/*.{md,csv,svg}": "default"
   },
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.preferredLightColorTheme": "Default Dark Modern",
-  "chat.commandCenter.enabled": false,
   "diffEditor.ignoreTrimWhitespace": false,
   "vscode-office.editorTheme": "Github Dark",
-  "jupyter.askForKernelRestart": false
+  "jupyter.askForKernelRestart": false,
+  "workbench.preferredLightColorTheme": "Default Dark Modern",
+  "chat.commandCenter.enabled": false,
+  "window.customTitleBarVisibility": "auto",
+  "workbench.navigationControl.enabled": false,
+  "window.commandCenter": false
 }

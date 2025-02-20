@@ -1,0 +1,27 @@
+#!/usr/bin/env sh
+#
+# when run in remote terminal, use the remote cli
+if [ -n "$VSCODE_IPC_HOOK_CLI" ]; then
+  REMOTE_CLI="$(which -a 'code' | grep /remote-cli/)"
+  if [ -n "$REMOTE_CLI" ]; then
+    "$REMOTE_CLI" "$@"
+    exit $?
+  fi
+fi
+
+# If root, exit
+if [ "$(id -u)" = "0" ]; then
+    echo "Don't start Visual Studio Code as a super user."
+    exit 1
+fi
+
+export ELECTRON_OZONE_PLATFORM_HINT=auto
+export ELECTRON_RUN_AS_NODE=1
+
+VSCODE_PATH="/opt/code"
+ELECTRON="$VSCODE_PATH/code"
+CLI="$VSCODE_PATH/resources/app/out/cli.js"
+FLAGS="--enable-wayland-ime"
+
+"$ELECTRON" "$CLI" "$@" "$FLAGS"
+exit $?

@@ -7,7 +7,6 @@ GenericName=Enpass Password Manager
 Icon=enpass
 Icon[en_IN]=enpass
 Terminal=false
-Exec=env 'QT_QPA_PLATFORM=wayland;xcb' QT_SCALE_FACTOR=1.6 /opt/enpass/Enpass %U
+Exec=env QT_QPA_PLATFORM=xcb QT_SCALE_FACTOR=1.6 /opt/enpass/Enpass %U
 MimeType=x-scheme-handler/enpassauth;x-scheme-handler/enpasscard;x-scheme-handler/enpassstart;x-scheme-handler/enpass;x-scheme-handler/cloudkit-7adb8cc6tf.in.sinew.walletx;x-scheme-handler/enpassshare;application/enpasscard;
 Categories=Utility
-

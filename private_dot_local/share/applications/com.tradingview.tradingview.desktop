@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=TradingView
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=tradingview --file-forwarding com.tradingview.tradingview --enable-features=UseOzonePlatform --ozone-platform=wayland @@u %U @@
+Terminal=false
+Type=Application
+Icon=com.tradingview.tradingview
+StartupWMClass=TradingView
+Comment=Experience extra power, extra speed and extra flexibility, all with the same UX you know and love.
+MimeType=x-scheme-handler/tradingview;
+Categories=Finance;Office;
+X-Flatpak=com.tradingview.tradingview

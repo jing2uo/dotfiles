@@ -2,6 +2,7 @@
 	quotePath = false
 	excludesfile = ~/.gitignore
 	compression = 0
+	filemode = false
 [push]
 	default = current
 [color]

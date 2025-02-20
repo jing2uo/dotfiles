@@ -31,5 +31,5 @@ files=(
   "org.libreoffice.LibreOffice.xsltfilter.desktop"
 )
 for file in "${files[@]}"; do
-  sudo find /var/lib/flatpak/exports/share/applications/ -name "${file}" -exec rm -f {} +
+  sudo find ~/.local/share/flatpak/exports/share/applications/ -name "${file}" -exec rm -f {} +
 done
