@@ -7,17 +7,16 @@
   "gtk-layer-shell": true,
   "passthrough": false,
   "fixed-center": true,
-  "modules-left": [
-    "hyprland/workspaces",
-    "hyprland/window"],
+  "modules-left": ["hyprland/workspaces", "hyprland/window"],
   "modules-right": [
     "battery",
+    "custom/cpupower",
     "backlight",
     "pulseaudio",
     "clock",
     "clock#simpleclock",
     "custom/keyboard",
-    "tray",
+    "tray"
   ],
   "hyprland/workspaces": {
     "on-click": "activate",
@@ -34,69 +33,76 @@
       "9": " ",
       "10": " ",
       "default": " "
-	  },
+    },
     "all-outputs": true,
-    "active-only": false,
+    "active-only": false
   },
   "hyprland/window": {
-    "format": "{class}",
+    "format": "{class}"
   },
   "tray": {
     "show-passive-items": true,
     "icon-size": 24,
-    "spacing": 10,
+    "spacing": 10
   },
   "backlight": {
     "device": "intel_backlight",
     "format": "  {percent}%",
-    "scroll-step": 1.0,
+    "scroll-step": 1.0
   },
   "clock#simpleclock": {
     "tooltip": false,
-    "format": "  {:%H:%M}",
+    "format": "  {:%H:%M}"
   },
   "clock": {
     "format": "  {:L%a %d %b}",
     "locale": "en_US.UTF-8",
     "calendar": {
       "format": {
-		  	"months":     "<span color='#ffead3'><b>{}</b></span>",
-		  	"days":       "<span color='#ecc6d9'><b>{}</b></span>",
-		  	"weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
-		  	"weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
-		  	"today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
-		  },
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+      },
       "mode": "month",
       "mode-mon-col": 1,
-      "on-scroll": 1,
+      "on-scroll": 1
     },
-    "tooltip-format": "<span color='#cdd6f4' font='Lexend 16'><tt><small>{calendar}</small></tt></span>",
+    "tooltip-format": "<span color='#cdd6f4' font='Lexend 16'><tt><small>{calendar}</small></tt></span>"
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",
     "format-muted": "  muted",
     "format-icons": {
       "headphone": " ",
-      "default": [" ", " "],
+      "default": [" ", " "]
     },
     "on-click-right": "pavucontrol",
     "on-click": "pactl set-sink-mute 0 toggle",
-    "scroll-step": 1.0,
+    "scroll-step": 1.0
   },
   "battery": {
     "bat": "BAT0",
     "interval": 60,
     "states": {
-        "warning": 30,
-        "critical": 15
+      "warning": 30,
+      "critical": 15
     },
-    "format": "  {capacity}%",
+    "format": "  {capacity}%"
   },
   "custom/keyboard": {
     "format": "  {}",
     "interval": 3,
     "exec": "~/.config/waybar/kbd.sh",
     "on-click": "~/.config/waybar/kbd.sh --toggle",
-    "tooltip-format": "Toggle Laptop Keyboard"
+    "tooltip-format": "Toggle Laptop KBD"
   },
+  "custom/cpupower": {
+    "format": "󱐋 {}",
+    "interval": 3,
+    "exec": "~/.config/waybar/cpupower.sh",
+    "on-click": "~/.config/waybar/cpupower.sh --set",
+    "tooltip-format": "Set CPU governor"
+  }
 }

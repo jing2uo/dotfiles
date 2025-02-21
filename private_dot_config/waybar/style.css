@@ -45,6 +45,7 @@ window#waybar {
 #backlight,
 #battery,
 #custom-keyboard,
+#custom-cpupower,
 #window {
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
@@ -87,6 +88,10 @@ window#waybar.empty #window {
 
 #custom-keyboard{
   color: #a48ca0;
+}
+
+#custom-cpupower{
+    color: #1eb78c;
 }
 
 tooltip {
