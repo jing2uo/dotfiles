@@ -16,6 +16,7 @@
     "clock",
     "clock#simpleclock",
     "custom/keyboard",
+    "custom/swww",
     "tray"
   ],
   "hyprland/workspaces": {
@@ -104,5 +105,11 @@
     "exec": "~/.config/waybar/cpupower.sh",
     "on-click": "~/.config/waybar/cpupower.sh --set",
     "tooltip-format": "Set CPU governor"
+  },
+  "custom/swww": {
+        "format": "",
+        "exec": "~/.config/waybar/swww.sh",
+        "interval": 300,
+        "tooltip": false
   }
 }

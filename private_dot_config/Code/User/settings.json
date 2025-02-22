@@ -124,5 +124,6 @@
   "chat.commandCenter.enabled": false,
   "window.customTitleBarVisibility": "auto",
   "workbench.navigationControl.enabled": false,
-  "window.commandCenter": false
+  "window.commandCenter": false,
+  "remote.SSH.configFile": "~/.ssh/config"
 }
