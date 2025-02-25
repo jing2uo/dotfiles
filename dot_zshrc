@@ -63,7 +63,6 @@ alias k="eza -lh"
 alias kx="kubectx"
 alias kn="kubens"
 alias kc="kubectl"
-alias kk="zellij ka -y"
 alias se="sudoedit"
 alias y="yarn"
 alias yt='yt-dlp -f "bv*+ba" '

@@ -17,6 +17,7 @@
     "clock#simpleclock",
     "custom/keyboard",
     "custom/swww",
+    "custom/reminder",
     "tray"
   ],
   "hyprland/workspaces": {
@@ -107,9 +108,15 @@
     "tooltip-format": "Set CPU governor"
   },
   "custom/swww": {
-        "format": "",
-        "exec": "~/.config/waybar/swww.sh",
-        "interval": 300,
-        "tooltip": false
+    "format": "",
+    "exec": "~/.config/waybar/swww.sh",
+    "interval": 300,
+    "tooltip": false
+  },
+  "custom/reminder": {
+    "format": "",
+    "exec": "~/.config/waybar/reminder.sh",
+    "interval": 3000,
+    "tooltip": false
   }
 }
