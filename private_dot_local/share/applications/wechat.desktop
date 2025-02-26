@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Weixin
+Exec=flatpak run --command=bottles-cli com.usebottles.bottles run -p Weixin -b 'tencent' -- %u
+Type=Application
+Terminal=false
+Categories=Application;
+Icon=/home/jing2uo/.var/app/com.usebottles.bottles/data/bottles/bottles/tencent/icons/Weixin.png
+Comment=Launch Weixin using Bottles.
+StartupWMClass=Weixin

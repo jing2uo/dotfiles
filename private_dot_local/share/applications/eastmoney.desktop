@@ -1,9 +1,9 @@
 [Desktop Entry]
 Name=eastmoney
-Exec=flatpak run --command=bottles-cli com.usebottles.bottles run -p 'eastmoney' -b 'eastmoney' -- %u
+Exec=flatpak run --command=bottles-cli com.usebottles.bottles run -p eastmoney -b 'eastmoney' -- %u
 Type=Application
 Terminal=false
 Categories=Application;
 Icon=/home/jing2uo/.var/app/com.usebottles.bottles/data/bottles/bottles/eastmoney/icons/eastmoney.png
-Comment=Launch 东方财富 using Bottles.
+Comment=Launch eastmoney using Bottles.
 StartupWMClass=eastmoney

@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=CopyQ
-Exec=env QT_QPA_PLATFORM=xcb QT_SCALE_FACTOR=1.6 copyq --start-server
-Icon=copyq
-GenericName=Clipboard Manager
-Comment=A cut & paste history utility
-Type=Application
-Terminal=false
-Categories=Qt;KDE;Utility;
