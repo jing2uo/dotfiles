@@ -65,6 +65,7 @@ alias k="eza -lh"
 alias kx="kubectx"
 alias kn="kubens"
 alias kc="kubectl"
+alias ssh="kitty +kitten ssh"
 alias y="yarn"
 alias yt='yt-dlp -f "bv*+ba" '
 alias zz="zimfw clean && zimfw install && zimfw build -v"
