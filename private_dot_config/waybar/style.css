@@ -42,10 +42,8 @@ window#waybar {
 #clock,
 #pulseaudio,
 #tray,
-#backlight,
 #battery,
-#custom-keyboard,
-#custom-cpupower,
+#custom-swaync,
 #window {
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
@@ -82,16 +80,8 @@ window#waybar.empty #window {
   color: #a6adc8;
 }
 
-#backlight {
+#custom-swaync {
   color: #f38ba8;
-}
-
-#custom-keyboard{
-  color: #a48ca0;
-}
-
-#custom-cpupower{
-    color: #1eb78c;
 }
 
 tooltip {

@@ -1,0 +1,209 @@
+@define-color cc-bg #11111b;
+@define-color noti-border-color #181825;
+@define-color noti-bg #181825;
+@define-color noti-bg-darker #181825;
+@define-color noti-bg-hover rgb(27, 27, 43);
+@define-color noti-bg-focus rgba(27, 27, 27, 0.6);
+@define-color text-color #f9f5d7;
+@define-color text-color-disabled #bdae93;
+@define-color bg-selected #2384ce;
+
+* {
+    font-family: IosevkaTermNerd;
+    font-weight: bold;
+    font-size: 14px
+}
+
+.control-center .notification-row:focus,
+.control-center .notification-row:hover {
+    opacity: 1;
+    background: @noti-bg-darker
+}
+
+.notification-row {
+    outline: none;
+    margin: 20px;
+    padding: 0;
+}
+
+.notification {
+    background: transparent;
+    margin: 0px;
+}
+
+.notification-content {
+    background: @cc-bg;
+    padding: 7px;
+    border-radius: 5px;
+    border: 3px solid #1e1e2e;
+    margin: 0;
+}
+
+.close-button {
+    background: #2384ce;
+    color: @cc-bg;
+    text-shadow: none;
+    padding: 0;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.close-button:hover {
+    box-shadow: none;
+    background: #2384ce;
+    transition: all .15s ease-in-out;
+    border: none
+}
+
+.notification-action {
+    color: #ebdbb2;
+    border: 2px solid #85796f;
+    border-top: none;
+    border-radius: 5px;
+    background: #32302F;
+}
+
+.notification-default-action:hover,
+.notification-action:hover {
+    color: #ebdbb2;
+    background: #32302F;
+}
+
+.summary {
+	padding-top: 7px;
+    font-size: 13px;
+    color: #ebdbb2;
+}
+
+.time {
+    font-size: 11px;
+    color: #2384ce;
+    margin-right: 24px
+}
+
+.body {
+    font-size: 12px;
+    color: #ebdbb2;
+}
+
+.control-center {
+    background: @cc-bg;
+    border: 2px solid #1e1e2e;
+    border-radius: 5px;
+}
+
+.control-center-list {
+    background: transparent
+}
+
+.control-center-list-placeholder {
+    opacity: .5
+}
+
+.floating-notifications {
+    background: transparent
+}
+
+.blank-window {
+    background: alpha(black, 0.1)
+}
+
+.widget-dnd {
+    background: @noti-bg-darker;
+    padding: 5px 10px;
+    margin: 5px 10px 10px 10px;
+    border-radius: 5px;
+    font-size: large;
+    color: #f2e5bc;
+}
+
+.widget-dnd>switch {
+    border-radius: 5px;
+    background: #665c54;
+}
+
+.widget-dnd>switch:checked {
+    background: #2384ce;
+    border: 1px solid #2384ce;
+}
+
+.widget-dnd>switch slider {
+    background: @cc-bg;
+    border-radius: 5px
+}
+
+.widget-dnd>switch:checked slider {
+    background: @cc-bg;
+    border-radius: 5px
+}
+
+.widget-mpris {
+    color: @text-color;
+    background: @cc-bg;
+    padding: 5px 10px 0px 0px;
+    margin: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+
+.widget-mpris > box > button {
+    border-radius: 5px;
+}
+
+.widget-mpris-player {
+    padding: 5px 5px;
+    margin: 5px
+}
+
+.widget-mpris-title {
+    font-weight: 700;
+    font-size: 1.25rem
+}
+
+.widget-mpris-subtitle {
+    font-size: 1.1rem
+}
+
+.widget-volume {
+    border-radius: 5px;
+}
+
+.widget-backlight {
+    border-radius: 5px;
+}
+
+.widget-buttons-grid {
+    font-size: 32;
+    padding: 5px;
+    margin: 5px 10px 10px 10px;
+    border-radius: 5px;
+    background: @noti-bg-darker;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button {
+    font-size: 32;
+    margin: 3px;
+    background: @cc-bg;
+    border-radius: 5px;
+    color: @text-color
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button:hover {
+    background: #2384ce;
+    color: @cc-bg;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked {
+    background: #1c7abc;
+}
+
+
+.widget-menubar>box>.menu-button-bar>button {
+    border: none;
+    background: transparent
+}
+
+.topbar-buttons>button {
+    border: none;
+    background: transparent
+}

@@ -1,0 +1,71 @@
+{
+    "$schema": "/etc/xdg/swaync/configSchema.json",
+    "positionX": "right",
+    "positionY": "top",
+    "layer": "overlay",
+    "control-center-margin-top": 10,
+    "control-center-margin-bottom": 10,
+    "control-center-margin-right": 10,
+    "control-center-margin-left": 10,
+    "notification-icon-size": 64,
+    "notification-body-image-height": 100,
+    "notification-body-image-width": 200,
+    "timeout": 3,
+    "timeout-low": 2,
+    "timeout-critical": 0,
+    "fit-to-screen": false,
+    "control-center-width": 350,
+    "control-center-height": 738,
+    "notification-window-width": 350,
+    "keyboard-shortcuts": true,
+    "image-visibility": "when-available",
+    "transition-time": 200,
+    "hide-on-clear": true,
+    "hide-on-action": true,
+    "script-fail-notify": true,
+    "widgets": [
+        "dnd",
+        "notifications",
+        "mpris",
+        "volume",
+        "backlight",
+        "buttons-grid"
+    ],
+    "widget-config": {
+        "dnd": {
+            "text": "专注模式"
+        },
+        "mpris": {
+            "image-size": 96,
+            "image-radius": 5
+        },
+        "volume": {
+            "label": "󰕾 "
+        },
+        "backlight": {
+            "label": " ",
+            "device": "intel_backlight",
+            "min": 10
+        },
+        "buttons-grid": {
+            "actions": [
+                {
+                    "label": " ",
+                    "command": "wlogout"
+                },
+                {
+                    "label": " ",
+                    "type": "toggle",
+                    "command": "set-kbd --toggle",
+                    "update-command": "bash -c '[[ $(set-kbd) == \"Off\" ]] && echo true || echo false'"
+                },
+                {
+                    "label": " ",
+                    "type": "toggle",
+                    "command": "set-powersave --toggle",
+                    "update-command": "bash -c '[[ $(set-powersave) == \"powersave\" ]] && echo true || echo false'"
+                }
+            ]
+        }
+    }
+}

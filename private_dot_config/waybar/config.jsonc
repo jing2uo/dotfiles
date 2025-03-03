@@ -10,12 +10,10 @@
   "modules-left": ["hyprland/workspaces", "hyprland/window"],
   "modules-right": [
     "battery",
-    "custom/cpupower",
-    "backlight",
-    "pulseaudio",
-    "clock",
     "clock#simpleclock",
-    "custom/keyboard",
+    "clock",
+    "pulseaudio",
+    "custom/swaync",
     "custom/swww",
     "custom/reminder",
     "tray"
@@ -47,17 +45,12 @@
     "icon-size": 24,
     "spacing": 10
   },
-  "backlight": {
-    "device": "intel_backlight",
-    "format": "  {percent}%",
-    "scroll-step": 1.0
-  },
   "clock#simpleclock": {
     "tooltip": false,
     "format": "  {:%H:%M}"
   },
   "clock": {
-    "format": "  {:L%a %d %b}",
+    "format": " ",
     "locale": "en_US.UTF-8",
     "calendar": {
       "format": {
@@ -74,15 +67,15 @@
     "tooltip-format": "<span color='#cdd6f4' font='Lexend 16'><tt><small>{calendar}</small></tt></span>"
   },
   "pulseaudio": {
-    "format": "{icon} {volume}%",
-    "format-muted": "  muted",
+    "format": "{icon}",
+    "format-muted": " ",
     "format-icons": {
       "headphone": " ",
-      "default": [" ", " "]
+      "default": " "
     },
     "on-click-right": "pavucontrol",
     "on-click": "pactl set-sink-mute 0 toggle",
-    "scroll-step": 1.0
+    "tooltip-format": "{volume}%"
   },
   "battery": {
     "bat": "BAT0",
@@ -93,29 +86,34 @@
     },
     "format": "  {capacity}%"
   },
-  "custom/keyboard": {
-    "format": "  {}",
-    "interval": 3,
-    "exec": "~/.config/waybar/kbd.sh",
-    "on-click": "~/.config/waybar/kbd.sh --toggle",
-    "tooltip-format": "Toggle Laptop KBD"
-  },
-  "custom/cpupower": {
-    "format": "󱐋 {}",
-    "interval": 3,
-    "exec": "~/.config/waybar/cpupower.sh",
-    "on-click": "~/.config/waybar/cpupower.sh --set",
-    "tooltip-format": "Set CPU governor"
+  "custom/swaync": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": " ",
+      "none": " ",
+      "dnd-notification": " ",
+      "dnd-none": " ",
+      "inhibited-notification": " ",
+      "inhibited-none": " ",
+      "dnd-inhibited-notification": " ",
+      "dnd-inhibited-none": " "
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "escape": true
   },
   "custom/swww": {
     "format": "",
-    "exec": "~/.config/waybar/swww.sh",
+    "exec": "~/.local/bin/swww.sh",
     "interval": 300,
     "tooltip": false
   },
   "custom/reminder": {
     "format": "",
-    "exec": "~/.config/waybar/reminder.sh",
+    "exec": "~/.local/bin/reminder.sh",
     "interval": 3000,
     "tooltip": false
   }
