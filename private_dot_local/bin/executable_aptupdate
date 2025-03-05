@@ -5,7 +5,7 @@ echo "正在更新软件源..."
 sudo aptitude update
 
 echo "新软件包："
-aptitude search '~N' --disable-columns -F '%p' | tee /dev/tty
+aptitude search '~N' --disable-columns -F '%p'
 echo
 
 # 忘记新软件包标记

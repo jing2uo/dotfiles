@@ -57,15 +57,15 @@ window#waybar.empty #window {
 }
 
 #battery {
-  color: #cba6f7;
+  color: #9e80c4;
 }
 
 #clock {
-  color: #74c7ec;
+  color: #76aec8;
 }
 
 #clock.simpleclock {
-  color: #89b4fa;
+  color: #f19898;
 }
 
 #window {
@@ -73,15 +73,15 @@ window#waybar.empty #window {
 }
 
 #pulseaudio {
-  color: #b4befe;
+  color: #7b87d5;
 }
 
 #pulseaudio.muted {
-  color: #a6adc8;
+  color: #9c2527;
 }
 
 #custom-swaync {
-  color: #f38ba8;
+  color: #4e9781;
 }
 
 tooltip {
