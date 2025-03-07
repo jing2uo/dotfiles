@@ -125,5 +125,6 @@
   "window.customTitleBarVisibility": "auto",
   "workbench.navigationControl.enabled": false,
   "window.commandCenter": false,
-  "remote.SSH.configFile": "~/.ssh/config"
+  "remote.SSH.configFile": "~/.ssh/config",
+  "workbench.secondarySideBar.showLabels": false
 }
