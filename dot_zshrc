@@ -62,9 +62,9 @@ fi
 
 alias curl="curl -k -s"
 alias k="eza -lh"
+alias kc="kubectl"
 alias kx="kubectx"
 alias kn="kubens"
-alias kc="kubectl"
 alias y="yarn"
 alias yt='yt-dlp -f "bv*+ba" '
 alias zz="zimfw clean && zimfw install && zimfw build -v"
@@ -74,11 +74,13 @@ if command -v asdf >/dev/null 2>&1; then
   export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 fi
 
+if command -v atuin >/dev/null 2>&1; then
+  export ATUIN_NOBIND="true"
+  eval "$(atuin init zsh)"
+fi
+
 # starship
 if command -v starship >/dev/null 2>&1; then
-  if [ -n "${XDG_CACHE_HOME}" ]; then
-    export STARSHIP_CACHE=${XDG_CACHE_HOME}/starship/
-  fi
   eval "$(starship init zsh)"
 else
   export PS1="%F{green}%n@%m:%~%F{reset} \$ "
@@ -95,17 +97,15 @@ if command -v fzf >/dev/null 2>&1; then
   source /usr/share/doc/fzf/examples/completion.zsh
 fi
 
-# Rust
-export RUSTUP_DIST_SERVER="https://rsproxy.cn"
-export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
-export RUSTUP_INIT_SKIP_PATH_CHECK=yes
-
 # conda
 export CONDA_HOME=$HOME/.asdf/installs/python/miniconda3-latest
 export CONDA_AUTO_ACTIVATE_BASE=false
 if [[ -e "$CONDA_HOME/etc/profile.d/conda.sh" ]]; then
   source $CONDA_HOME/etc/profile.d/conda.sh
 fi
+
+# podman
+export PODMAN_COMPOSE_WARNING_LOGS=false
 
 # init zim
 source ${ZIM_HOME}/init.zsh

@@ -33,7 +33,7 @@
     ],
     "widget-config": {
         "dnd": {
-            "text": "专注模式"
+            "text": "Focus Mode"
         },
         "mpris": {
             "image-size": 96,

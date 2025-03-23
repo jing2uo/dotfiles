@@ -15,4 +15,4 @@ fi
 vmlinuz_version=$(echo $1 | sed 's%/boot/vmlinuz-%%g')
 sudo linux-update-symlinks install $vmlinuz_version $vmlinuz_path
 echo "now:"
-ls -lh / | grep --color -E 'vmlinuz|initrd'
+eza -lh / | egrep --color $vmlinuz_version

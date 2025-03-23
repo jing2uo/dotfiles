@@ -1,15 +1,10 @@
 #!/bin/bash
 
-# 更新软件源
-echo "正在更新软件源..."
 sudo aptitude update
 
-echo "新软件包："
+echo "New packages:"
 aptitude search '~N' --disable-columns -F '%p'
 echo
 
-# 忘记新软件包标记
-echo "清除新软件包标记"
 sudo aptitude forget-new
-
 sudo aptitude full-upgrade

@@ -4,17 +4,12 @@ sudo chown -R root:root /usr/local/bin/*
 sudo chmod a+x /usr/local/bin/* ~/.local/bin/*
 
 files=(
-  "pcmanfm-desktop-pref.desktop",
-  "gparted.desktop"
+  "bleachbit-root.desktop"
+  "pcmanfm-desktop-pref.desktop"
+  "btop.desktop"
   "htop.desktop"
-  "display-im7.q16.desktop"
   "vim.desktop"
   "nvim.desktop"
-  "rofi-theme-selector.desktop"
-  "rofi.desktop"
-  "bleachbit-root.desktop"
-  "emacs-*.desktop"
-  "emacsclient-*.desktop"
 )
 
 for file in "${files[@]}"; do

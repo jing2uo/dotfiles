@@ -3,7 +3,7 @@ Name=Code
 Comment=Code Editing. Redefined.
 GenericName=Text Editor
 Exec=env ELECTRON_OZONE_PLATFORM_HINT=auto /opt/code/code --enable-wayland-ime --unity-launch %F
-Icon=vscode
+Icon=/opt/code/resources/app/resources/linux/code.png
 Type=Application
 StartupNotify=false
 StartupWMClass=Code
