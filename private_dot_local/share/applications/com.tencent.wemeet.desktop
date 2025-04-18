@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=WemeetApp
 Keywords=wemeet;tencent;meeting;
-Exec=env QT_SCALE_FACTOR=1.5 /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=wemeetapp --file-forwarding com.tencent.wemeet @@u %u @@
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=wemeetapp --file-forwarding com.tencent.wemeet @@u %u @@
 Icon=com.tencent.wemeet
 Type=Application
 Terminal=false

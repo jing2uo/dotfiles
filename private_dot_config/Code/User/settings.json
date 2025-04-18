@@ -1,7 +1,4 @@
 {
-  "[dockerfile]": {
-    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-  },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -96,7 +93,6 @@
   "window.dialogStyle": "custom",
   "window.openFilesInNewWindow": "on",
   "window.restoreWindows": "none",
-  "window.titleBarStyle": "custom",
   "workbench.editor.empty.hint": "hidden",
   "workbench.editorAssociations": {
     "*.md": "vscode.markdown.preview.editor",
@@ -107,9 +103,8 @@
   "jupyter.askForKernelRestart": false,
   "workbench.preferredLightColorTheme": "Default Dark Modern",
   "chat.commandCenter.enabled": false,
-  "window.customTitleBarVisibility": "auto",
   "workbench.navigationControl.enabled": false,
-  "window.commandCenter": false,
   "remote.SSH.configFile": "~/.ssh/config",
-  "workbench.secondarySideBar.showLabels": false
+  "workbench.secondarySideBar.showLabels": false,
+  "window.commandCenter": false
 }

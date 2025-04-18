@@ -12,9 +12,11 @@ if ! ls "$DEV" >/dev/null 2>&1; then
   exit 1
 fi
 
+source /etc/os-release
+
 sudo mount "$DEV" /mnt/
-sudo btrfs subvolume delete /mnt/@osback
-sudo btrfs subvolume snapshot /mnt/@ /mnt/@osback
+sudo btrfs subvolume delete /mnt/@"$ID"-bak
+sudo btrfs subvolume snapshot /mnt/@"$ID" /mnt/@"$ID"-bak
 echo "now:"
 sudo btrfs subvolume list /mnt
 sudo umount /mnt

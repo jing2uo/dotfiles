@@ -6,6 +6,10 @@ sudo chmod a+x /usr/local/bin/* ~/.local/bin/*
 files=(
   "bleachbit-root.desktop"
   "pcmanfm-desktop-pref.desktop"
+  "bvnc.desktop"
+  "bssh.desktop"
+  "qv4l2.desktop"
+  "qvidcap.desktop"
   "btop.desktop"
   "htop.desktop"
   "vim.desktop"

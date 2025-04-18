@@ -38,7 +38,7 @@
     "active-only": false
   },
   "hyprland/window": {
-    "format": "{class}"
+    "format": "{initialTitle}"
   },
   "tray": {
     "show-passive-items": true,

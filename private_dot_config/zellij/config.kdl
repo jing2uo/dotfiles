@@ -44,4 +44,6 @@ default_shell "zsh"
 scrollback_lines_to_serialize 10000
 mouse_mode true
 copy_on_select true
+show_release_notes false
+show_startup_tips false
 theme "catppuccin-mocha"
