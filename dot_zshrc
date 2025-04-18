@@ -16,6 +16,8 @@ fi
 export ZIM_COMP=${ZIM_HOME}/completions
 mkdir -p ${ZIM_COMP}
 fpath=("${fpath[@]}"
+  "/usr/share/zsh/site-functions/"
+  "/usr/share/zsh/vendor-completions/"
   $ZIM_COMP
 )
 
@@ -28,16 +30,33 @@ bindkey -s '\e\e' '\C-asudo \C-e'
 bindkey '^[[1;5C' forward-word
 bindkey '^[[1;5D' backward-word
 
-if [[ -n "${terminfo[kcuu1]}" ]]; then
-  autoload -U up-line-or-beginning-search
-  zle -N up-line-or-beginning-search
-  bindkey "${terminfo[kcuu1]}" up-line-or-beginning-search
-fi
-
-if [[ -n "${terminfo[kcud1]}" ]]; then
-  autoload -U down-line-or-beginning-search
-  zle -N down-line-or-beginning-search
-  bindkey "${terminfo[kcud1]}" down-line-or-beginning-search
+# 检查 /etc/os-release 文件是否存在
+if [[ -f /etc/os-release ]]; then
+    source /etc/os-release
+    case "$ID" in
+        debian)
+            # Debian 特定的配置
+            autoload -U up-line-or-beginning-search
+            zle -N up-line-or-beginning-search
+            bindkey "${terminfo[kcuu1]}" up-line-or-beginning-search
+            autoload -U down-line-or-beginning-search
+            zle -N down-line-or-beginning-search
+            bindkey "${terminfo[kcud1]}" down-line-or-beginning-search
+            source /usr/share/doc/fzf/examples/key-bindings.zsh
+            source /usr/share/doc/fzf/examples/completion.zsh
+            ;;
+        arch)
+            # Arch 特定的配置
+            autoload -U up-line-or-beginning-search
+            zle -N up-line-or-beginning-search
+            bindkey "^[[A" up-line-or-beginning-search
+            autoload -U down-line-or-beginning-search
+            zle -N down-line-or-beginning-search
+            bindkey "^[[B" down-line-or-beginning-search
+            source /usr/share/fzf/key-bindings.zsh
+            source /usr/share/fzf/completion.zsh
+            ;;
+    esac
 fi
 
 # History config
@@ -65,7 +84,6 @@ alias k="eza -lh"
 alias kc="kubectl"
 alias kx="kubectx"
 alias kn="kubens"
-alias y="yarn"
 alias yt='yt-dlp -f "bv*+ba" '
 alias zz="zimfw clean && zimfw install && zimfw build -v"
 
@@ -74,6 +92,7 @@ if command -v asdf >/dev/null 2>&1; then
   export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 fi
 
+# atuin, save history
 if command -v atuin >/dev/null 2>&1; then
   export ATUIN_NOBIND="true"
   eval "$(atuin init zsh)"
@@ -89,19 +108,6 @@ fi
 # direnv
 if command -v direnv >/dev/null 2>&1; then
   eval "$(direnv hook zsh)"
-fi
-
-# fzf in debian
-if command -v fzf >/dev/null 2>&1; then
-  source /usr/share/doc/fzf/examples/key-bindings.zsh
-  source /usr/share/doc/fzf/examples/completion.zsh
-fi
-
-# conda
-export CONDA_HOME=$HOME/.asdf/installs/python/miniconda3-latest
-export CONDA_AUTO_ACTIVATE_BASE=false
-if [[ -e "$CONDA_HOME/etc/profile.d/conda.sh" ]]; then
-  source $CONDA_HOME/etc/profile.d/conda.sh
 fi
 
 # podman

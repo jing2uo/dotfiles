@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=WeChat
-Exec=env QT_SCALE_FACTOR=1.5 /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=wechat --file-forwarding com.tencent.WeChat @@u %U @@
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=wechat --file-forwarding com.tencent.WeChat @@u %U @@
 Terminal=false
 Type=Application
 Icon=com.tencent.WeChat

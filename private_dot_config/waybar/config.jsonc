@@ -34,11 +34,11 @@
       "10": " ",
       "default": " "
     },
-    "all-outputs": true,
+    "all-outputs": false,
     "active-only": false
   },
   "hyprland/window": {
-    "format": "{class}"
+    "format": "{initialTitle}"
   },
   "tray": {
     "show-passive-items": true,

@@ -3,18 +3,46 @@
 if [ -z "$1" ]; then
   echo "please input device name, like /dev/sdx"
   exit 1
-fi
-
-DEV="$1"
-
-if ! ls "$DEV" >/dev/null 2>&1; then
-  echo "device $DEV not found"
+elif ! ls "$1" >/dev/null 2>&1; then
+  echo "device $1 not found"
   exit 1
 fi
 
-sudo mount "$DEV" /mnt/
-sudo btrfs subvolume delete /mnt/@osback
-sudo btrfs subvolume snapshot /mnt/@ /mnt/@osback
-echo "now:"
-sudo btrfs subvolume list /mnt
-sudo umount /mnt
+DEV="$1"
+BAK=$(cat /proc/cmdline | grep bak | wc -l)
+
+source /etc/os-release
+
+backup() {
+  if [ "$BAK" -eq 1 ]; then
+    echo "当前处于备份子卷，不支持备份"
+    exit 1
+  fi
+  echo "back @$ID to @$ID-bak"
+  sudo mount "$DEV" /mnt/
+  sudo btrfs subvolume delete /mnt/@"$ID"-bak
+  sudo btrfs subvolume snapshot /mnt/@"$ID" /mnt/@"$ID"-bak
+  echo "now:"
+  sudo btrfs subvolume list /mnt
+  sudo umount /mnt
+}
+
+restore() {
+  if [ "$BAK" -eq 0 ]; then
+    echo "当前处于系统子卷，不支持还原"
+    exit 1
+  fi
+  echo "restore @$ID from @$ID-bak"
+  sudo mount "$DEV" /mnt/
+  sudo btrfs subvolume delete /mnt/@"$ID"
+  sudo btrfs subvolume snapshot /mnt/@"$ID"-bak /mnt/@"$ID"
+  echo "now:"
+  sudo btrfs subvolume list /mnt
+  sudo umount /mnt
+}
+
+if [ -z "$2" ]; then
+  backup
+else
+  restore
+fi

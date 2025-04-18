@@ -1,0 +1,7 @@
+#!/bin/bash
+
+for i in $(asdf current | grep -Evi "name|system" | awk '{print $1}'); do
+  echo "update: "$i
+  asdf install $i latest
+  asdf set $i latest
+done
