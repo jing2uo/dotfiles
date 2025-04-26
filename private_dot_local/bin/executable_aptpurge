@@ -1,1 +1,2 @@
+#/bin/bash
 sudo aptitude purge $(cat /var/log/apt/history.log | grep Install | tail -n1 | sed 's/Install: //; s/, /\n/g' | cut -d: -f1 | tr '\n' ' ' | sed 's/automatic)//g;')

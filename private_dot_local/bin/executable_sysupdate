@@ -1,0 +1,26 @@
+#!/bin/bash
+
+echo "asdf update:"
+echo
+for i in $(asdf current | grep -Evi "name|system" | awk '{print $1}'); do
+  echo "update: "$i
+  asdf install $i latest
+  asdf set $i latest
+done
+
+echo
+echo "flatpak update:"
+echo
+flatpak update
+
+echo
+echo "sudo apt update:"
+echo
+sudo aptitude update
+
+echo "New packages:"
+aptitude search '~N' --disable-columns -F '%p'
+echo
+
+sudo aptitude forget-new
+sudo aptitude full-upgrade

@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=BlueMail
-Exec=/opt/BlueMail/bluemail --no-sandbox %U
-Terminal=false
-Type=Application
-Icon=bluemail
-Comment=BlueMail email client
-MimeType=x-scheme-handler/me.blueone.linux;x-scheme-handler/mailto;x-scheme-handler/me.blueone.linux;
-Categories=Office;
