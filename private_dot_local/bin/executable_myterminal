@@ -1,9 +1,9 @@
 #!/bin/bash
 
-count=$(hyprctl clients | grep "class: kitty" | wc -l)
+count=$(hyprctl clients | grep "class: Alacritty" | wc -l)
 
 if [ $count -gt 0 ]; then
-  hyprctl dispatch focuswindow "kitty"
+  hyprctl dispatch focuswindow "Alacritty"
 else
-  kitty
+  alacritty
 fi
