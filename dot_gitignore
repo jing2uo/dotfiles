@@ -12,3 +12,6 @@ vendor
 
 # nodejs
 node_modules
+
+# flatpak-builder
+.flatpak-builder

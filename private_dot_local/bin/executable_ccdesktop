@@ -7,6 +7,7 @@ files=(
   "bleachbit-root.desktop"
   "pcmanfm-desktop-pref.desktop"
   "zellij.desktop"
+  "ranger.desktop"
   "avahi-discover.desktop"
   "bvnc.desktop"
   "bssh.desktop"

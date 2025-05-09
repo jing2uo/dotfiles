@@ -1,0 +1,17 @@
+#!/bin/bash
+
+export URL="https://download.calibre-ebook.com"
+export LATEST_RELEASE=$(curl -s $URL | pup 'ul li a[href$=".html"] attr{href}' | head -n1)
+export LATEST_VERSION=$(curl -s $URL/$LATEST_RELEASE | pup 'ul li a attr{href}' | head -n1 | sed 's/\/$//')
+
+export DOWNLOAD_URL="$URL/$LATEST_VERSION/calibre-$LATEST_VERSION-x86_64.txz"
+
+echo "Downloading $DOWNLOAD_URL"
+
+sudo rm -f /tmp/calibre.txz
+axel $DOWNLOAD_URL -o /tmp/calibre.txz
+
+sudo mkdir -p /opt/calibre
+sudo rm -rf /opt/calibre/*
+sudo tar xf /tmp/calibre.txz -C /opt/calibre
+sudo rm -f /tmp/calibre.txz
