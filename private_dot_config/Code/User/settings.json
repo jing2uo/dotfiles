@@ -86,6 +86,9 @@
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.fontFamily": "monospace",
   "terminal.integrated.fontSize": 18,
+  "terminal.integrated.env.linux": {
+    "PYTHONPATH": "${workspaceFolder}"
+  },
   "window.autoDetectColorScheme": true,
   "window.commandCenter": false,
   "window.dialogStyle": "custom",
@@ -99,5 +102,5 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.navigationControl.enabled": false,
   "workbench.preferredLightColorTheme": "Default Dark Modern",
-  "workbench.secondarySideBar.showLabels": false,
+  "workbench.secondarySideBar.showLabels": false
 }

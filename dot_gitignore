@@ -3,6 +3,10 @@
 .aabb
 .tool-versions
 
+# clangd
+.cache
+compile_commands.json
+
 # python
 __pycache__
 .venv
