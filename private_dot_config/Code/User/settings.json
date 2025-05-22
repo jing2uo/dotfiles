@@ -9,13 +9,14 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[python]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "charliermarsh.ruff"
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true
   },
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "chat.commandCenter.enabled": false,
+  "clangd.path": "clangd-20",
   "code-runner.executorMap": {
     "python": "$pythonPath -u $fullFileName"
   },
@@ -71,32 +72,34 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
+  "git-graph.dialog.cherryPick.noCommit": true,
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.openRepositoryInParentFolders": "never",
+  "gitlens.telemetry.enabled": false,
   "go.toolsManagement.autoUpdate": true,
   "indentRainbow.lightIndicatorStyleLineWidth": 2,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "jupyter.askForKernelRestart": false,
   "notebook.lineNumbers": "on",
-  "redhat.telemetry.enabled": true,
+  "python.analysis.typeCheckingMode": "standard",
+  "redhat.telemetry.enabled": false,
   "remote.SSH.configFile": "~/.ssh/config",
   "sqlite3-editor.ui.minimizePanel": true,
+  "telemetry.feedback.enabled": false,
+  "telemetry.telemetryLevel": "off",
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.fontFamily": "monospace",
-  "terminal.integrated.fontSize": 18,
   "terminal.integrated.env.linux": {
     "PYTHONPATH": "${workspaceFolder}"
   },
+  "terminal.integrated.fontFamily": "monospace",
+  "terminal.integrated.fontSize": 18,
   "window.autoDetectColorScheme": true,
-  "window.commandCenter": false,
   "window.dialogStyle": "custom",
   "window.openFilesInNewWindow": "on",
-  "window.restoreWindows": "none",
   "workbench.editor.empty.hint": "hidden",
   "workbench.editorAssociations": {
-    "{git,gitlens,git-graph}:/**/*.{md,csv,svg}": "default",
     "*.md": "vscode.markdown.preview.editor"
   },
   "workbench.iconTheme": "material-icon-theme",

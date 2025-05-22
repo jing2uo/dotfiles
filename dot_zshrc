@@ -82,7 +82,7 @@ alias kx="kubectx"
 alias kn="kubens"
 alias yt='yt-dlp -f "bv*+ba" '
 alias zz="zimfw clean && zimfw install && zimfw build -v"
-
+alias typora="flatpak run io.typora.Typora $1"
 # asdf-vm
 if command -v asdf >/dev/null 2>&1; then
   export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
