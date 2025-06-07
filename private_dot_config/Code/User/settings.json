@@ -105,5 +105,6 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.navigationControl.enabled": false,
   "workbench.preferredLightColorTheme": "Default Dark Modern",
-  "workbench.secondarySideBar.showLabels": false
+  "workbench.secondarySideBar.showLabels": false,
+  "workbench.editor.enablePreview": false
 }
