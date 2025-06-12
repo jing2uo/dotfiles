@@ -68,7 +68,7 @@ create-context() {
 clean-context() {
   for ctx in $(kubectl config get-contexts -o name); do
     kubectl config use-context $ctx
-    if ! kubectl cluster-info &>/dev/null; then
+    if ! timeout 5 kubectl cluster-info &>/dev/null; then
       echo "Context $ctx is invalid, deleting..."
       kube-context --delete --name $ctx
     fi

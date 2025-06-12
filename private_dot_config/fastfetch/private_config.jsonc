@@ -3,7 +3,7 @@
     "display": {
         "separator": "  ",
         "color": {
-            "keys": "light_blue"
+            "keys": "light_red"
         },
     },
     "modules": [
@@ -16,7 +16,6 @@
                 "host": "magenta"
             }
         },
-        "break",
         {
             "type": "os",
             "key": "  ",
@@ -49,11 +48,6 @@
             "key": "  "
         },
         {
-            "type": "disk",
-            "key": "  ",
-            "hideFS": "overlay"
-        },
-        {
             "type": "display",
             "key": " 󰍹 "
         },
@@ -65,7 +59,6 @@
             "type": "gamepad",
             "key": " 󰖺 "
         },
-        "break",
         {
             "type": "wm",
             "key": "  "

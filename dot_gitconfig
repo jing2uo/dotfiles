@@ -18,3 +18,11 @@
 	email = mail@guojing.io
 [http]
 	postBuffer = 52428800
+[merge]
+	tool = vscode
+[mergetool "vscode"]
+	cmd = "code --wait "
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = "code --wait --diff  "
