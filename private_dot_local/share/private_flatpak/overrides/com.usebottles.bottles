@@ -1,0 +1,6 @@
+[Context]
+sockets=!wayland
+filesystems=xdg-data/applications
+
+[Environment]
+FONTCONFIG_FILE=~/.config/fontconfig/fonts-dir.conf

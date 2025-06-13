@@ -1,0 +1,3 @@
+[Context]
+sockets=wayland
+filesystems=xdg-music:rw;xdg-videos:rw;xdg-pictures:rw;xdg-download:rw

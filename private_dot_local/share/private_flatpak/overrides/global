@@ -1,0 +1,2 @@
+[Context]
+filesystems=xdg-download:rw;xdg-config/fontconfig:ro
