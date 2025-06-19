@@ -10,7 +10,10 @@
   },
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
   },
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -108,5 +111,12 @@
   "workbench.secondarySideBar.showLabels": false,
   "workbench.editor.enablePreview": false,
   "flashpost.horizontalLayout": "Split Style",
-  "flashpost.defaultSideBarTab": "History"
+  "flashpost.defaultSideBarTab": "History",
+  "containers.containerClient": "com.microsoft.visualstudio.containers.podman",
+  "python.analysis.autoImportCompletions": true,
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-containers"
+  },
+  "sqltools.useNodeRuntime": true,
+  "sqltools.disableNodeDetectNotifications": true
 }
