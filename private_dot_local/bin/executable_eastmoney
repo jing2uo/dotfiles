@@ -16,18 +16,18 @@ replace_resolution() {
   local target_res="$1"
   # Use sed to replace the line containing Default="2520x1360" or Default="2500x1480"
   # Only match lines with these specific resolutions to avoid other Default= entries
-  if grep -q '"Default"="\(2520x1360\|2500x1480\)"' "$FILE"; then
-    sed -i 's/"Default"="\(2520x1360\|2500x1480\)"/"Default"="'$target_res'"/' "$FILE"
+  if grep -q '"Default"="\(2500x1360\|2500x1480\)"' "$FILE"; then
+    sed -i 's/"Default"="\(2500x1360\|2500x1480\)"/"Default"="'$target_res'"/' "$FILE"
     echo "eastmoney Resolution changed to $target_res"
   else
-    echo "No matching resolution (2520x1360 or 2500x1480) found in $FILE"
+    echo "No matching resolution (2500x1360 or 2500x1480) found in $FILE"
   fi
 }
 
 if [ "$EDP_COUNT" -ge 1 ]; then
   replace_resolution "2500x1480"
 elif [ "$EDP_COUNT" -eq 0 ]; then
-  replace_resolution "2520x1360"
+  replace_resolution "2500x1360"
 else
   echo "No changes made: single eDP-1 detected or unexpected monitor configuration"
 fi

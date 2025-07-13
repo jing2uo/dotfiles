@@ -6,6 +6,7 @@ sudo chmod a+x /usr/local/bin/* ~/.local/bin/*
 files=(
   "bleachbit-root.desktop"
   "pcmanfm-desktop-pref.desktop"
+  "pcmanfm-qt-desktop-pref.desktop"
   "zellij.desktop"
   "ranger.desktop"
   "avahi-discover.desktop"

@@ -12,6 +12,7 @@ echo
 echo "flatpak update:"
 echo
 flatpak update
+flatpak uninstall --unused --delete-data
 
 source /etc/os-release
 

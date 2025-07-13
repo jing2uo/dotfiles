@@ -1,2 +1,2 @@
 [Context]
-filesystems=!host
+filesystems=xdg-public-share:rw;xdg-pictures:rw;!host
