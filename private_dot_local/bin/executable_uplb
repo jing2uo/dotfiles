@@ -11,5 +11,5 @@ rm lb.deb lb -rf
 echo $URL
 wget -q $(curl $URL | jq ".assets[] | select(.name | test(\"linux-x86_64\\\\.deb$\")).url" | sed 's/"//g') -O lb.deb
 dpkg-deb -x lb.deb lb
-mv lb/usr/local/bin/longbridge ~/.local/share/flatpak/app/com.longbridgeapp.LongbridgePro/current/active/files/extra/longbridge
+sudo mv lb/usr/local/bin/longbridge /usr/local/bin/longbridge
 rm lb.deb lb -rf

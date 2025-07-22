@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=VM
+Name=vm
 Comment=vm
 Exec=/home/jing2uo/.local/bin/vm-spice
 Icon=remmina
