@@ -1,7 +1,7 @@
 # common
-.env
 .aabb
 .tool-versions
+.env
 
 # clangd
 .cache
@@ -16,6 +16,3 @@ vendor
 
 # nodejs
 node_modules
-
-# flatpak-builder
-.flatpak-builder
