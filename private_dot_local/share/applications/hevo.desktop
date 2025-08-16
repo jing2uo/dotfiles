@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=hevo
-Exec=/bin/bash -c ~/.local/bin/hevo
-Type=Application
-Terminal=false
-Categories=Application;
-Icon=/home/jing2uo/.var/app/com.usebottles.bottles/data/bottles/bottles/hevo/icons/happ.png
-Comment=Launch happ using Bottles.
-StartupWMClass=happ

@@ -1,6 +1,6 @@
 #!/bin/bash
-
-export FILE=~/.var/app/com.usebottles.bottles/data/bottles/bottles/eastmoney/user.reg
+export APP=$1
+export FILE=~/.var/app/com.usebottles.bottles/data/bottles/bottles/$APP/user.reg
 
 # Count number of eDP monitors
 EDP_COUNT=$(hyprctl monitors | grep -c eDP-1)
@@ -18,7 +18,7 @@ replace_resolution() {
   # Only match lines with these specific resolutions to avoid other Default= entries
   if grep -q '"Default"="\(2500x1360\|2500x1480\)"' "$FILE"; then
     sed -i 's/"Default"="\(2500x1360\|2500x1480\)"/"Default"="'$target_res'"/' "$FILE"
-    echo "eastmoney Resolution changed to $target_res"
+    echo "Resolution changed to $target_res"
   else
     echo "No matching resolution (2500x1360 or 2500x1480) found in $FILE"
   fi
@@ -32,4 +32,4 @@ else
   echo "No changes made: single eDP-1 detected or unexpected monitor configuration"
 fi
 
-flatpak run --command=bottles-cli com.usebottles.bottles run -p eastmoney -b 'eastmoney' -- %u
+flatpak run --command=bottles-cli com.usebottles.bottles run -p $APP -b $APP -- %u
