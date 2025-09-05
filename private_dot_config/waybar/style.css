@@ -40,6 +40,7 @@ window#waybar {
 }
 
 #clock,
+#network,
 #pulseaudio,
 #tray,
 #battery,
@@ -60,12 +61,12 @@ window#waybar.empty #window {
   color: #9e80c4;
 }
 
-#clock {
-  color: #76aec8;
+#network{
+  color: #4f8cca;
 }
 
-#clock.simpleclock {
-  color: #f19898;
+#clock {
+  color: #76aec8;
 }
 
 #window {

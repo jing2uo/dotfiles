@@ -1,15 +1,134 @@
 #!/bin/bash
 
-if [ "$1" ]; then
-  export URL="https://assets.lbkrs.com/github/release/longbridge-desktop/preview/latest.json"
-else
-  export URL="https://assets.lbkrs.com/github/release/longbridge-desktop/stable/latest.json"
-fi
+version_compare() {
+  local ver1="$1" ver2="$2"
 
-cd /tmp/
-rm lb.deb lb -rf
-echo $URL
-wget -q $(curl $URL | jq ".assets[] | select(.name | test(\"linux-x86_64\\\\.deb$\")).url" | sed 's/"//g') -O lb.deb
-dpkg-deb -x lb.deb lb
-sudo mv lb/usr/local/bin/longbridge /usr/local/bin/longbridge
-rm lb.deb lb -rf
+  # Normalize versions by removing 'v' and splitting into arrays
+  ver1=${ver1#v} # Remove leading 'v'
+  ver2=${ver2#v} # Remove leading 'v'
+
+  # Split versions into arrays (handle preview suffix)
+  IFS='.-' read -ra arr1 <<<"$ver1"
+  IFS='.-' read -ra arr2 <<<"$ver2"
+
+  # Determine if either version is a preview (check for 'preview' in components)
+  local is_preview1=0 is_preview2=0
+  for comp in "${arr1[@]}"; do
+    if [[ "$comp" == "preview" ]]; then
+      is_preview1=1
+      break
+    fi
+  done
+  for comp in "${arr2[@]}"; do
+    if [[ "$comp" == "preview" ]]; then
+      is_preview2=1
+      break
+    fi
+  done
+
+  # Compare numeric components
+  local max_length=$((${#arr1[@]} > ${#arr2[@]} ? ${#arr1[@]} : ${#arr2[@]}))
+  for ((i = 0; i < max_length; i++)); do
+    # Get components, default to 0 if missing
+    local comp1="${arr1[i]:-0}"
+    local comp2="${arr2[i]:-0}"
+
+    # Skip non-numeric comparisons (e.g., 'preview')
+    if [[ "$comp1" == "preview" || "$comp2" == "preview" ]]; then
+      continue
+    fi
+
+    # Convert to numeric if possible, otherwise treat as 0
+    local num1=$((comp1 + 0))
+    local num2=$((comp2 + 0))
+
+    if [ "$num1" -gt "$num2" ]; then
+      echo "$1"
+      return
+    elif [ "$num1" -lt "$num2" ]; then
+      echo "$2"
+      return
+    fi
+  done
+
+  # If versions are numerically equal, check preview status
+  if [ "${#arr1[@]}" -lt "${#arr2[@]}" ]; then
+    if [ "$is_preview2" -eq 1 ]; then
+      echo "$1" # ver2 is preview, ver1 is newer
+    else
+      echo "$2" # ver1 is shorter, ver2 is newer
+    fi
+  elif [ "${#arr1[@]}" -gt "${#arr2[@]}" ]; then
+    if [ "$is_preview1" -eq 1 ]; then
+      echo "$2" # ver1 is preview, ver2 is newer
+    else
+      echo "$1" # ver1 is longer, ver1 is newer
+    fi
+  elif [ "$is_preview1" -eq 1 ] && [ "$is_preview2" -eq 0 ]; then
+    echo "$2" # ver1 is preview, ver2 is stable
+  elif [ "$is_preview2" -eq 1 ] && [ "$is_preview1" -eq 0 ]; then
+    echo "$1" # ver2 is preview, ver1 is stable
+  else
+    echo "0" # Versions are equal
+  fi
+}
+
+# Function to find the latest version among three
+find_latest_version() {
+  local ver1="$1" ver2="$2" ver3="$3"
+
+  # Step 1: Compare ver1 and ver2
+  result1=$(version_compare "$ver1" "$ver2")
+
+  # If versions are equal, use ver1 for next comparison
+  if [ "$result1" = "0" ]; then
+    result1="$ver1"
+  fi
+
+  # Step 2: Compare the result with ver3
+  result2=$(version_compare "$result1" "$ver3")
+
+  # If final comparison returns "0", use result1
+  if [ "$result2" = "0" ]; then
+    echo "$result1"
+  else
+    echo "$result2"
+  fi
+}
+
+update_lb() {
+  cd /tmp/
+  rm lb.deb lb -rf
+  export URL=$1
+  echo $URL
+  wget -q $(curl --silent $URL --compressed | jq ".assets[] | select(.name | test(\"linux-x86_64\\\\.deb$\")).url" | sed 's/"//g') -O lb.deb
+  dpkg-deb -x lb.deb lb
+  sudo mv lb/usr/local/bin/longbridge /usr/local/bin/longbridge
+  rm lb.deb lb -rf
+}
+
+PREVIEW_URL="https://assets.lbkrs.com/github/release/longbridge-desktop/preview/latest.json"
+STABLE_URL="https://assets.lbkrs.com/github/release/longbridge-desktop/stable/latest.json"
+
+CURRENT_VERSION=$(longbridge -V | awk '{print $2}')
+LATEST_STABLE=$(curl --silent --compressed "$STABLE_URL" | jq -r ".version")
+LATEST_PREVIEW=$(curl --silent --compressed "$PREVIEW_URL" | jq -r ".version")
+
+LATEST=$(find_latest_version "$CURRENT_VERSION" "$LATEST_STABLE" "$LATEST_PREVIEW")
+
+# Decide which version to update
+echo "Current version: $CURRENT_VERSION"
+echo "Latest stable version: $LATEST_STABLE"
+echo "Latest preview version: $LATEST_PREVIEW"
+
+if [ "$LATEST" = "$CURRENT_VERSION" ] || [ "$LATEST" = "0" ]; then
+  echo "No update needed, current version is latest."
+elif [ "$LATEST" = "$LATEST_STABLE" ]; then
+  echo "Update to version: $LATEST_STABLE"
+  update_lb $STABLE_URL
+elif [ "$LATEST" = "$LATEST_PREVIEW" ]; then
+  echo "Update to version: $LATEST_PREVIEW"
+  update_lb $PREVIEW_URL
+else
+  echo "Error: Unexpected version comparison result."
+fi

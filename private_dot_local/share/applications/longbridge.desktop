@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Longbridge
+Comment=Longbridge trading platform desktop application.
+TryExec=longbridge
+StartupNotify=true
+Exec=/usr/local/bin/longbridge
+Icon=/home/jing2uo/.local/share/icons/longbridge.png
+Categories=Finance;
+Keywords=longbridge;
+StartupWMClass=com.longbridge.app.desktop

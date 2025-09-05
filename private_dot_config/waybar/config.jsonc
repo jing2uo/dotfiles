@@ -10,7 +10,7 @@
   "modules-left": ["hyprland/workspaces", "hyprland/window"],
   "modules-right": [
     "battery",
-    "clock#simpleclock",
+    "network",
     "clock",
     "pulseaudio",
     "custom/swaync",
@@ -45,12 +45,8 @@
     "icon-size": 24,
     "spacing": 10
   },
-  "clock#simpleclock": {
-    "tooltip": false,
-    "format": "  {:%H:%M}"
-  },
   "clock": {
-    "format": " ",
+    "format": "  {:%m-%d %H:%M}",
     "locale": "en_US.UTF-8",
     "calendar": {
       "format": {
@@ -65,11 +61,8 @@
       "on-scroll": 1
     },
     "actions":  {
-            "on-click-right": "mode",
-            "on-scroll-up": "tz_up",
-            "on-scroll-down": "tz_down",
-            "on-scroll-up": "shift_up",
-            "on-scroll-down": "shift_down"
+            "on-scroll-up": "shift_down",
+            "on-scroll-down": "shift_up"
     },
     "tooltip-format": "<span color='#cdd6f4' font='Lexend 16'><tt><small>{calendar}</small></tt></span>"
   },
@@ -81,6 +74,7 @@
       "default": " "
     },
     "on-click-right": "pavucontrol",
+    "on-click-middle": "pavucontrol",
     "on-click": "pactl set-sink-mute 0 toggle",
     "tooltip-format": "{volume}%"
   },
@@ -92,6 +86,18 @@
       "critical": 15
     },
     "format": "  {capacity}%"
+  },
+  "network": {
+      "interface": "wlan0",
+      "format": "{ifname}: {essid} ({signalStrength}%)",
+      "format-wifi": "󰖩  {signalStrength}%",
+      "format-disconnected": "󱚵 ",
+      "format-disabled": "󰖪 ",
+      "interval": 5,
+      "tooltip": true,
+      "tooltip-format": "IP: {ipaddr}\nESSID: {essid}\nSignal: {signalStrength}%",
+      "on-click-middle": "iwmenu -l fuzzel -i font -s 3",
+      "on-click-right": "iwmenu -l fuzzel -i font -s 3",
   },
   "custom/swaync": {
     "tooltip": false,
