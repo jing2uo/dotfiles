@@ -118,5 +118,6 @@
     "editor.defaultFormatter": "ms-azuretools.vscode-containers"
   },
   "sqltools.useNodeRuntime": true,
-  "sqltools.disableNodeDetectNotifications": true
+  "sqltools.disableNodeDetectNotifications": true,
+  "terminal.integrated.stickyScroll.enabled": false
 }

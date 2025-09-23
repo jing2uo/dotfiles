@@ -113,3 +113,20 @@ export PODMAN_COMPOSE_WARNING_LOGS=false
 
 # init zim
 source ${ZIM_HOME}/init.zsh
+
+# python uv 
+_uv_run_mod() {
+    if [[ "$words[2]" == "run" && "$words[CURRENT]" != -* ]]; then
+        # Check if any previous argument after 'run' ends with .py
+        if [[ ${words[3,$((CURRENT-1))]} =~ ".*\.py" ]]; then
+            # Already have a .py file, complete any files
+            _arguments '*:filename:_files'
+        else
+            # No .py file yet, complete only .py files
+            _arguments '*:filename:_files -g "*.py"'
+        fi
+    else
+        _uv "$@"
+    fi
+}
+compdef _uv_run_mod uv
