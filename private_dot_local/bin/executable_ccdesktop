@@ -38,7 +38,7 @@ for file in "${files[@]}"; do
 done
 
 cd ~/.cache
-rm -rf thumbnails staticcheck ms-playwright pip typescript clangd jedi
+rm -rf thumbnails staticcheck ms-playwright pip typescript clangd jedi uv go-build node-gyp gopls
 rm -rf nvim mesa_shader_cache mesa_shader_cache_db mpv
 
 rm -f ~/Downloads/*.png

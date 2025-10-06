@@ -104,6 +104,7 @@ update_lb() {
   wget -q $(curl --silent $URL --compressed | jq ".assets[] | select(.name | test(\"linux-x86_64\\\\.deb$\")).url" | sed 's/"//g') -O lb.deb
   dpkg-deb -x lb.deb lb
   sudo mv lb/usr/local/bin/longbridge /usr/local/bin/longbridge
+  sudo chown root:root /usr/local/bin/longbridge
   rm lb.deb lb -rf
 }
 

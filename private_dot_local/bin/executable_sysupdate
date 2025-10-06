@@ -20,14 +20,8 @@ if [[ $ID == "debian" ]]; then
   echo
   echo "sudo apt update:"
   echo
-  sudo aptitude update
-
-  echo "New packages:"
-  aptitude search '~N' --disable-columns -F '%p'
-  echo
-
-  sudo aptitude forget-new
-  sudo aptitude full-upgrade
+  sudo apt update
+  sudo apt full-upgrade
 elif [[ $ID == "arch" ]]; then
   echo
   echo "paru update:"

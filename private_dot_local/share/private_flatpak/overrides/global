@@ -1,5 +1,5 @@
 [Context]
-filesystems=xdg-download:rw;xdg-config/fontconfig:ro
+filesystems=xdg-config/fontconfig:ro;xdg-download:rw
 
 [Environment]
-FONTCONFIG_PATH=~/.config/fontconfig/
+FONTCONFIG_FILE=~/.config/fontconfig/fonts.conf
