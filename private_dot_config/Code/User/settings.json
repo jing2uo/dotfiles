@@ -102,9 +102,6 @@
   "window.dialogStyle": "custom",
   "window.openFilesInNewWindow": "on",
   "workbench.editor.empty.hint": "hidden",
-  "workbench.editorAssociations": {
-    "*.md": "vscode.markdown.preview.editor"
-  },
   "workbench.iconTheme": "material-icon-theme",
   "workbench.navigationControl.enabled": false,
   "workbench.preferredLightColorTheme": "Default Dark Modern",

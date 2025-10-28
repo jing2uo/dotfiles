@@ -11,4 +11,4 @@ if [ -z "$WALLPAPER" ]; then
 fi
 
 # 使用 swww 设置壁纸
-swww img "$WALLPAPER" --resize=crop --filter=Nearest --transition-type random
+swww img "$WALLPAPER" --resize=crop --filter=Nearest --transition-type wipe
