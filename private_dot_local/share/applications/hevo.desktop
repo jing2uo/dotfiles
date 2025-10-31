@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=hevo
+Exec=bash -c "~/.local/bin/runwine hevo"
+Type=Application
+Terminal=false
+Categories=Application;
+Icon=/home/jing2uo/.var/app/com.usebottles.bottles/data/bottles/bottles/hevo/icons/hevo.png
+Comment=Launch hevo using Bottles.
+StartupWMClass=hevo

@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=guojin
-Exec=bash -c "~/.local/bin/runwine guojin"
-Type=Application
-Terminal=false
-Categories=Application;
-Icon=/home/jing2uo/.var/app/com.usebottles.bottles/data/bottles/bottles/guojin/icons/guojin.png
-Comment=Launch guojin using Bottles.
-StartupWMClass=guojin

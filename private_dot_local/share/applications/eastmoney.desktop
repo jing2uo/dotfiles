@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=eastmoney
+Exec=bash -c "~/.local/bin/runwine eastmoney"
+Type=Application
+Terminal=false
+Categories=Application;
+Icon=/home/jing2uo/.var/app/com.usebottles.bottles/data/bottles/bottles/eastmoney/icons/eastmoney.png
+Comment=Launch eastmoney using Bottles.
+StartupWMClass=eastmoney

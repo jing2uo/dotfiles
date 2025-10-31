@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=gjzq
+Exec=bash -c "~/.local/bin/runwine gjzq"
+Type=Application
+Terminal=false
+Categories=Application;
+Icon=/home/jing2uo/.var/app/com.usebottles.bottles/data/bottles/bottles/gjzq/icons/gjzq.png
+Comment=Launch gjzq using Bottles.
+StartupWMClass=gjzq
