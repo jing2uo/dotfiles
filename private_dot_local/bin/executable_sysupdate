@@ -30,3 +30,4 @@ elif [[ $ID == "arch" ]]; then
 fi
 
 bash ~/.local/bin/uplb
+bash ~/.local/bin/upzed
