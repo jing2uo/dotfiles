@@ -118,12 +118,13 @@ LATEST_PREVIEW=$(curl --silent --compressed "$PREVIEW_URL" | jq -r ".version")
 LATEST=$(find_latest_version "$CURRENT_VERSION" "$LATEST_STABLE" "$LATEST_PREVIEW")
 
 # Decide which version to update
-echo "Current version: $CURRENT_VERSION"
-echo "Latest stable version: $LATEST_STABLE"
-echo "Latest preview version: $LATEST_PREVIEW"
+echo "开始更新长桥"
+echo "当前安装版本: $CURRENT_VERSION"
+echo "最新 stable 版本: $LATEST_STABLE"
+echo "最新 preview 版本: $LATEST_PREVIEW"
 
 if [ "$LATEST" = "$CURRENT_VERSION" ] || [ "$LATEST" = "0" ]; then
-  echo "No update needed, current version is latest."
+  echo "无需更新"
 elif [ "$LATEST" = "$LATEST_STABLE" ]; then
   echo "Update to version: $LATEST_STABLE"
   update_lb $STABLE_URL
@@ -133,3 +134,5 @@ elif [ "$LATEST" = "$LATEST_PREVIEW" ]; then
 else
   echo "Error: Unexpected version comparison result."
 fi
+
+echo
