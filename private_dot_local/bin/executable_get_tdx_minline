@@ -1,0 +1,4 @@
+#!/bin/bash
+
+export dd=$(date +%Y%m%d)
+/usr/bin/axel "https://www.tdx.com.cn/products/data/data/g4tic/$dd.zip" -o /datapool/tdxdata/"$dd.zip"

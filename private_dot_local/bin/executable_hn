@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# 检查参数
+if [ "$1" != "r" ] && [ "$1" != "p" ]; then
+  echo "用法: $0 [r|p]"
+  echo "r -> content/reading"
+  echo "p -> content/posts"
+  exit 1
+fi
+
+# 根据参数选择目录
+if [ "$1" == "r" ]; then
+  BASE_DIR="content/reading"
+else
+  BASE_DIR="content/posts"
+fi
+
+# 获取今天日期
+TODAY=$(date +%Y-%m-%d)
+
+# 目标目录
+TARGET_DIR="$BASE_DIR/$TODAY"
+
+# 创建目录（如果不存在）
+mkdir -p "$TARGET_DIR"
+
+# 创建 index.md 并写入 front matter
+cat >"$TARGET_DIR/index.md" <<EOL
++++
+title = ''
+date = $(date +%Y-%m-%d)
+slug = ''
++++
+EOL
+
+echo "已创建 $TARGET_DIR/index.md"
