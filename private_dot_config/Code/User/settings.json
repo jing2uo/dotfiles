@@ -143,5 +143,6 @@
     "repositories": true,
     "searchAndCompare": false,
     "launchpad": false
-  }
+  },
+  "gitlens.views.branches.showRemoteBranches": true
 }

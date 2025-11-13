@@ -32,4 +32,3 @@ fi
 echo
 
 bash ~/.local/bin/uplb
-bash ~/.local/bin/upzed
