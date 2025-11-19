@@ -1,9 +1,0 @@
-#!/bin/bash
-
-DP=$(hyprctl monitors | grep -c -w "DP-1")
-
-if [ $DP -ge 1 ]; then
-  hyprctl keywords "monitor DP-1,2560x1440@60.0,0x800,1.6"
-  sleep 1
-  hyprctl keywords "monitor DP-1,2560x1440@60.0,0x0,1.6"
-fi

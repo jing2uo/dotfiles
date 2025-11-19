@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=sxzq
-Exec=bash -c "~/.local/bin/runwine sxzq"
-Type=Application
-Terminal=false
-Categories=Application;
-Icon=/home/jing2uo/.var/app/com.usebottles.bottles/data/bottles/bottles/sxzq/icons/sxzq.png
-Comment=Launch sxzq using Bottles.
-StartupWMClass=sxzq

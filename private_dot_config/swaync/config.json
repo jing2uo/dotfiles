@@ -54,6 +54,10 @@
                     "command": "wlogout"
                 },
                 {
+                    "label": " ",
+                    "command": "hyprlock"
+                },
+                {
                     "label": " ",
                     "type": "toggle",
                     "command": "set-kbd --toggle",

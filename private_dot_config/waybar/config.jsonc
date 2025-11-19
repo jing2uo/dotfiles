@@ -14,7 +14,7 @@
     "clock",
     "pulseaudio",
     "custom/swaync",
-    "custom/swww",
+    "custom/hyprpaper",
     "custom/reminder",
     "tray"
   ],
@@ -118,9 +118,9 @@
     "on-click": "swaync-client -t -sw",
     "escape": true
   },
-  "custom/swww": {
+  "custom/hyprpaper": {
     "format": "",
-    "exec": "~/.local/bin/swww.sh",
+    "exec": "~/.local/bin/hyprpaper.sh",
     "interval": 300,
     "tooltip": false
   },

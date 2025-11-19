@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=tdx
+Exec=bash -c "~/.local/bin/runwine tdx"
+Type=Application
+Terminal=false
+Categories=Application;
+Icon=/home/jing2uo/.var/app/com.usebottles.bottles/data/bottles/bottles/tdx/icons/tdx.png
+Comment=Launch tdx using Bottles.
