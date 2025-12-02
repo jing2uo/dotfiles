@@ -1,4 +1,10 @@
 {
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-containers"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -9,11 +15,14 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[python]": {
-    "editor.defaultFormatter": "charliermarsh.ruff",
-    "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "source.organizeImports": "explicit"
-    }
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -23,6 +32,7 @@
   "code-runner.executorMap": {
     "python": "$pythonPath -u $fullFileName"
   },
+  "containers.containerClient": "com.microsoft.visualstudio.containers.podman",
   "debug.console.fontSize": 16,
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.cursorSmoothCaretAnimation": "on",
@@ -75,16 +85,33 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
+  "flashpost.defaultSideBarTab": "History",
+  "flashpost.horizontalLayout": "Split Style",
   "git-graph.dialog.cherryPick.noCommit": true,
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.openRepositoryInParentFolders": "never",
   "gitlens.telemetry.enabled": false,
+  "gitlens.views.branches.showRemoteBranches": true,
+  "gitlens.views.scm.grouped.views": {
+    "branches": true,
+    "commits": true,
+    "contributors": true,
+    "fileHistory": false,
+    "launchpad": false,
+    "remotes": false,
+    "repositories": true,
+    "searchAndCompare": false,
+    "stashes": true,
+    "tags": true,
+    "worktrees": true
+  },
   "go.toolsManagement.autoUpdate": true,
   "indentRainbow.lightIndicatorStyleLineWidth": 2,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "jupyter.askForKernelRestart": false,
   "notebook.lineNumbers": "on",
+  "python.analysis.autoImportCompletions": true,
   "python.analysis.typeCheckingMode": "standard",
   "redhat.telemetry.enabled": false,
   "remote.SSH.configFile": "~/.ssh/config",
@@ -98,51 +125,14 @@
   },
   "terminal.integrated.fontFamily": "monospace",
   "terminal.integrated.fontSize": 18,
+  "terminal.integrated.stickyScroll.enabled": false,
   "window.autoDetectColorScheme": true,
   "window.dialogStyle": "custom",
   "window.openFilesInNewWindow": "on",
   "workbench.editor.empty.hint": "hidden",
+  "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.navigationControl.enabled": false,
   "workbench.preferredLightColorTheme": "Default Dark Modern",
-  "workbench.secondarySideBar.showLabels": false,
-  "workbench.editor.enablePreview": false,
-  "flashpost.horizontalLayout": "Split Style",
-  "flashpost.defaultSideBarTab": "History",
-  "containers.containerClient": "com.microsoft.visualstudio.containers.podman",
-  "python.analysis.autoImportCompletions": true,
-  "[dockerfile]": {
-    "editor.defaultFormatter": "ms-azuretools.vscode-containers"
-  },
-  "sqltools.useNodeRuntime": true,
-  "sqltools.disableNodeDetectNotifications": true,
-  "terminal.integrated.stickyScroll.enabled": false,
-  "[dockercompose]": {
-    "editor.insertSpaces": true,
-    "editor.tabSize": 2,
-    "editor.autoIndent": "advanced",
-    "editor.quickSuggestions": {
-      "other": true,
-      "comments": false,
-      "strings": true
-    },
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "gitlens.views.scm.grouped.views": {
-    "commits": true,
-    "branches": true,
-    "remotes": false,
-    "stashes": true,
-    "tags": true,
-    "worktrees": true,
-    "contributors": true,
-    "fileHistory": false,
-    "repositories": true,
-    "searchAndCompare": false,
-    "launchpad": false
-  },
-  "gitlens.views.branches.showRemoteBranches": true
+  "workbench.secondarySideBar.showLabels": false
 }

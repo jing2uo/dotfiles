@@ -28,7 +28,3 @@ elif [[ $ID == "arch" ]]; then
   echo
   paru -Syu
 fi
-
-echo
-
-bash ~/.local/bin/uplb
