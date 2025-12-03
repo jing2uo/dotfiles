@@ -1,12 +1,9 @@
 [Desktop Entry]
-Version=1.0
+Name=longbridge
+Exec=bash -c "~/.local/bin/runwine longbridge"
 Type=Application
-Name=Longbridge
-Comment=Longbridge trading platform desktop application.
-TryExec=longbridge
-StartupNotify=true
-Exec=/usr/local/bin/longbridge
-Icon=/home/jing2uo/.local/share/icons/longbridge.png
-Categories=Finance;
-Keywords=longbridge;
-StartupWMClass=com.longbridge.app.desktop
+Terminal=false
+Categories=Application;
+Icon=/home/jing2uo/.var/app/com.usebottles.bottles/data/bottles/bottles/longbridge/icons/longbridge.png
+Comment=Launch longbridge using Bottles.
+StartupWMClass=longbridge
