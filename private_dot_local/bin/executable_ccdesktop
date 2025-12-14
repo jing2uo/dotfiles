@@ -5,8 +5,6 @@ sudo chmod a+x /usr/local/bin/* ~/.local/bin/*
 
 files=(
   "bleachbit-root.desktop"
-  "pcmanfm-desktop-pref.desktop"
-  "pcmanfm-qt-desktop-pref.desktop"
   "zellij.desktop"
   "ranger.desktop"
   "avahi-discover.desktop"
@@ -22,19 +20,6 @@ files=(
 
 for file in "${files[@]}"; do
   sudo find /usr/share/applications -name "${file}" -exec rm -f {} +
-done
-
-files=(
-  "org.libreoffice.LibreOffice.base.desktop"
-  "org.libreoffice.LibreOffice.calc.desktop"
-  "org.libreoffice.LibreOffice.draw.desktop"
-  "org.libreoffice.LibreOffice.impress.desktop"
-  "org.libreoffice.LibreOffice.math.desktop"
-  "org.libreoffice.LibreOffice.writer.desktop"
-  "org.libreoffice.LibreOffice.xsltfilter.desktop"
-)
-for file in "${files[@]}"; do
-  sudo find ~/.local/share/flatpak/exports/share/applications/ -name "${file}" -exec rm -f {} +
 done
 
 cd ~/.cache
