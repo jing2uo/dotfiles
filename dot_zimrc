@@ -3,7 +3,6 @@ zmodule fzf
 zmodule zsh-users/zsh-autosuggestions
 zmodule zsh-users/zsh-completions -f src
 zmodule zdharma-continuum/fast-syntax-highlighting
-
 zmodule jing2uo/dotzim
 
 if command -v fzf >/dev/null 2>&1; then
