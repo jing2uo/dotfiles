@@ -1,0 +1,25 @@
+[tools]
+bun = "latest"
+chezmoi = "latest"
+claude = "latest"
+clickhouse = "latest"
+duckdb = "latest"
+fzf = "latest"
+"github:daeuniverse/daed" = "latest"
+"github:e-tho/bzmenu" = "latest"
+"github:e-tho/iwmenu" = "latest"
+"github:jing2uo/kontext" = "latest"
+"github:jing2uo/tdx2db" = "latest"
+"github:mzz2017/gg" = "latest"
+"github:v2fly/v2ray-core" = { version = "latest", asset_pattern = "v2ray-linux-64.zip" }
+"github:v2rayA/v2rayA" = { version = "latest", asset_pattern = "v2raya_linux_x64_*" }
+"github:xtls/xray-core" = { version = "latest", asset_pattern = "Xray-linux-64.zip" }
+go = "latest"
+"http:longbridge" = { version = "latest", url = "https://assets.lbkrs.com/github/release/longbridge-desktop/stable/longbridge-v{{version}}-linux-x86_64.AppImage", bin = "longbridge", version_list_url = "https://assets.lbkrs.com/github/release/longbridge-desktop/stable/latest.json", version_json_path = ".version" }
+hugo = "latest"
+node = "latest"
+opencode = "latest"
+shfmt = "latest"
+usage = "latest"
+uv = "latest"
+zellij = "latest"

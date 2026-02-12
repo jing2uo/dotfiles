@@ -1,0 +1,62 @@
+#!/bin/bash
+# 颜色定义
+GREEN='\033[0;32m'
+RED='\033[0;31m'
+YELLOW='\033[1;33m'
+NC='\033[0m' # No Color
+
+# 获取日期参数，如果没有传参则使用当前日期
+if [ -z "$1" ]; then
+  dd=$(date +%Y%m%d)
+  echo -e "${YELLOW}未指定日期，使用当前日期: ${dd}${NC}"
+else
+  dd=$1
+  # 验证日期格式
+  if ! [[ $dd =~ ^[0-9]{8}$ ]]; then
+    echo -e "${RED}错误: 日期格式不正确，请使用 yyyymmdd 格式 (例如: 20240209)${NC}"
+    exit 1
+  fi
+  echo -e "${GREEN}使用指定日期: ${dd}${NC}"
+fi
+
+# 定义URL和保存路径
+url="https://www.tdx.com.cn/products/data/data/g4tic/${dd}.zip"
+save_path="/data/tdxdata/${dd}.zip"
+
+# 先检查本地文件是否已存在
+if [ -f "$save_path" ]; then
+  echo -e "${GREEN}✓ 本地文件已存在: ${save_path}${NC}"
+  echo -e "${YELLOW}跳过下载${NC}"
+  exit 0
+fi
+
+echo -e "${YELLOW}检测远程文件是否存在...${NC}"
+echo "URL: ${url}"
+
+# 使用curl检测文件是否存在
+http_code=$(curl -s -o /dev/null -w "%{http_code}" --head "${url}")
+
+if [ "$http_code" -eq 200 ]; then
+  echo -e "${GREEN}✓ 文件存在 (HTTP ${http_code})${NC}"
+  
+  # 创建目录（如果不存在）
+  mkdir -p /data/tdxdata
+  
+  echo -e "${GREEN}开始下载...${NC}"
+  /usr/bin/axel "${url}" -o "${save_path}"
+  
+  if [ $? -eq 0 ]; then
+    echo -e "${GREEN}✓ 下载完成: ${save_path}${NC}"
+  else
+    echo -e "${RED}✗ 下载失败${NC}"
+    exit 1
+  fi
+elif [ "$http_code" -eq 404 ]; then
+  echo -e "${RED}✗ 文件不存在 (HTTP 404)${NC}"
+  echo -e "${YELLOW}跳过下载${NC}"
+  exit 0
+else
+  echo -e "${RED}✗ 无法访问文件 (HTTP ${http_code})${NC}"
+  echo -e "${YELLOW}跳过下载${NC}"
+  exit 0
+fi

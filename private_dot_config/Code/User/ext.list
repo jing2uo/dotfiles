@@ -3,16 +3,16 @@ bennycode.sort-everything
 bierner.markdown-mermaid
 charliermarsh.ruff
 christian-kohler.path-intellisense
-eamodio.gitlens
 esbenp.prettier-vscode
 formulahendry.code-runner
-foxundermoon.shell-format
 golang.go
 grapecity.gc-excelviewer
+hverlin.mise-vscode
 kofuk.hugo-utils
+lumirelle.shell-format-rev
+maattdd.gitless
 mechatroner.rainbow-csv
 mhutchie.git-graph
-mikestead.dotenv
 ms-azuretools.vscode-containers
 ms-ceintl.vscode-language-pack-zh-hans
 ms-python.debugpy
@@ -33,5 +33,6 @@ oderwat.indent-rainbow
 pkief.material-icon-theme
 quanzaiyu.vscode-json-enhanced
 redhat.vscode-yaml
+rust-lang.rust-analyzer
 tamasfe.even-better-toml
 tomoki1207.pdf

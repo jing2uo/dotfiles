@@ -1,36 +1,34 @@
 {
   "[dockerfile]": {
-    "editor.defaultFormatter": "ms-azuretools.vscode-containers"
+    "editor.defaultFormatter": "ms-azuretools.vscode-containers",
   },
   "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "vscode.json-language-features",
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[python]": {
     "editor.codeActionsOnSave": {
-      "source.organizeImports": "explicit"
+      "source.organizeImports": "explicit",
     },
     "editor.defaultFormatter": "charliermarsh.ruff",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[yaml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
-  "chat.commandCenter.enabled": false,
-  "clangd.path": "clangd-20",
   "code-runner.executorMap": {
-    "python": "$pythonPath -u $fullFileName"
+    "python": "$pythonPath -u $fullFileName",
   },
   "containers.containerClient": "com.microsoft.visualstudio.containers.podman",
   "debug.console.fontSize": 16,
@@ -53,10 +51,10 @@
       {
         "scope": "keyword.other.dotenv",
         "settings": {
-          "foreground": "#FF000000"
-        }
-      }
-    ]
+          "foreground": "#FF000000",
+        },
+      },
+    ],
   },
   "editor.wordWrap": "on",
   "editor.wordWrapColumn": 100,
@@ -74,38 +72,18 @@
     "*.ts": "${capture}.js",
     "*.tsx": "${capture}.ts",
     "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
-    "tsconfig.json": "tsconfig.*.json"
+    "tsconfig.json": "tsconfig.*.json",
   },
   "extensions.experimental.affinity": {
-    "asvetliakov.vscode-neovim": 1
-  },
-  "files.associations": {
-    ".env*": "dotenv"
+    "asvetliakov.vscode-neovim": 1,
   },
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
-  "flashpost.defaultSideBarTab": "History",
-  "flashpost.horizontalLayout": "Split Style",
   "git-graph.dialog.cherryPick.noCommit": true,
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.openRepositoryInParentFolders": "never",
-  "gitlens.telemetry.enabled": false,
-  "gitlens.views.branches.showRemoteBranches": true,
-  "gitlens.views.scm.grouped.views": {
-    "branches": true,
-    "commits": true,
-    "contributors": true,
-    "fileHistory": false,
-    "launchpad": false,
-    "remotes": false,
-    "repositories": true,
-    "searchAndCompare": false,
-    "stashes": true,
-    "tags": true,
-    "worktrees": true
-  },
   "go.toolsManagement.autoUpdate": true,
   "indentRainbow.lightIndicatorStyleLineWidth": 2,
   "javascript.updateImportsOnFileMove.enabled": "always",
@@ -115,13 +93,12 @@
   "python.analysis.typeCheckingMode": "standard",
   "redhat.telemetry.enabled": false,
   "remote.SSH.configFile": "~/.ssh/config",
-  "sqlite3-editor.ui.minimizePanel": true,
   "telemetry.feedback.enabled": false,
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.env.linux": {
-    "PYTHONPATH": "${workspaceFolder}"
+    "PYTHONPATH": "${workspaceFolder}",
   },
   "terminal.integrated.fontFamily": "monospace",
   "terminal.integrated.fontSize": 18,
@@ -134,5 +111,6 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.navigationControl.enabled": false,
   "workbench.preferredLightColorTheme": "Default Dark Modern",
-  "workbench.secondarySideBar.showLabels": false
+  "workbench.secondarySideBar.showLabels": false,
+  "mise.configureExtensionsAutomatically": true,
 }

@@ -13,87 +13,80 @@ if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZDOTDIR:-${HOME}}/.zimrc ]]; then
   source ${ZIM_HOME}/zimfw.zsh init -q
 fi
 
-# zsh completion
-export ZIM_COMP=${ZIM_HOME}/completions
-mkdir -p ${ZIM_COMP}
-fpath=("${fpath[@]}"
-  "/usr/share/zsh/site-functions/"
-  "/usr/share/zsh/vendor-completions/"
-  $ZIM_COMP
-)
-
 export WORDCHARS=${WORDCHARS/\//}
 export PATH=${HOME}/.local/bin:$PATH
-
-# zsh config
-setopt globdots
-bindkey -s '\e\e' '\C-asudo \C-e'
-bindkey '^[[1;5C' forward-word
-bindkey '^[[1;5D' backward-word
-
-# 检查 /etc/os-release 文件是否存在
-if [[ -f /etc/os-release ]]; then
-    source /etc/os-release
-    case "$ID" in
-        debian)
-            # Debian 特定的配置
-            autoload -U up-line-or-beginning-search
-            zle -N up-line-or-beginning-search
-            bindkey "${terminfo[kcuu1]}" up-line-or-beginning-search
-            autoload -U down-line-or-beginning-search
-            zle -N down-line-or-beginning-search
-            bindkey "${terminfo[kcud1]}" down-line-or-beginning-search
-            source /usr/share/doc/fzf/examples/key-bindings.zsh
-            source /usr/share/doc/fzf/examples/completion.zsh
-            ;;
-        arch)
-            # Arch 特定的配置
-            autoload -U up-line-or-beginning-search
-            zle -N up-line-or-beginning-search
-            bindkey "^[[A" up-line-or-beginning-search
-            autoload -U down-line-or-beginning-search
-            zle -N down-line-or-beginning-search
-            bindkey "^[[B" down-line-or-beginning-search
-            source /usr/share/fzf/key-bindings.zsh
-            source /usr/share/fzf/completion.zsh
-            ;;
-    esac
-fi
-
-# History config
+export ZIM_COMP=${ZIM_HOME}/completions
+export HISTFILE=${ZIM_HOME}/zsh_history
 export HISTSIZE=10000000
 export SAVEHIST=10000000
-export HISTFILE=${ZIM_HOME}/zsh_history
 
-setopt append_history
+# custom zsh completion
+mkdir -p ${ZIM_COMP}
+fpath+=($ZIM_COMP)
+
+
+# 智能 sudo 切换函数
+sudo-command-line() {
+    [[ -z $BUFFER ]] && zle up-history
+    if [[ $BUFFER == sudo\ * ]]; then
+        LBUFFER="${LBUFFER#sudo }"
+    else
+        LBUFFER="sudo $LBUFFER"
+    fi
+}
+zle -N sudo-command-line
+
+# 绑定到双击 Esc
+bindkey '\e\e' sudo-command-line
+
+# Ctrl + 左右箭头按单词移动
+bindkey '^[[1;5C' forward-word
+bindkey '^[[1;5D' backward-word
+# Ctrl + Backspace 删除单词
+bindkey '^H' backward-kill-word
+
+# 上下箭头智能搜索历史
+autoload -U up-line-or-beginning-search
+autoload -U down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+bindkey '^[[A' up-line-or-beginning-search
+bindkey '^[OA' up-line-or-beginning-search  
+bindkey '^[[B' down-line-or-beginning-search
+bindkey '^[OB' down-line-or-beginning-search
+
+# 通配符 * 匹配隐藏文件
+setopt globdots
+# 多终端共享历史
 setopt share_history
 setopt hist_expire_dups_first
 setopt hist_find_no_dups
 setopt hist_save_no_dups
-setopt hist_ignore_dups
 setopt hist_ignore_all_dups
 setopt hist_ignore_space
 setopt hist_reduce_blanks
-setopt inc_append_history
 
 alias curl="curl -k -s"
 alias k="eza -lh"
 alias kc="kubectl"
 alias kx="kubectx"
 alias kn="kubens"
-alias yt='yt-dlp -f "bv*+ba" '
+alias yt='uv run yt-dlp -f "bv*+ba" '
 alias zz="zimfw clean && zimfw install && zimfw build -v"
-alias typora="flatpak run io.typora.Typora $1"
 
-# asdf-vm
-if command -v asdf >/dev/null 2>&1; then
-  export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+# init zim
+source ${ZIM_HOME}/init.zsh
+
+# mise
+if command -v mise >/dev/null 2>&1; then
+  eval "$(mise activate zsh)"
 fi
 
 # atuin, save history
 if command -v atuin >/dev/null 2>&1; then
   export ATUIN_NOBIND="true"
   eval "$(atuin init zsh)"
+  bindkey '^r' atuin-search  # Ctrl+R 搜索历史
 fi
 
 # starship
@@ -103,35 +96,5 @@ else
   export PS1="%F{green}%n@%m:%~%F{reset} \$ "
 fi
 
-# direnv
-if command -v direnv >/dev/null 2>&1; then
-  eval "$(direnv hook zsh)"
-fi
-
-# podman
-export PODMAN_COMPOSE_WARNING_LOGS=false
-
-# Rust
-export RUSTUP_DIST_SERVER="https://rsproxy.cn"
-export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
-export RUSTUP_INIT_SKIP_PATH_CHECK=yes
-
-# init zim
-source ${ZIM_HOME}/init.zsh
-
-# python uv 
-_uv_run_mod() {
-    if [[ "$words[2]" == "run" && "$words[CURRENT]" != -* ]]; then
-        # Check if any previous argument after 'run' ends with .py
-        if [[ ${words[3,$((CURRENT-1))]} =~ ".*\.py" ]]; then
-            # Already have a .py file, complete any files
-            _arguments '*:filename:_files'
-        else
-            # No .py file yet, complete only .py files
-            _arguments '*:filename:_files -g "*.py"'
-        fi
-    else
-        _uv "$@"
-    fi
-}
-compdef _uv_run_mod uv
+# Python uv 
+eval "$(uv generate-shell-completion zsh)"

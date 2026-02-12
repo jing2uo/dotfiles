@@ -1,0 +1,10 @@
+[Unit]
+Description=TDX2DB Daily Sync Timer
+Requires=tdx2db.service
+
+[Timer]
+OnCalendar=*-*-* 16:20:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

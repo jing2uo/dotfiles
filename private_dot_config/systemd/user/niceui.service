@@ -1,0 +1,18 @@
+[Unit]
+Description=NiceGUI Personal UI
+After=clickhouse.service
+Requires=clickhouse.service
+
+[Service]
+Type=simple
+WorkingDirectory=%h/Project/ko_trading/
+ExecStart=mise x -- uv run python ui.py
+Restart=always
+RestartSec=3
+StandardOutput=journal
+StandardError=journal
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target
+
