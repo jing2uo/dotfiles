@@ -2,10 +2,8 @@
 
 count=$(hyprctl clients | grep "class: Alacritty" | wc -l)
 
-rm ~/.cache/zellij/* -rf
-
 if [ $count -gt 0 ]; then
-  hyprctl dispatch focuswindow "Alacritty"
+  hyprctl dispatch focuswindow "class:Alacritty"
 else
   alacritty
 fi

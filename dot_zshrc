@@ -71,7 +71,8 @@ alias k="eza -lh"
 alias kc="kubectl"
 alias kx="kubectx"
 alias kn="kubens"
-alias yt='uv run yt-dlp -f "bv*+ba" '
+alias fd="fdfind -H"
+alias yt='mise x -- yt-dlp -f "bv*+ba" '
 alias zz="zimfw clean && zimfw install && zimfw build -v"
 
 # init zim
