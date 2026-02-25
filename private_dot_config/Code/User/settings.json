@@ -113,4 +113,13 @@
   "workbench.preferredLightColorTheme": "Default Dark Modern",
   "workbench.secondarySideBar.showLabels": false,
   "mise.configureExtensionsAutomatically": true,
+  "claudeCode.preferredLocation": "panel",
+  "workbench.editorAssociations": {
+    "*.md": "markdownEditorOptimized.editor",
+    "*.markdown": "markdownEditorOptimized.editor",
+    "git:/**/*.md": "default",
+    "git:/**/*.markdown": "default",
+    "git:**/*.md": "default",
+    "git:**/*.markdown": "default",
+  },
 }

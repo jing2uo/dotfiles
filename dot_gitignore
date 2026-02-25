@@ -3,6 +3,7 @@
 .tool-versions
 .env
 .vscode
+.claude
 mise.local.toml
 
 # clangd

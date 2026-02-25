@@ -7,9 +7,8 @@ Wants=network.target
 [Service]
 Type=simple
 Environment="V2RAYA_CONFIG=%h/.config/v2raya"
-Environment="V2RAYA_LOG_MAX_DAYS=2"
+Environment="V2RAYA_LOG_MAX_DAYS=1"
 Environment="V2RAYA_LOG_FILE=/tmp/v2raya.log"
-#Environment="V2RAY_LOCATION_ASSET=%h/.local/share/mise/installs/github-v2fly-v2ray-core/latest/"
 Environment="V2RAY_LOCATION_ASSET=%h/.local/share/mise/installs/github-xtls-xray-core/latest/"
 ExecStart=mise x -- v2raya --lite --log-disable-timestamp
 Restart=on-failure

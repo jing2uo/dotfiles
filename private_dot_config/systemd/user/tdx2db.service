@@ -4,7 +4,7 @@ After=network-online.target
 
 [Service]
 Type=oneshot
-ExecStart=mise x -- tdx2db cron --dburi 'clickhouse://localhost' --minline 5 --tdxhome %h/Templates/new_tdx/
+ExecStart=mise x -- tdx2db cron --dburi 'clickhouse://localhost' --minline 5 --tdxhome %h/Public/new_tdx64/
 
 [Install]
 WantedBy=default.target
