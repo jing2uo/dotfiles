@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=vm
 Comment=vm
-Exec=/home/jing2uo/.local/bin/vm-spice
+Exec=spicy -h 10.102.1.188 -p 5900
 Icon=remmina
 Terminal=false
 Type=Application

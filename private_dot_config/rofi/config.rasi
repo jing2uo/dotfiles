@@ -1,0 +1,23 @@
+@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+
+configuration {
+    show-icons: true;
+    icon-theme: "Papirus";
+    disable-history: false;
+    display-drun: ">>";
+    matching: "fuzzy";
+    case-sensitive: false;
+}
+
+listview {
+    scrollbar: false;
+}
+
+
+element {
+    spacing: 10px;
+}
+
+element-icon {
+    size: 32px;
+}

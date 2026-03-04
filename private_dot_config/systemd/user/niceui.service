@@ -1,7 +1,5 @@
 [Unit]
 Description=NiceGUI Personal UI
-After=clickhouse.service
-Requires=clickhouse.service
 
 [Service]
 Type=simple
