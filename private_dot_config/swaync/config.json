@@ -15,7 +15,7 @@
     "timeout-critical": 0,
     "fit-to-screen": false,
     "control-center-width": 350,
-    "control-center-height": 738,
+    "control-center-height": 650,
     "notification-window-width": 350,
     "keyboard-shortcuts": true,
     "image-visibility": "when-available",
@@ -44,7 +44,7 @@
         },
         "backlight": {
             "label": " ",
-            "device": "intel_backlight",
+            "device": "amdgpu_bl0",
             "min": 10
         },
         "buttons-grid": {
@@ -64,10 +64,10 @@
                     "update-command": "bash -c '[[ $(set-kbd) == \"Off\" ]] && echo true || echo false'"
                 },
                 {
-                    "label": " ",
+                    "label": " ",
                     "type": "toggle",
-                    "command": "set-powersave --toggle",
-                    "update-command": "bash -c '[[ $(set-powersave) == \"powersave\" ]] && echo true || echo false'"
+                    "command": "set-boost --toggle",
+                    "update-command": "bash -c '[[ $(set-boost) == \"on\" ]] && echo true || echo false'"
                 }
             ]
         }

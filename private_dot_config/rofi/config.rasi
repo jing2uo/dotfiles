@@ -6,6 +6,8 @@ configuration {
     disable-history: false;
     display-drun: ">>";
     matching: "fuzzy";
+    sorting-method: "fzf";
+    sort: true;
     case-sensitive: false;
 }
 

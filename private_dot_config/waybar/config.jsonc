@@ -45,7 +45,7 @@
   },
   "clock": {
     "format": "  {:%m-%d %H:%M}",
-    "locale": "en_US.UTF-8",
+    "locale": "C",
     "calendar": {
       "format": {
         "months": "<span color='#ffead3'><b>{}</b></span>",

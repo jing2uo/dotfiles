@@ -110,8 +110,6 @@
   "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.navigationControl.enabled": false,
-  "workbench.preferredLightColorTheme": "Default Dark Modern",
-  "workbench.secondarySideBar.showLabels": false,
   "mise.configureExtensionsAutomatically": true,
   "claudeCode.preferredLocation": "panel",
   "workbench.editorAssociations": {
@@ -122,4 +120,8 @@
     "git:**/*.md": "default",
     "git:**/*.markdown": "default",
   },
+  "claudeCode.selectedModel": "opus",
+  "chat.disableAIFeatures": true,
+  "workbench.preferredLightColorTheme": "Dark 2026",
+  "workbench.secondarySideBar.showLabels": false,
 }
