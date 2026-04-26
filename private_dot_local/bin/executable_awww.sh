@@ -3,4 +3,4 @@
 WALLPAPER_DIR="$HOME/Pictures/Wallpapers/"
 WALLPAPER=$(fdfind . "$WALLPAPER_DIR" | shuf -n 1)
 
-hyprctl hyprpaper wallpaper ",$WALLPAPER,cover"
+awww img "$WALLPAPER" --resize=crop --filter=Nearest --transition-type wipe

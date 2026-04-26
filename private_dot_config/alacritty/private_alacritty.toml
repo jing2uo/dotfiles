@@ -6,7 +6,7 @@ size = 16.0
 builtin_box_drawing = true
 
 [terminal.shell]
-args = ["-c", "tmux attach || tmux new-session"]
+args = ["-c", "mise x -- zellij -l compact"]
 program = "/bin/zsh"
 
 [window]

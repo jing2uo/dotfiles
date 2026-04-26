@@ -90,6 +90,14 @@ if command -v atuin >/dev/null 2>&1; then
   bindkey '^r' atuin-search  # Ctrl+R 搜索历史
 fi
 
+# podman
+export REGISTRY_AUTH_FILE=$HOME/.config/containers/auth.json
+
+# distrobox
+distrobox() {
+    command distrobox "$1" --root "${@:2}"
+}
+
 # starship
 if command -v starship >/dev/null 2>&1; then
   eval "$(starship init zsh)"

@@ -4,7 +4,7 @@ Description=NiceGUI Personal UI
 [Service]
 Type=simple
 WorkingDirectory=%h/Project/ko_trading/
-ExecStart=mise x -- uv run python ui.py
+ExecStart=mise x -- uv run main.py
 Restart=always
 RestartSec=3
 StandardOutput=journal

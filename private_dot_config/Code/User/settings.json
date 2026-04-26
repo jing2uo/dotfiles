@@ -124,4 +124,5 @@
   "chat.disableAIFeatures": true,
   "workbench.preferredLightColorTheme": "Dark 2026",
   "workbench.secondarySideBar.showLabels": false,
+  "terminal.integrated.initialHint": false,
 }
