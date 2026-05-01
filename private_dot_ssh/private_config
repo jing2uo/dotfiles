@@ -3,6 +3,9 @@ Include /etc/ssh/ssh_config.d/*.conf
 Include ~/.ssh/asdf
 
 Host *
+  ForwardAgent yes
+  LogLevel error
+  HostKeyAlgorithms rsa-sha2-256,rsa-sha2-512,ssh-rsa
   CheckHostIP no
   StrictHostKeyChecking no
   UserKnownHostsFile /dev/null
