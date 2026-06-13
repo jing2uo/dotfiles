@@ -3,19 +3,23 @@
 bun = "latest"
 chezmoi = "latest"
 claude = "latest"
+codex = "latest"
 duckdb = "latest"
 github-cli = "latest"
-"github:daeuniverse/daed" = "latest"
+"github:daeuniverse/daed" = { version = "latest", version_prefix = "v" }
 "github:e-tho/bzmenu" = "latest"
 "github:e-tho/iwmenu" = "latest"
 "github:jing2uo/kontext" = "latest"
-"github:jing2uo/tdx2db" = "latest"
 go = "latest"
-"http:longbridge" = { version = "latest", url = "https://assets.lbkrs.com/github/release/longbridge-desktop/stable/longbridge-v{{version}}-linux-x86_64.AppImage", bin = "longbridge", version_list_url = "https://assets.lbkrs.com/github/release/longbridge-desktop/stable/latest.json", version_json_path = ".version" }
 node = "latest"
 opencode = "latest"
+pulumi = "latest"
 rust = "latest"
 usage = "latest"
 uv = "latest"
+wrangler = "latest"
 yt-dlp = "latest"
 zellij = "latest"
+
+[settings]
+minimum_release_age = "0"

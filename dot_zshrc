@@ -69,8 +69,8 @@ setopt hist_reduce_blanks
 alias curl="curl -k -s"
 alias k="eza -lh"
 alias kc="kubectl"
-alias kx="kubectx"
-alias kn="kubens"
+alias kx="mise x -- kontext use"
+alias kn="mise x -- kontext ns"
 alias fd="fdfind -H"
 alias yt='mise x -- yt-dlp -f "bv*+ba" '
 alias zz="zimfw clean && zimfw install && zimfw build -v"
@@ -81,6 +81,7 @@ source ${ZIM_HOME}/init.zsh
 # mise
 if command -v mise >/dev/null 2>&1; then
   eval "$(mise activate zsh)"
+  export MISE_PRERELEASES=1
 fi
 
 # atuin, save history

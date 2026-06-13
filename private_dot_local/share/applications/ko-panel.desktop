@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=KO Panel
+Comment=Trading panel
+Exec=ko-panel
+Terminal=false
+Categories=Finance;Office;
+StartupWMClass=ko_panel
