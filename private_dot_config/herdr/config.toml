@@ -1,0 +1,86 @@
+onboarding = false
+[theme]
+name = "catppuccin"
+auto_switch = false
+
+[terminal]
+default_shell = "zsh"
+new_cwd = "follow"
+
+[ui.toast]
+delivery = "herdr"
+
+[ui]
+show_agent_labels_on_pane_borders = true
+agent_panel_sort = "spaces"
+prompt_new_tab_name = false
+confirm_close = true
+
+[keys]
+prefix = "f12"
+workspace_picker = "prefix+w"
+goto = "prefix+g"
+new_workspace = "prefix+shift+n"
+new_worktree = "prefix+shift+g"
+previous_workspace = "prefix+shift+left"
+next_workspace = "prefix+shift+right"
+previous_agent = "prefix+shift+i"
+next_agent = "prefix+shift+k"
+new_tab = "prefix+b"
+previous_tab = "prefix+left"
+next_tab = "prefix+right"
+switch_tab = ""
+switch_workspace = "prefix+shift+1..9"
+focus_pane_left = "prefix+j"
+focus_pane_down = "prefix+k"
+focus_pane_up = "prefix+i"
+focus_pane_right = "prefix+l"
+navigate_pane_left = "j"
+navigate_pane_down = "k"
+navigate_pane_up = "i"
+navigate_pane_right = "l"
+last_pane = "prefix+backtick"
+split_vertical = "prefix+n"
+split_horizontal = "prefix+m"
+close_pane = ""
+zoom = "prefix+z"
+resize_mode = "prefix+r"
+toggle_sidebar = "prefix+h"
+
+[[keys.command]]
+key = "prefix+t"
+type = "plugin_action"
+command = "herdr-picker-plus.open"
+description = "Navigator: jump to workspace, agent, or project"
+
+[[keys.command]]
+key = "prefix+shift+l"
+type = "plugin_action"
+command = "herdr-picker-plus.jump-back"
+description = "Navigator: jump back to previous workspace"
+
+[[keys.command]]
+key = "prefix+u"
+type = "plugin_action"
+command = "persiyanov.reviewr.toggle"
+description = "reviewr: toggle code review overlay"
+
+[[keys.command]]
+key = "prefix+1"
+type = "shell"
+command = "~/.config/herdr/scripts/home-space.sh"
+description = "Focus or recreate the home Terminal workspace"
+
+[[keys.command]]
+key = "prefix+p"
+type = "shell"
+command = "~/.config/herdr/scripts/pane-to-tab.sh"
+description = "Move current pane to a new tab"
+
+[experimental]
+# Allow `herdr --remote ...` from a terminal pane managed by local Herdr.
+allow_nested = true
+
+[update]
+channel = "stable"
+version_check = false

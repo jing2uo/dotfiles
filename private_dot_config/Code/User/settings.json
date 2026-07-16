@@ -110,4 +110,7 @@
   "chat.mcp.gallery.enabled": true,
   "chat.viewSessions.orientation": "stacked",
   "redhat.telemetry.enabled": false,
+  "terminal.integrated.shellIntegration.enabled": false,
+  "terminal.integrated.gpuAcceleration": "off",
+  "chat.disableAIFeatures": true,
 }

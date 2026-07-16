@@ -4,6 +4,8 @@
 .env
 .vscode
 .claude
+.agents
+.codex
 mise.local.toml
 
 # clangd
