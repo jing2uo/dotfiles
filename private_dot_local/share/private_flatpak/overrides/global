@@ -1,5 +1,6 @@
 [Context]
-filesystems=xdg-config/fontconfig:ro;xdg-download:rw
+filesystems=xdg-download:rw;xdg-config/fontconfig:ro
 
 [Environment]
 FONTCONFIG_FILE=~/.config/fontconfig/fonts.conf
+LANG=zh_CN.UTF-8

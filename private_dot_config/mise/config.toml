@@ -1,7 +1,6 @@
 [tools]
 chezmoi = "latest"
 claude = "latest"
-codex = "0.145.0-alpha.10"
 duckdb = "latest"
 github-cli = "latest"
 "github:daeuniverse/daed" = { version = "latest", version_prefix = "v" }
@@ -22,3 +21,11 @@ yt-dlp = "latest"
 
 [settings]
 minimum_release_age = "0"
+
+[hooks]
+# rust 用 latest,mise 每次升级版本就漂。走 mise 的场景 (mise activate 的终端) 靠
+# RUSTUP_TOOLCHAIN=<mise pin> 自然一致;但不走 mise 的场景 (IDE / CI / 别的 shell) 退回
+# rustup default,若它不跟 mise,两边编译器版本不同 → cargo 反复重编 (fingerprint 失效)。
+# 每次 tool 装完把 rustup default 对齐到 mise 当前 rust,保证走不走 mise 都是同一版本。
+# 幂等 (rustup default 重设无害),故不必只在 rust 变化时跑。
+postinstall = 'rustup default "$(mise current rust 2>/dev/null)" 2>/dev/null || true'

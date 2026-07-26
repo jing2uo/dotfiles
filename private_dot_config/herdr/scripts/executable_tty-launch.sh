@@ -13,6 +13,19 @@ if "$MISE" x -- herdr --version >/dev/null 2>&1; then
         # -n: if another window is already handing off, skip instead of queueing
         flock -n "$LOCK" "$MISE" x -- herdr server live-handoff || true
     fi
+    # Land on the home λ workspace once the server is reachable
+    # (covers both cold start and re-attach; same logic as the f12+1 binding).
+    (
+        i=0
+        while [ "$i" -lt 50 ]; do
+            if "$MISE" x -- herdr workspace list >/dev/null 2>&1; then
+                "$HOME/.config/herdr/scripts/home-space.sh"
+                exit 0
+            fi
+            sleep 0.2
+            i=$((i + 1))
+        done
+    ) >/dev/null 2>&1 &
     exec "$MISE" x -- herdr
 fi
 

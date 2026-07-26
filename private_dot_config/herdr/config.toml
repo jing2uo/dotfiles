@@ -1,6 +1,6 @@
 onboarding = false
 [theme]
-name = "catppuccin"
+name = "terminal"
 auto_switch = false
 
 [terminal]
@@ -8,7 +8,7 @@ default_shell = "zsh"
 new_cwd = "follow"
 
 [ui.toast]
-delivery = "herdr"
+delivery = "system"
 
 [ui]
 show_agent_labels_on_pane_borders = true
@@ -50,13 +50,13 @@ toggle_sidebar = "prefix+h"
 [[keys.command]]
 key = "prefix+t"
 type = "plugin_action"
-command = "herdr-picker-plus.open"
+command = "herdr-navigator.open"
 description = "Navigator: jump to workspace, agent, or project"
 
 [[keys.command]]
 key = "prefix+shift+l"
 type = "plugin_action"
-command = "herdr-picker-plus.jump-back"
+command = "herdr-navigator.jump-back"
 description = "Navigator: jump back to previous workspace"
 
 [[keys.command]]
@@ -69,7 +69,7 @@ description = "reviewr: toggle code review overlay"
 key = "prefix+1"
 type = "shell"
 command = "~/.config/herdr/scripts/home-space.sh"
-description = "Focus or recreate the home Terminal workspace"
+description = "Focus or recreate the home λ workspace"
 
 [[keys.command]]
 key = "prefix+p"
