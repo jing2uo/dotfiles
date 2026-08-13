@@ -26,3 +26,9 @@
 	tool = vscode
 [difftool "vscode"]
 	cmd = "code --wait --diff  "
+[credential "https://github.com"]
+	helper = 
+	helper = !/home/jing2uo/.local/share/mise/shims/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/home/jing2uo/.local/share/mise/shims/gh auth git-credential

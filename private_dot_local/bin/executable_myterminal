@@ -3,7 +3,7 @@
 count=$(hyprctl clients | grep "class: Alacritty" | wc -l)
 
 if [ $count -gt 0 ]; then
-  hyprctl dispatch focuswindow "class:Alacritty"
+  hyprctl dispatch 'hl.dsp.focus({ window = "class:Alacritty" })'
 else
   alacritty -e ~/.config/herdr/scripts/tty-launch.sh
 fi

@@ -35,7 +35,7 @@ hl.bind("SUPER + P", hl.dsp.exec_cmd('grim -g "$(slurp)" ~/Downloads/$(date +%y%
 -- hyprpicker
 -- NOTE: Alt+I is bound twice (also "move window up" below). Same as in the old
 -- hyprlang config; the first registered bind wins, so hyprpicker does.
-hl.bind(mainMod .. " + I", hl.dsp.exec_cmd("hyprpicker -a"))
+hl.bind(mainMod .. " + U", hl.dsp.exec_cmd("hyprpicker -a"))
 
 hl.gesture({
 	fingers = 3,
