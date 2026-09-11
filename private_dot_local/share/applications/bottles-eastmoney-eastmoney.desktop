@@ -1,0 +1,9 @@
+[Desktop Entry]
+Exec=flatpak run --command=bottles-cli --file-forwarding "com.usebottles.bottles" run -p "eastmoney" -b "eastmoney" -- @@u %u @@
+Type=Application
+Terminal=false
+Categories=Game;
+Comment=Launch eastmoney using Bottles.
+StartupWMClass=mainfree.exe
+Name=eastmoney
+Icon=/home/jing2uo/.var/app/com.usebottles.bottles/data/bottles/bottles/eastmoney/icons/eastmoney.png

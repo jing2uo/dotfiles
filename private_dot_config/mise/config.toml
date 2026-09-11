@@ -1,6 +1,7 @@
 [tools]
 chezmoi = "latest"
 claude = "latest"
+deno = "latest"
 duckdb = "latest"
 github-cli = "latest"
 "github:daeuniverse/daed" = { version = "latest", version_prefix = "v" }
@@ -9,18 +10,18 @@ github-cli = "latest"
 "github:jing2uo/kontext" = "latest"
 go = "latest"
 herdr = "latest"
-kind = "latest"
 node = "latest"
 pi = "latest"
-pulumi = "latest"
 rust = "latest"
 usage = "latest"
 uv = "latest"
 wrangler = "latest"
-yt-dlp = "latest"
 
 [settings]
 minimum_release_age = "0"
+
+[settings.upgrade]
+prune_after = "0s"
 
 [hooks]
 # rust 用 latest,mise 每次升级版本就漂。走 mise 的场景 (mise activate 的终端) 靠

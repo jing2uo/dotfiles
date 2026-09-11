@@ -1,5 +1,5 @@
 [Context]
-filesystems=xdg-data/applications
+filesystems=xdg-documents;xdg-data/applications:create;xdg-desktop:create;
 
 [Environment]
 FONTCONFIG_FILE=~/.config/fontconfig/fonts-dir.conf

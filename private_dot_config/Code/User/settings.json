@@ -100,7 +100,6 @@
   "workbench.editor.empty.hint": "hidden",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.navigationControl.enabled": false,
-  "mise.configureExtensionsAutomatically": true,
   "claudeCode.preferredLocation": "panel",
   "claudeCode.selectedModel": "opus",
   "workbench.preferredLightColorTheme": "Dark 2026",
@@ -114,4 +113,6 @@
   "terminal.integrated.gpuAcceleration": "off",
   "chat.disableAIFeatures": true,
   "workbench.experimental.modernUI": true,
+  "mise.binPath": "/usr/local/bin/mise",
+  "mise.configureExtensionsAutomatically": true,
 }

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Exec=flatpak run --command=bottles-cli --file-forwarding "com.usebottles.bottles" run -p "xdzq" -b "xdzq" -- @@u %u @@
+Type=Application
+Terminal=false
+Categories=Game;
+Comment=Launch xdzq using Bottles.
+StartupWMClass=tdxw.exe
+Name=xdzq
+Icon=/home/jing2uo/.var/app/com.usebottles.bottles/data/bottles/bottles/xdzq/icons/xdzq.png

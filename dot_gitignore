@@ -4,10 +4,14 @@
 .env
 .vscode
 .claude
+.mirrord
 .agents
 .codex
 mise.local.toml
 .pi-*
+
+# duckdb
+.duckdb
 
 # clangd
 .cache
