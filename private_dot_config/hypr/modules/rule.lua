@@ -128,7 +128,7 @@ hl.window_rule({
 hl.window_rule({
 	name = "windowrule-15",
 	match = {
-		class = "(.*copyq|Enpass|.*Calculator|explorer.exe|steam_proton)",
+		class = "(.*copyq|enpass|.*Calculator|explorer.exe|steam_proton)",
 	},
 	float = true,
 	center = true,
@@ -169,4 +169,18 @@ hl.window_rule({
 	float = true,
 	center = true,
 	size = "900 600",
+})
+
+-- 截图工具: 自己会全屏, 别让它进平铺 (开/关时会挤动其它窗口)
+hl.window_rule({
+	name = "windowrule-20",
+	match = {
+		class = "mark-shot",
+	},
+	float = true,
+	pin = true,
+	no_anim = true,
+	no_shadow = true,
+	no_blur = true,
+	suppress_event = "maximize",
 })

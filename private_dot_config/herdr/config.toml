@@ -1,6 +1,6 @@
 onboarding = false
 [theme]
-name = "terminal"
+name = "dracula"
 auto_switch = false
 
 [terminal]

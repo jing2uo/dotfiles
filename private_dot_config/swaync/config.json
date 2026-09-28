@@ -64,10 +64,10 @@
                     "update-command": "bash -c '[[ $(set-kbd) == \"Off\" ]] && echo true || echo false'"
                 },
                 {
-                    "label": " ",
+                    "label": " ",
                     "type": "toggle",
-                    "command": "set-boost --toggle",
-                    "update-command": "bash -c '[[ $(set-boost) == \"on\" ]] && echo true || echo false'"
+                    "command": "set-powersave --toggle",
+                    "update-command": "bash -c '[[ $(set-powersave) == \"powersave\" ]] && echo true || echo false'"
                 }
             ]
         }

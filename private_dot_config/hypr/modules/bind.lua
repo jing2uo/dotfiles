@@ -28,9 +28,8 @@ hl.bind(
 )
 
 -- ScreenShot
--- apt install grim slurp
-hl.bind(mainMod .. " + P", hl.dsp.exec_cmd('grim -g "$(slurp)" - | wl-copy --type image/png'))
-hl.bind("SUPER + P", hl.dsp.exec_cmd('grim -g "$(slurp)" ~/Downloads/$(date +%y%m%d-%H%m%S).png'))
+-- flatpak install io.github.jswysnemc.MarkShot
+hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("flatpak run io.github.jswysnemc.MarkShot"))
 
 -- hyprpicker
 -- NOTE: Alt+I is bound twice (also "move window up" below). Same as in the old
