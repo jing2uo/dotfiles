@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=AyuGram Desktop
+Comment=Telegram Desktop fork with ghost mode, message history and anti-recall
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=AyuGram com.ayugram.desktop -startintray
+Icon=com.ayugram.desktop
+Terminal=false
+StartupWMClass=AyuGram
+Type=Application
+Categories=Chat;Network;InstantMessaging;Qt;
+X-GNOME-UsesNotifications=true
+X-GNOME-Autostart-enabled=true
+X-Flatpak=com.ayugram.desktop

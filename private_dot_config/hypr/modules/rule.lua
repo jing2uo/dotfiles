@@ -154,7 +154,7 @@ hl.window_rule({
 hl.window_rule({
 	name = "windowrule-18",
 	match = {
-		class = "(io.github.kukuruzka165.materialgram)",
+		class = "(com.ayugram.desktop|AyuGram)",
 	},
 	float = true,
 	center = true,

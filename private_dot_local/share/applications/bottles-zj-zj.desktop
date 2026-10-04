@@ -1,9 +1,0 @@
-[Desktop Entry]
-Exec=flatpak run --command=bottles-cli --file-forwarding "com.usebottles.bottles" run -p "zj" -b "zj" -- @@u %u @@
-Type=Application
-Terminal=false
-Categories=Game;
-Comment=Launch zj using Bottles.
-StartupWMClass=tdxw.exe
-Name=zj
-Icon=/home/jing2uo/.var/app/com.usebottles.bottles/data/bottles/bottles/zj/icons/zj.png

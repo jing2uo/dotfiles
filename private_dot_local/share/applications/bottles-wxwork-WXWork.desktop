@@ -1,9 +1,0 @@
-[Desktop Entry]
-Exec=flatpak run --command=bottles-cli --file-forwarding "com.usebottles.bottles" run -p "WXWork" -b "wxwork" -- @@u %u @@
-Type=Application
-Terminal=false
-Categories=Game;
-Comment=Launch WXWork using Bottles.
-StartupWMClass=wxwork.exe
-Name=WXWork
-Icon=/home/jing2uo/.var/app/com.usebottles.bottles/data/bottles/bottles/wxwork/icons/WXWork.png
