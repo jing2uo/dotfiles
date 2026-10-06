@@ -164,7 +164,7 @@ hl.window_rule({
 hl.window_rule({
 	name = "windowrule-19",
 	match = {
-		class = "(.*pavucontrol|xarchiver|(?i)thunar)",
+		class = "(.*pavucontrol|xarchiver|io.github.lgse.Strata)",
 	},
 	float = true,
 	center = true,
