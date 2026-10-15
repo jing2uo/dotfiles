@@ -115,4 +115,5 @@
   "workbench.experimental.modernUI": true,
   "mise.binPath": "/usr/local/bin/mise",
   "mise.configureExtensionsAutomatically": true,
+  "claudeCode.hideOnboarding": true,
 }

@@ -137,7 +137,7 @@ hl.window_rule({
 hl.window_rule({
 	name = "windowrule-16",
 	match = {
-		class = "(QQ|wechat)",
+		class = "(wechat)",
 	},
 	float = true,
 	center = true,
@@ -146,7 +146,7 @@ hl.window_rule({
 hl.window_rule({
 	name = "windowrule-17",
 	match = {
-		title = "(QQ|WeChat)",
+		class = "(wechat)",
 	},
 	size = "980 650",
 })
@@ -164,11 +164,21 @@ hl.window_rule({
 hl.window_rule({
 	name = "windowrule-19",
 	match = {
-		class = "(.*pavucontrol|xarchiver|io.github.lgse.Strata)",
+		class = "(.*pavucontrol|xarchiver)",
 	},
 	float = true,
 	center = true,
 	size = "900 600",
+})
+
+hl.window_rule({
+	name = "windowrule-strata",
+	match = {
+		class = "io.github.lgse.Strata",
+	},
+	float = true,
+	center = true,
+	size = "1100 700",
 })
 
 -- 截图工具: 自己会全屏, 别让它进平铺 (开/关时会挤动其它窗口)
