@@ -2,33 +2,14 @@
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-containers",
   },
-  "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml",
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-  },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features",
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[python]": {
     "editor.codeActionsOnSave": {
       "source.organizeImports": "explicit",
     },
-    "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.formatOnSave": true,
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-  },
-  "[yaml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-  },
-  "code-runner.executorMap": {
-    "python": "$pythonPath -u $fullFileName",
   },
   "containers.containerClient": "com.microsoft.visualstudio.containers.podman",
   "debug.console.fontSize": 16,
@@ -86,8 +67,6 @@
   "git.openRepositoryInParentFolders": "never",
   "go.toolsManagement.autoUpdate": true,
   "indentRainbow.lightIndicatorStyleLineWidth": 2,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "jupyter.askForKernelRestart": false,
   "notebook.lineNumbers": "on",
   "python.analysis.autoImportCompletions": true,
   "python.analysis.typeCheckingMode": "standard",
@@ -98,17 +77,14 @@
   "window.dialogStyle": "custom",
   "window.openFilesInNewWindow": "on",
   "workbench.editor.empty.hint": "hidden",
-  "workbench.iconTheme": "material-icon-theme",
   "workbench.navigationControl.enabled": false,
   "claudeCode.preferredLocation": "panel",
-  "claudeCode.selectedModel": "opus",
-  "workbench.preferredLightColorTheme": "Dark 2026",
+  "workbench.preferredLightColorTheme": "Dark Modern",
   "workbench.secondarySideBar.showLabels": false,
   "chat.agent.networkFilter": true,
   "chat.agent.enabled": false,
   "chat.mcp.gallery.enabled": true,
   "chat.viewSessions.orientation": "stacked",
-  "redhat.telemetry.enabled": false,
   "terminal.integrated.shellIntegration.enabled": false,
   "terminal.integrated.gpuAcceleration": "off",
   "chat.disableAIFeatures": true,
@@ -116,4 +92,10 @@
   "mise.binPath": "/usr/local/bin/mise",
   "mise.configureExtensionsAutomatically": true,
   "claudeCode.hideOnboarding": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "go.addTags": {
+    "transform": "keep",
+  },
+  "telemetry.feedback.enabled": false,
+  "telemetry.editStats.enabled": false,
 }

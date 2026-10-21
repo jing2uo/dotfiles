@@ -44,7 +44,8 @@
     },
     {
       "type": "gpu",
-      "key": "  "
+      "key": "  ",
+      "format": "{vendor} {name~34,-4}"
     },
     {
       "type": "memory",

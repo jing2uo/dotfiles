@@ -1,0 +1,26 @@
+# Session environment, sourced by uwsm and exported into the systemd user
+# manager, so systemd services (waybar, swaync, hypridle...) see it too.
+# Was: ~/.config/hypr/modules/env.lua. XDG_SESSION_TYPE / XDG_SESSION_DESKTOP /
+# XDG_CURRENT_DESKTOP are set by uwsm itself.
+
+export XMODIFIERS=@im=fcitx
+
+# Toolkit Backend
+export CLUTTER_BACKEND=wayland
+
+# Qt
+export QT_QPA_PLATFORM=wayland
+export QT_AUTO_SCREEN_SCALE_FACTOR=1
+export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
+export QT_WAYLAND_RECONNECT=1
+
+# Cursor
+export XCURSOR_THEME=Paper
+export XCURSOR_SIZE=24
+export HYPRCURSOR_THEME=Paper
+export HYPRCURSOR_SIZE=24
+
+# No accessibility bus on this system; silence the AT-SPI warnings.
+# GTK_A11Y covers GTK4 (swaync), NO_AT_BRIDGE covers GTK3 (waybar).
+export GTK_A11Y=none
+export NO_AT_BRIDGE=1

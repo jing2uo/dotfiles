@@ -15,30 +15,7 @@ window#waybar {
   /* background-color: rgba(24, 24, 37, 0.6); */
 }
 
-#workspaces button {
-  padding: 0.3rem 0.6rem;
-  margin: 0.4rem 0.25rem;
-  border-radius: 6px;
-  /* background-color: #181825; */
-  background-color: #1e1e2e;
-  color: #cdd6f4;
-}
-
-#workspaces button:hover {
-  color: #1e1e2e;
-  background-color: #cdd6f4;
-}
-
-#workspaces button.active {
-  background-color: #1e1e2e;
-  color: #89b4fa;
-}
-
-#workspaces button.urgent {
-  background-color: #1e1e2e;
-  color: #f38ba8;
-}
-
+#workspaces button,
 #clock,
 #network,
 #pulseaudio,
@@ -53,15 +30,43 @@ window#waybar {
   background-color: #1e1e2e;
 }
 
+#workspaces button {
+  color: #cdd6f4;
+}
+
+#workspaces button:hover {
+  color: #1e1e2e;
+  background-color: #cdd6f4;
+}
+
+/* Background keeps active/urgent buttons dark on hover. */
+#workspaces button.active {
+  background-color: #1e1e2e;
+  color: #89b4fa;
+}
+
+#workspaces button.urgent {
+  background-color: #1e1e2e;
+  color: #f38ba8;
+}
+
 window#waybar.empty #window {
   background-color: transparent;
 }
 
 #battery {
-  color: #9e80c4;
+  color: #a6e3a1;
 }
 
-#network{
+#battery.warning:not(.charging) {
+  color: #f9e2af;
+}
+
+#battery.critical:not(.charging) {
+  color: #f38ba8;
+}
+
+#network {
   color: #4f8cca;
 }
 

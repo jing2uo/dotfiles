@@ -1,0 +1,99 @@
+#!/bin/bash
+#
+# devpod-fwd — 把 devpod workspace（kubernetes provider）的端口转发到本机，断开自动重连
+#
+#   devpod-fwd guojing                  # 默认转发 3425 3430
+#   devpod-fwd guojing 8080 13425:3425  # 自定义端口，写法同 kubectl port-forward
+#
+# 参数（环境变量可改）:
+#   HEALTH_INTERVAL=10  每隔几秒请求一次第一个端口，连续 2 次不通就重建转发
+#   HEALTH_URL=...      健康检查请求的地址，默认 http://127.0.0.1:<第一个本地端口>/
+#   RETRY_INTERVAL=180  连不上时，隔多少秒再试
+#   MAX_FAILURES=5      连续失败几次后放弃并退出
+#   NOTIFY_AFTER=3      连续失败几次后弹通知
+# 健康检查通过过的连接断了，会马上重连，不算失败。
+#
+# 作为后台服务运行: systemctl --user enable --now devpod-fwd@guojing
+#
+set -u
+
+workspace=${1:?用法: devpod-fwd <workspace> [port...]}
+shift
+ports=("$@")
+[ $# -eq 0 ] && ports=(3425 3430)
+
+: "${HEALTH_INTERVAL:=10}" "${HEALTH_URL:=http://127.0.0.1:${ports[0]%%:*}/}"
+: "${RETRY_INTERVAL:=180}" "${MAX_FAILURES:=5}" "${NOTIFY_AFTER:=3}"
+
+config=${DEVPOD_HOME:-$HOME/.devpod}/contexts/default/workspaces/$workspace/workspace.json
+[ -f "$config" ] || { echo "找不到 workspace: $workspace" >&2; exit 1; }
+
+# 从 workspace.json 读取一个字段
+field() { jq -r "$1 // empty" "$config"; }
+
+# 能拿到任何 HTTP 响应就算通（401、404 也算）
+healthy() { curl -s -o /dev/null -m 5 "$HEALTH_URL"; }
+
+notify() {
+  command -v notify-send >/dev/null && notify-send -a devpod-fwd -u critical "$@"
+}
+
+# 转发一次，直到 kubectl 退出或健康检查失败；通过过健康检查就把 connected 置 1
+forward() {
+  # 每次都重新读：workspace 重建后 uid 会变，pod 名跟着变
+  local pod="devpod-$(field .uid)"
+  local kubeconfig=$(field .provider.options.KUBERNETES_CONFIG.value)
+  local namespace=$(field .provider.options.KUBERNETES_NAMESPACE.value)
+
+  echo "→ pod/$pod  ports: ${ports[*]}" >&2
+  kubectl ${kubeconfig:+--kubeconfig "$kubeconfig"} ${namespace:+-n "$namespace"} \
+    port-forward --address 127.0.0.1 "pod/$pod" "${ports[@]}" &
+  kube=$!
+
+  connected=0
+  local misses=0 last_check=$SECONDS
+  while kill -0 "$kube" 2>/dev/null; do
+    sleep 1
+    (( SECONDS - last_check < HEALTH_INTERVAL )) && continue
+    last_check=$SECONDS
+
+    if healthy; then
+      connected=1 misses=0
+    elif (( ++misses >= 2 )); then
+      echo "✗ 健康检查连续 $misses 次不通，重建转发" >&2
+      kill "$kube"
+    fi
+  done
+  wait "$kube"
+}
+
+kube=
+trap '[ -n "$kube" ] && kill "$kube" 2>/dev/null' EXIT  # 退出时带走 kubectl
+trap 'exit 0' INT TERM
+
+failures=0
+while true; do
+  forward
+
+  if (( connected )); then
+    failures=0
+    echo "✗ 连接断开，马上重连..." >&2
+    sleep 2
+    continue
+  fi
+
+  failures=$((failures + 1))
+  echo "✗ 连不上（第 $failures/$MAX_FAILURES 次）" >&2
+
+  if (( failures >= MAX_FAILURES )); then
+    notify "devpod-fwd: $workspace 已放弃" \
+      "连续 $failures 次连不上。恢复: systemctl --user restart devpod-fwd@$workspace"
+    exit 1
+  fi
+  if (( failures == NOTIFY_AFTER )); then
+    notify "devpod-fwd: $workspace 连不上" \
+      "已连续失败 $failures 次，每 ${RETRY_INTERVAL} 秒重试，最多 $MAX_FAILURES 次"
+  fi
+
+  sleep "$RETRY_INTERVAL"
+done

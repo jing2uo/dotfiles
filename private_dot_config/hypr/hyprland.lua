@@ -9,14 +9,11 @@
 --
 -- Mapping from the old hyprlang split-conf layout:
 --   hyprland.conf -> hyprland.lua + modules/bind.lua + modules/autostart.lua
---   env.conf      -> modules/env.lua
+--   env.conf      -> ~/.config/uwsm/env (uwsm exports it to systemd services too)
 --   look.conf     -> modules/look.lua
 --   rule.conf     -> modules/rule.lua  (its binde/bindm tail went to bind.lua)
 --   misc.conf     -> modules/misc.lua
---   monitors.conf -> modules/monitors.lua
 
-require("modules.env")
-require("modules.monitors")
 require("modules.look")
 require("modules.misc")
 require("modules.rule")

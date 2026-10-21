@@ -1,16 +1,11 @@
 {
-  "layer": "bottom",
   "position": "bottom",
-  "height": 40,
+  "height": 42,
   "spacing": 2,
-  "exclusive": true,
-  "gtk-layer-shell": true,
-  "passthrough": false,
-  "fixed-center": true,
   "modules-left": ["hyprland/workspaces", "hyprland/window"],
   "modules-right": [
-    "battery",
     "network",
+    "battery",
     "clock",
     "pulseaudio",
     "custom/swaync",
@@ -18,7 +13,6 @@
     "tray"
   ],
   "hyprland/workspaces": {
-    "on-click": "activate",
     "format": "{icon}",
     "format-icons": {
       "1": " ",
@@ -31,9 +25,7 @@
       "8": " ",
       "9": " ",
       "default": " "
-    },
-    "all-outputs": false,
-    "active-only": false
+    }
   },
   "hyprland/window": {
     "format": "{initialTitle}"
@@ -58,11 +50,11 @@
       "mode-mon-col": 1,
       "on-scroll": 1
     },
-    "actions":  {
-            "on-scroll-up": "shift_down",
-            "on-scroll-down": "shift_up"
+    "actions": {
+      "on-scroll-up": "shift_down",
+      "on-scroll-down": "shift_up"
     },
-    "tooltip-format": "<span color='#cdd6f4' font='Lexend 16'><tt><small>{calendar}</small></tt></span>"
+    "tooltip-format": "<span color='#cdd6f4' font='monospace 16'><tt><small>{calendar}</small></tt></span>"
   },
   "pulseaudio": {
     "format": "{icon}",
@@ -73,7 +65,7 @@
     },
     "on-click-right": "pavucontrol",
     "on-click-middle": "pavucontrol",
-    "on-click": "pactl set-sink-mute 0 toggle",
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "tooltip-format": "{volume}%"
   },
   "battery": {
@@ -86,16 +78,15 @@
     "format": "  {capacity}%"
   },
   "network": {
-      "interface": "wlan0",
-      "format": "{ifname}: {essid} ({signalStrength}%)",
-      "format-wifi": "󰖩  {signalStrength}%",
-      "format-disconnected": "󱚵 ",
-      "format-disabled": "󰖪 ",
-      "interval": 5,
-      "tooltip": true,
-      "tooltip-format": "IP: {ipaddr}\nESSID: {essid}\nSignal: {signalStrength}%",
-      "on-click-middle": "iwmenu -l fuzzel -i font -s 3",
-      "on-click-right": "iwmenu -l fuzzel -i font -s 3",
+    "interface": "wlan0",
+    "format": "{ifname}: {essid} ({signalStrength}%)",
+    "format-wifi": "󰖩  {signalStrength}%",
+    "format-disconnected": "󱚵 ",
+    "format-disabled": "󰖪 ",
+    "interval": 5,
+    "tooltip-format": "IP: {ipaddr}\nESSID: {essid}\nSignal: {signalStrength}%",
+    "on-click-middle": "mise x -- iwmenu -l rofi -i font -s 3",
+    "on-click-right": "mise x -- iwmenu -l rofi -i font -s 3"
   },
   "custom/swaync": {
     "tooltip": false,
@@ -121,5 +112,5 @@
     "exec": "~/.local/bin/awww.sh",
     "interval": 300,
     "tooltip": false
-  },
+  }
 }
