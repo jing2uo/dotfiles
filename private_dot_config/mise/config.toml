@@ -1,8 +1,10 @@
 [tools]
+"aqua:loft-sh/devpod" = "latest"
 claude = "latest"
 github-cli = "latest"
 "github:e-tho/bzmenu" = "latest"
 "github:e-tho/iwmenu" = "latest"
+"github:flatpark/rpak" = "latest"
 "github:jing2uo/kontext" = "latest"
 go = "latest"
 herdr = "latest"

@@ -2,180 +2,56 @@
 -- The binde/bindm tail of rule.conf moved to bind.lua, so mainMod is only
 -- declared in one place now.
 
--- Terminal
-hl.window_rule({
-	name = "windowrule-1",
-	match = {
-		class = "Alacritty",
-	},
-	workspace = "1",
-})
-
--- Internet
-hl.window_rule({
-	name = "windowrule-2",
-	match = {
-		class = "app.zen_browser.zen",
-	},
-	workspace = "2",
-})
-
--- Coding
-hl.window_rule({
-	name = "windowrule-3",
-	match = {
-		class = "code",
-	},
-	workspace = "3",
-})
-
-hl.window_rule({
-	name = "windowrule-4",
-	match = {
-		class = "ko-panel",
-	},
-	workspace = "6",
-})
+-- 按 class 固定 workspace
+for _, r in ipairs({
+	{ "terminal", "Alacritty", "1" },
+	{ "browser", "app.zen_browser.zen", "2" },
+	{ "coding", "code", "3" },
+	{ "note", "(ko-panel|obsidian|calibre-gui)", "6" },
+}) do
+	hl.window_rule({
+		name = "ws-" .. r[1],
+		match = { class = r[2] },
+		workspace = r[3],
+	})
+end
 
 -- wemeet
 hl.window_rule({
-	name = "windowrule-5",
-	match = {
-		class = "wemeetapp",
-	},
+	name = "wemeet",
+	match = { class = "wemeetapp" },
 	float = true,
 	center = true,
 	suppress_event = "activate",
 })
 
 hl.window_rule({
-	name = "windowrule-6",
-	match = {
-		title = "EmojiFloatWnd",
-	},
+	name = "wemeet-tips",
+	match = { title = "(EmojiFloatWnd|InMeeting_Float_Tips)" },
 	workspace = "4 silent",
 	suppress_event = "activate",
 })
 
+-- 浮动
 hl.window_rule({
-	name = "windowrule-7",
-	match = {
-		title = "InMeeting_Float_Tips",
-	},
-	workspace = "4 silent",
-	suppress_event = "activate",
-})
-
--- note
-hl.window_rule({
-	name = "windowrule-8",
-	match = {
-		class = "obsidian",
-	},
-	workspace = "6",
-})
-
-hl.window_rule({
-	name = "windowrule-9",
-	match = {
-		class = "calibre-gui",
-	},
-	workspace = "6",
-})
-
--- richeasy
-hl.window_rule({
-	name = "windowrule-10",
-	match = {
-		class = "RichEZFast",
-	},
-	workspace = "9",
-})
-
--- open file
-hl.window_rule({
-	name = "windowrule-11",
-	match = {
-		title = "(Bottles)",
-	},
-	float = true,
-})
-
-hl.window_rule({
-	name = "windowrule-12",
-	match = {
-		title = "(Wine.*)",
-	},
-	center = true,
-})
-
-hl.window_rule({
-	name = "windowrule-13",
-	match = {
-		class = "(TradingView)",
-	},
-	center = true,
-})
-
-hl.window_rule({
-	name = "windowrule-14",
-	match = {
-		class = "(soffice|xdg-desktop-portal-gtk|hyprland-share-picker)",
-	},
-	float = true,
-})
-
-hl.window_rule({
-	name = "windowrule-15",
-	match = {
-		class = "(.*copyq|enpass|.*Calculator|explorer.exe|steam_proton)",
-	},
+	name = "float-center",
+	match = { class = "(xdg-desktop-portal-gtk|hyprland-share-picker)" },
 	float = true,
 	center = true,
 })
 
+-- 浮动 + 居中 + 固定大小
 hl.window_rule({
-	name = "windowrule-16",
-	match = {
-		class = "(wechat)",
-	},
-	float = true,
-	center = true,
-})
-
-hl.window_rule({
-	name = "windowrule-17",
-	match = {
-		class = "(wechat)",
-	},
-	size = "980 650",
-})
-
-hl.window_rule({
-	name = "windowrule-18",
-	match = {
-		class = "(com.ayugram.desktop|AyuGram)",
-	},
+	name = "float-980x650",
+	match = { class = "(.*pavucontrol|enpass|xarchiver|wechat|com.ayugram.desktop|org.flatpark.Cellar)" },
 	float = true,
 	center = true,
 	size = "980 650",
 })
 
 hl.window_rule({
-	name = "windowrule-19",
-	match = {
-		class = "(.*pavucontrol|xarchiver)",
-	},
-	float = true,
-	center = true,
-	size = "900 600",
-})
-
-hl.window_rule({
-	name = "windowrule-strata",
-	match = {
-		class = "io.github.lgse.Strata",
-	},
+	name = "float-1100x700-strata",
+	match = { class = "io.github.lgse.*" },
 	float = true,
 	center = true,
 	size = "1100 700",
@@ -183,10 +59,8 @@ hl.window_rule({
 
 -- 截图工具: 自己会全屏, 别让它进平铺 (开/关时会挤动其它窗口)
 hl.window_rule({
-	name = "windowrule-20",
-	match = {
-		class = "mark-shot",
-	},
+	name = "mark-shot",
+	match = { class = "mark-shot" },
 	float = true,
 	pin = true,
 	no_anim = true,

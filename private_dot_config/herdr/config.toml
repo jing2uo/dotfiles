@@ -85,3 +85,6 @@ allow_nested = true
 [update]
 channel = "stable"
 version_check = false
+
+[ui.sound]
+enabled = false

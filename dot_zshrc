@@ -1,3 +1,5 @@
+typeset -U path fpath
+
 zstyle ':zim:zmodule' use 'degit'
 
 ZIM_HOME=${HOME}/.config/zim
@@ -13,15 +15,16 @@ if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZDOTDIR:-${HOME}}/.zimrc ]]; then
   source ${ZIM_HOME}/zimfw.zsh init -q
 fi
 
-export WORDCHARS=${WORDCHARS/\//}
-export PATH=${HOME}/.local/bin:$PATH
-export ZIM_COMP=${ZIM_HOME}/completions
-export HISTFILE=${ZIM_HOME}/zsh_history
-export HISTSIZE=10000000
-export SAVEHIST=10000000
+WORDCHARS=${WORDCHARS/\//}
+path=(${HOME}/.local/bin $path)
+ZIM_COMP=${ZIM_HOME}/completions
+# 不 export, 避免子进程 bash 继承后写入 zsh 历史文件
+HISTFILE=${ZIM_HOME}/zsh_history
+HISTSIZE=10000000
+SAVEHIST=10000000
 
 # custom zsh completion
-mkdir -p ${ZIM_COMP}
+[[ -d ${ZIM_COMP} ]] || mkdir -p ${ZIM_COMP}
 fpath+=($ZIM_COMP)
 
 
@@ -59,14 +62,11 @@ bindkey '^[OB' down-line-or-beginning-search
 setopt globdots
 # 多终端共享历史
 setopt share_history
-setopt hist_expire_dups_first
-setopt hist_find_no_dups
-setopt hist_save_no_dups
 setopt hist_ignore_all_dups
 setopt hist_ignore_space
 setopt hist_reduce_blanks
 
-alias curl="curl -k -s"
+alias curlk="curl -k -s"
 alias k="eza -lh"
 alias kc="kubectl"
 alias kx="mise x -- kontext use"
@@ -78,7 +78,9 @@ alias zz="zimfw clean && zimfw install && zimfw build -v"
 # init zim
 source ${ZIM_HOME}/init.zsh
 
+
 # mise
+# mise 安装的应用, 配置需放在 mise activate 之后
 if command -v mise >/dev/null 2>&1; then
   eval "$(mise activate zsh)"
   export MISE_PRERELEASES=1
@@ -94,20 +96,24 @@ fi
 # podman
 export REGISTRY_AUTH_FILE=$HOME/.config/containers/auth.json
 
-# distrobox
-distrobox() {
-    command distrobox "$1" --root "${@:2}"
-}
-
 # starship
 if command -v starship >/dev/null 2>&1; then
   eval "$(starship init zsh)"
 else
-  export PS1="%F{green}%n@%m:%~%F{reset} \$ "
+  PS1="%F{green}%n@%m:%~%f \$ "
 fi
 
-# Python uv 
-if command -v uv >/dev/null 2>&1; then
-  eval "$(uv generate-shell-completion zsh)"
+# Python uv: 补全缓存到 ${ZIM_COMP}/_uv, uv 更新后自动重新生成
+if (( $+commands[uv] )) && [[ ! ${ZIM_COMP}/_uv -nt ${commands[uv]} ]]; then
+  uv generate-shell-completion zsh >| ${ZIM_COMP}/_uv
+  autoload -Uz _uv && compdef _uv uv
 fi
 
+# rpak: 补全缓存到 ${ZIM_COMP}/_rpak, rpak 更新后自动重新生成
+if (( $+commands[rpak] )); then
+  alias flatpak="rpak"
+  if [[ ! ${ZIM_COMP}/_rpak -nt ${commands[rpak]} ]]; then
+    rpak completion zsh >| ${ZIM_COMP}/_rpak
+    autoload -Uz _rpak && compdef _rpak rpak
+  fi
+fi

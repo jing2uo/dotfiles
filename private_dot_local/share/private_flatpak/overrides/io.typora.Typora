@@ -1,3 +1,0 @@
-[Context]
-sockets=system-bus
-filesystems=home;!host

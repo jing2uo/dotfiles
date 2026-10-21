@@ -1,11 +1,6 @@
 @define-color cc-bg #11111b;
-@define-color noti-border-color #181825;
-@define-color noti-bg #181825;
 @define-color noti-bg-darker #181825;
-@define-color noti-bg-hover rgb(27, 27, 43);
-@define-color noti-bg-focus rgba(27, 27, 27, 0.6);
 @define-color text-color #f9f5d7;
-@define-color text-color-disabled #bdae93;
 @define-color bg-selected #2384ce;
 
 * {
@@ -40,7 +35,7 @@
 }
 
 .close-button {
-    background: #2384ce;
+    background: @bg-selected;
     color: @cc-bg;
     text-shadow: none;
     padding: 0px;
@@ -51,7 +46,7 @@
 
 .close-button:hover {
     box-shadow: none;
-    background: #2384ce;
+    background: @bg-selected;
     transition: all .15s ease-in-out;
     border: none;
 }
@@ -71,14 +66,14 @@
 }
 
 .summary {
-	padding-top: 7px;
+    padding-top: 7px;
     font-size: 13px;
     color: #ebdbb2;
 }
 
 .time {
     font-size: 11px;
-    color: #2384ce;
+    color: @bg-selected;
     margin-right: 24px;
 }
 
@@ -124,16 +119,11 @@
 }
 
 .widget-dnd>switch:checked {
-    background: #2384ce;
-    border: 1px solid #2384ce;
+    background: @bg-selected;
+    border: 1px solid @bg-selected;
 }
 
 .widget-dnd>switch slider {
-    background: @cc-bg;
-    border-radius: 5px;
-}
-
-.widget-dnd>switch:checked slider {
     background: @cc-bg;
     border-radius: 5px;
 }
@@ -187,21 +177,10 @@
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button:hover {
-    background: #2384ce;
+    background: @bg-selected;
     color: @cc-bg;
 }
 
-.widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked {
+.widget-buttons-grid>flowbox>flowboxchild>button.toggle:checked {
     background: #1c7abc;
-}
-
-
-.widget-menubar>box>.menu-button-bar>button {
-    border: none;
-    background: transparent;
-}
-
-.topbar-buttons>button {
-    border: none;
-    background: transparent;
 }

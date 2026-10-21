@@ -1,13 +1,11 @@
-zmodule zsh-users/zsh-completions -f src
+zmodule zsh-users/zsh-completions --fpath src
 zmodule completion
 
 zmodule fzf
+# fzf-tab 必须在 compinit 之后, 且在 autosuggestions / syntax-highlighting 等包装 widget 的插件之前
+zmodule Aloxaf/fzf-tab --if-command fzf
+zmodule b4b4r07/enhancd --if-command fzf
+
 zmodule zsh-users/zsh-autosuggestions
 zmodule zdharma-continuum/fast-syntax-highlighting
 zmodule jing2uo/dotzim
-
-if command -v fzf >/dev/null 2>&1; then
-  zmodule Aloxaf/fzf-tab
-  zmodule b4b4r07/enhancd
-fi
-
