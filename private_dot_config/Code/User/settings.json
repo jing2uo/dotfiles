@@ -62,6 +62,8 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "git-graph.dialog.cherryPick.noCommit": true,
+  "git-graph.maxDepthOfRepoSearch": 2,
+  "git.repositoryScanMaxDepth": 2,
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.openRepositoryInParentFolders": "never",
@@ -98,4 +100,7 @@
   },
   "telemetry.feedback.enabled": false,
   "telemetry.editStats.enabled": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
 }
