@@ -43,7 +43,7 @@ hl.window_rule({
 -- 浮动 + 居中 + 固定大小
 hl.window_rule({
 	name = "float-980x650",
-	match = { class = "(.*pavucontrol|enpass|xarchiver|wechat|com.ayugram.desktop|org.flatpark.Cellar)" },
+	match = { class = "(.*pavucontrol|enpass|xarchiver|wechat|com.ayugram.desktop|org.flatpark.Cellar|magpie)" },
 	float = true,
 	center = true,
 	size = "980 650",

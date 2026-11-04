@@ -1,6 +1,7 @@
 [tools]
 "aqua:loft-sh/devpod" = "latest"
 claude = "latest"
+duckdb = "latest"
 github-cli = "latest"
 "github:e-tho/bzmenu" = "latest"
 "github:e-tho/iwmenu" = "latest"
@@ -15,7 +16,10 @@ uv = "latest"
 wrangler = "latest"
 
 [settings]
-minimum_release_age = "0"
+minimum_release_age = "0s"
 
 [settings.upgrade]
 prune_after = "0s"
+
+[settings.self_update]
+auto = true

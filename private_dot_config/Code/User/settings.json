@@ -91,7 +91,7 @@
   "terminal.integrated.gpuAcceleration": "off",
   "chat.disableAIFeatures": true,
   "workbench.experimental.modernUI": true,
-  "mise.binPath": "/usr/local/bin/mise",
+  "mise.binPath": "/home/jing2uo/.local/bin/mise",
   "mise.configureExtensionsAutomatically": true,
   "claudeCode.hideOnboarding": true,
   "workbench.iconTheme": "material-icon-theme",
