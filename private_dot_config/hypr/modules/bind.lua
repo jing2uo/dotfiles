@@ -4,7 +4,7 @@
 
 local mainMod = "ALT"
 
--- apt install alacritty fcitx5 uwsm
+-- apt install kitty fcitx5 uwsm
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd("~/.local/bin/myterminal"))
 
 -- Menu

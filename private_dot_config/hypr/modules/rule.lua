@@ -4,7 +4,7 @@
 
 -- 按 class 固定 workspace
 for _, r in ipairs({
-	{ "terminal", "Alacritty", "1" },
+	{ "terminal", "kitty", "1" },
 	{ "browser", "app.zen_browser.zen", "2" },
 	{ "coding", "code", "3" },
 	{ "note", "(ko-panel|obsidian|calibre-gui)", "6" },
@@ -55,6 +55,14 @@ hl.window_rule({
 	float = true,
 	center = true,
 	size = "1100 700",
+})
+
+hl.window_rule({
+	name = "float-1120x700-music",
+	match = { class = "io.github.gloridust.YetEaseMusic" },
+	float = true,
+	center = true,
+	size = "1120 700",
 })
 
 -- 截图工具: 自己会全屏, 别让它进平铺 (开/关时会挤动其它窗口)

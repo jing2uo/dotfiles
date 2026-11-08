@@ -3,6 +3,10 @@
 # Was: ~/.config/hypr/modules/env.lua. XDG_SESSION_TYPE / XDG_SESSION_DESKTOP /
 # XDG_CURRENT_DESKTOP are set by uwsm itself.
 
+# User binaries (mise lives in ~/.local/bin). Without this, programs started
+# by Hyprland (exec_cmd, binds, launchers) only see the system PATH.
+export PATH="$HOME/.local/bin:$PATH"
+
 export XMODIFIERS=@im=fcitx
 
 # Toolkit Backend
