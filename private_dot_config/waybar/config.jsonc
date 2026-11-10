@@ -9,7 +9,6 @@
     "clock",
     "pulseaudio",
     "custom/swaync",
-    "custom/wallpaper",
     "tray"
   ],
   "hyprland/workspaces": {
@@ -106,11 +105,5 @@
     "exec": "swaync-client -swb",
     "on-click": "swaync-client -t -sw",
     "escape": true
-  },
-  "custom/wallpaper": {
-    "format": "",
-    "exec": "~/.local/bin/awww.sh",
-    "interval": 300,
-    "tooltip": false
   }
 }

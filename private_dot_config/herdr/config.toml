@@ -8,7 +8,7 @@ default_shell = "zsh"
 new_cwd = "follow"
 
 [ui.toast]
-delivery = "off"
+delivery = "terminal"
 
 [ui]
 show_agent_labels_on_pane_borders = true
@@ -16,7 +16,7 @@ agent_panel_sort = "spaces"
 prompt_new_tab_name = false
 confirm_close = true
 
-status_indicators = "dots"
+status_indicators = "symbols"
 [keys]
 prefix = "f12"
 workspace_picker = "prefix+w"
@@ -87,4 +87,4 @@ channel = "stable"
 version_check = false
 
 [ui.sound]
-enabled = false
+enabled = true
